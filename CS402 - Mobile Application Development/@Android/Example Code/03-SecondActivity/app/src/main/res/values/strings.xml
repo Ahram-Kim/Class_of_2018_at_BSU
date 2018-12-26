@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SecondActivity</string>
+    <string name="first_name_hint">First Name</string>
+    <string name="last_name_hint">Last Name</string>
+    <string name="age_hint">Age</string>
+    <string name="birthday_hint">Birthday</string>
+</resources>

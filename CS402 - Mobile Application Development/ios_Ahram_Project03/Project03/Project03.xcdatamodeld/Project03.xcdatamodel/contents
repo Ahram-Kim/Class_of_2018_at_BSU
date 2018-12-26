@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.14.2" systemVersion="17G65" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Review" representedClassName="Review" syncable="YES">
+        <attribute name="rName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rOpinion" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Review" positionX="-63" positionY="-18" width="128" height="75"/>
+    </elements>
+</model>
