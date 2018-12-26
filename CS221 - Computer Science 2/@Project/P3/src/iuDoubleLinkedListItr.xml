@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="IUDoubleLinkedList Iterator and ListIterator Tests">
+
+  <test name="IUDoubleLinkedList Iterator Tests">   
+  	<parameter name="listType" value="doubleLinkedList"/> 
+  	
+    <classes>     
+      <class name="ListItrTest_1_emptyList"/>
+      <class name="ListItrTest_10_A_addToRearB_AB"/>
+      <class name="ListItrTest_11_A_addAfterBA_AB"/>
+       <class name="ListItrTest_12_A_remove0_emptyList"/>
+      <class name="ListItrTest_13_A_set0B_B"/>
+      <class name="ListItrTest_14_A_add0B_BA"/>
+       <class name="ListItrTest_15_A_add1B_AB"/>
+      <class name="ListItrTest_16_AB_removeFirst_B"/>
+      <class name="ListItrTest_17_AB_removeLast_A"/>
+       <class name="ListItrTest_18_AB_removeA_B"/>
+      <class name="ListItrTest_19_AB_removeB_A"/>
+      <class name="ListItrTest_2_emptyList_addToFrontA_A"/>
+       <class name="ListItrTest_20_AB_addToFrontC_CAB"/>
+      <class name="ListItrTest_21_AB_addToRearC_ABC"/> 
+      <class name="ListItrTest_22_AB_addAfterCA_ACB"/>
+       <class name="ListItrTest_23_AB_addAfterCB_ABC"/>
+      <class name="ListItrTest_24_AB_remove0_B"/>
+      <class name="ListItrTest_25_AB_remove1_A"/>
+       <class name="ListItrTest_26_AB_set0C_CB"/>
+      <class name="ListItrTest_27_AB_set1C_AC"/>
+      <class name="ListItrTest_28_AB_addC_ABC"/>
+       <class name="ListItrTest_29_AB_add0C_CAB"/>
+ 	<class name="ListItrTest_3_emptyList_addToRearA_A"/>
+     <class name="ListItrTest_30_AB_add1C_ACB"/>
+       <class name="ListItrTest_31_AB_add2C_ABC"/>
+      <class name="ListItrTest_32_ABC_removeFirst_BC"/>
+      <class name="ListItrTest_33_ABC_removeLast_AB"/>
+	<class name="ListItrTest_34_ABC_removeA_BC"/>
+       <class name="ListItrTest_35_ABC_removeB_AC"/>
+      <class name="ListItrTest_36_ABC_removeC_AB"/>
+      <class name="ListItrTest_37_ABC_remove0_BC"/>
+       <class name="ListItrTest_38_ABC_remove1_AC"/>
+      <class name="ListItrTest_39_ABC_remove2_AB"/>
+      <class name="ListItrTest_4_emptyList_addA_A"/>
+       <class name="ListItrTest_40_ABC_set0D_DBC"/>
+      <class name="ListItrTest_41_ABC_set1D_ADC"/>
+      <class name="ListItrTest_42_ABC_set2D_ABD"/>
+       <class name="ListItrTest_5_emptyList_add0A_A"/>
+      <class name="ListItrTest_6_A_removeFirst_emptyList"/>
+      <class name="ListItrTest_7_A_removeLast_emptyList"/>
+       <class name="ListItrTest_8_A_removeA_emptyList"/>
+      <class name="ListItrTest_9_A_addToFrontB_BA"/>
+
+     </classes>  
+     
+  </test> <!-- IUDoubleLinkedList Iterator Tests -->	
+  
+  <test name="IUDoubleLinkedList ListIterator Tests">   
+    <parameter name="listType" value="doubleLinkedList"/> 
+    
+    <classes>
+      <class name="ListItrTest_1_emptyList"/>
+      <class name="ListItrTest_10_A_addToRearB_AB"/>
+      <class name="ListItrTest_11_A_addAfterBA_AB"/>
+       <class name="ListItrTest_12_A_remove0_emptyList"/>
+      <class name="ListItrTest_13_A_set0B_B"/>
+      <class name="ListItrTest_14_A_add0B_BA"/>
+       <class name="ListItrTest_15_A_add1B_AB"/>
+      <class name="ListItrTest_16_AB_removeFirst_B"/>
+      <class name="ListItrTest_17_AB_removeLast_A"/>
+       <class name="ListItrTest_18_AB_removeA_B"/>
+      <class name="ListItrTest_19_AB_removeB_A"/>
+      <class name="ListItrTest_2_emptyList_addToFrontA_A"/>
+       <class name="ListItrTest_20_AB_addToFrontC_CAB"/>
+      <class name="ListItrTest_21_AB_addToRearC_ABC"/>
+      <class name="ListItrTest_22_AB_addAfterCA_ACB"/>
+       <class name="ListItrTest_23_AB_addAfterCB_ABC"/>
+      <class name="ListItrTest_24_AB_remove0_B"/>
+      <class name="ListItrTest_25_AB_remove1_A"/>
+       <class name="ListItrTest_26_AB_set0C_CB"/>
+      <class name="ListItrTest_27_AB_set1C_AC"/>
+      <class name="ListItrTest_28_AB_addC_ABC"/>
+       <class name="ListItrTest_29_AB_add0C_CAB"/>
+ 	<class name="ListItrTest_3_emptyList_addToRearA_A"/>
+     <class name="ListItrTest_30_AB_add1C_ACB"/>
+       <class name="ListItrTest_31_AB_add2C_ABC"/>
+      <class name="ListItrTest_32_ABC_removeFirst_BC"/>
+      <class name="ListItrTest_33_ABC_removeLast_AB"/>
+	<class name="ListItrTest_34_ABC_removeA_BC"/>
+       <class name="ListItrTest_35_ABC_removeB_AC"/>
+      <class name="ListItrTest_36_ABC_removeC_AB"/>
+      <class name="ListItrTest_37_ABC_remove0_BC"/>
+       <class name="ListItrTest_38_ABC_remove1_AC"/>
+      <class name="ListItrTest_39_ABC_remove2_AB"/>
+      <class name="ListItrTest_4_emptyList_addA_A"/>
+       <class name="ListItrTest_40_ABC_set0D_DBC"/>
+      <class name="ListItrTest_41_ABC_set1D_ADC"/>
+      <class name="ListItrTest_42_ABC_set2D_ABD"/>
+       <class name="ListItrTest_5_emptyList_add0A_A"/>
+      <class name="ListItrTest_6_A_removeFirst_emptyList"/>
+      <class name="ListItrTest_7_A_removeLast_emptyList"/>
+       <class name="ListItrTest_8_A_removeA_emptyList"/>
+      <class name="ListItrTest_9_A_addToFrontB_BA"/>
+    
+    </classes> 
+       
+  </test> <!-- IUDoubleLinkedList ListIterator Tests -->
+
+</suite> <!-- IUDoubleLinkedList Iterator & ListIterator Tests -->

@@ -1,0 +1,59 @@
+#!/bin/sh
+#testProg for CircuitTracer
+
+# testing compilation
+
+# Usage: $ sh ./testProg
+
+echo
+echo "Running this testProgram should compile and run your program.  
+If it doesn't, check the name of your main class."
+
+echo
+
+if (test -f CircuitTracer.java)
+	then
+	javac CircuitTracer.java
+fi
+
+if (test -f CircuitTracer.class)
+	then
+	echo "==========================================="
+	echo "Searching with a stack"
+	echo "==========================================="
+	java CircuitTracer -s -c circuit1.dat > stack.out
+        sort stack.out > stack.sorted
+	echo
+	echo diff should show no differences if output is as expected:
+	echo
+	diff stack.sorted circuit1.sorted
+	echo
+        echo end of diff
+        echo
+else
+    echo
+    echo "class CircuitTracer not found - either your program didn't compile 
+    or it has the wrong name."
+fi
+
+if (test -f CircuitTracer.class)
+	then
+	echo "==========================================="
+	echo "Searching with a queue"
+	echo "==========================================="
+	java CircuitTracer -q -c circuit1.dat > queue.out
+        sort queue.out > queue.sorted
+	echo
+	echo diff should show no differences if output is as expected:
+	echo
+	diff queue.sorted circuit1.sorted
+	echo
+        echo end of diff
+        echo
+fi
+
+echo
+echo The files stack.out and queue.out contain search output for the sample circuit1.dat
+echo and circuit1.out shows the expected output. The order of found solutions is not
+echo important, but all solutions should appear exactly once.
+echo

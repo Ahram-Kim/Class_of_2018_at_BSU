@@ -1,0 +1,59 @@
+****************
+* Project 3 - Double Linked List
+* cs221-3
+* Sunday, April 16
+* Ahram Kim
+**************** 
+
+OVERVIEW:
+
+ To create a doubly linked list implementation of the IndexedUnsortedList interfaces
+ called IUDoubleLinkedList
+
+
+INCLUDED FILES:
+
+ * IUDoubleLinkedList.java - main class
+ * DLLNode.java - node class for double linked list
+ * iuDoubleLinkedList.xml - to check TestNG
+ * README - this file
+
+
+COMPILING AND RUNNING:
+ 
+ From the directory containing all source files, compile the
+ driver class (and all dependencies) with the command:
+ $ javac IUDoubleLinkedList.java
+
+ Run the compiled class file with the command:
+ $ java IUDoubleLinkedList
+ $ java org.testng.TestNG iuDoubleLinkedList.xml
+ $ java org.testng.TestNG iuDoubleLinkedListItr.xml
+ 
+
+PROGRAM DESIGN AND IMPORTANT CONCEPTS:
+
+ This project is to create a doubly linked list implementation of the IndexedUnsortedList 
+ interface called IUDoubleLinkedList. It maked me to expand my test suite to ensure correct
+ functionality of my IUDoubleLinkedList class. Also, I need to create a fully functional list
+ iterator for my IUDoubleLinkedList class that implements the ListIterator interface by used 
+ a test suite to ensure correct functionality of my list iterator.
+
+TESTING:
+
+ When I try to check by using TestNG with IUDoubleLinkedList.xml and IUDoubleLinkedListItr.xml
+ have no failure and any skip. 
+ There were lots of skip for this file. I used debug for fixing them to pass all.
+
+DISCUSSION:
+ 
+ It was getting harder and more complecated from Array to double.
+ When I work on double linked list, I used to use single linked list so it make me confuse.
+ Also, I had lots of failure in remove(int index). I draw the picture for remove and make sense,
+ and ask tutors and fix them.
+ I worked on some Iterator but it had still 6840 errors. It didnt fix them at all even I 
+ write most of code. I didnt return anything in 'public ListIterator<T> listIteraotr()'
+ and 'public ListIterator<T> listIterator(int startingIndex)' and just threw their exception 
+ so I didnt decrease any errors in Iterator.
+
+----------------------------------------------------------------------------

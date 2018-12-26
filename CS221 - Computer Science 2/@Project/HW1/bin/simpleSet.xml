@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Simple Set">
+
+  <test name="ArraySet">   
+    <classes>     
+      <class name="TestSimpleSet_1"/>
+	  <class name="TestSimpleSet_2"/>
+	  <class name="TestSimpleSet_3"/>
+	  <class name="TestSimpleSet_4"/>
+	  <class name="TestSimpleSet_5"/>
+	  <class name="TestSimpleSet_6"/>
+	  <class name="TestSimpleSet_7"/>
+	  <class name="TestSimpleSet_8"/>
+	  <class name="TestSimpleSet_9"/>
+	  <class name="TestSimpleSet_10"/>
+	  <class name="TestSimpleSet_11"/>
+    </classes>
+  </test> <!-- ArraySet -->
+
+</suite> <!-- Simple Set -->

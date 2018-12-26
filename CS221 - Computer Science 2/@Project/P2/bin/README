@@ -1,0 +1,70 @@
+****************
+* Project 2/Clocks
+* CS221-03
+* 02/24/17
+* Ahram Kim
+**************** 
+
+OVERVIEW:
+
+ I make the program which simulates the running of a collection of clocks
+ over various periods of time by using polymorphism.
+
+
+INCLUDED FILES:
+
+ List the files required for the project with a brief
+ explanation of why each is included.
+
+ * ClockSimulation.java - include main method to print sample output
+ * Clock.java - abstract class
+ * TimePiece.java - Interface class
+ * AtomicClock.java - sub class of the Clock class
+ * CuckooClock.java - sub class of the Clock class
+ * GrandfatherClock.java - sub class of the Clock class
+ * Sundial.java - sub class of the Clock class
+ * WristWatch.java - sub class of the Clock class
+ * README - this file
+
+
+COMPILING AND RUNNING:
+ 
+ From the directory containing all source files, compile the
+ driver class (and all dependencies) with the command:
+ $ javac ClockSimulation.java
+
+ Run the compiled class file with the command:
+ $ java ClockSimulation
+
+
+PROGRAM DESIGN AND IMPORTANT CONCEPTS:
+
+  The main concepts and organization of my program is the implement class inheritance.
+  This program is needed to use polymorphism to store classes from the same inheritance
+  tree in the same container and use of generic programming to dynamically assign stored
+  objects.
+  
+  The Clock class is abstract class, which implements the TimePiece interface.
+  The Sundial, CuckooClock, GrandfatherClock, WristWatch, and AtomicClock classes are 
+  sub classes of the Clock class which is abstract class.
+  The ClockSimulation class is included the main method to print the output values.
+
+TESTING:
+
+  I couln't get the same value of the sample output exactly. 
+  I was figured out what I have problem. It was in reset method.
+  I didn't reset the clocks to their start times so they have different output.
+
+
+DISCUSSION:
+ 
+ I had a problem to get the value of the same sample output exactly. That is because 
+ I didn't reset the clocks to their start times. So, I did reset the clocks every for 
+ loop in ClockSimulation class. After then, I got the correct output.
+ 
+ 
+EXTRA CREDIT:
+
+N/A
+
+

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="List Testing 2">
+  <test name="Good List"> 
+  	<parameter name="listType" value="goodList"/>   
+    <classes>     
+      <class name="Test_1_newList"/>
+	  <class name="Test_9_A_addToFrontB_BA"/>
+	  <class name="Test_38_ABC_remove1_AC"/>
+	  <class name="Test_10_A_addToRearB_AB"/>
+	  <class name="Test_11_A_addAfterBA_AB"/>
+	  <class name="Test_14_A_add0B_BA"/>
+	  <class name="Test_16_AB_removeFirst_B"/>
+	  <class name="Test_18_AB_removeA_B"/>
+	  <class name="Test_25_AB_remove1_A"/>
+	  <class name="Test_31_AB_add2C_ABC"/>
+    </classes>
+  </test> <!-- Good List-->
+
+  <test name="Bad List">   
+  	<parameter name="listType" value="badList"/> 
+    <classes>     
+      <class name="Test_1_newList"/>
+	  <class name="Test_9_A_addToFrontB_BA"/>
+	  <class name="Test_38_ABC_remove1_AC"/>
+	  <class name="Test_10_A_addToRearB_AB"/>
+	  <class name="Test_11_A_addAfterBA_AB"/>
+	  <class name="Test_14_A_add0B_BA"/>
+	  <class name="Test_16_AB_removeFirst_B"/>
+	  <class name="Test_18_AB_removeA_B"/>
+	  <class name="Test_25_AB_remove1_A"/>
+	  <class name="Test_31_AB_add2C_ABC"/>
+    </classes>
+  </test> <!-- Bad List-->
+
+</suite> <!-- List Testing 2 -->
