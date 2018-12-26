@@ -1,0 +1,11 @@
+
+Name: AhramKim@u.boisestate.edu
+
+Install sysinternals: ok
+clockres: ok
+procexp: ok
+notepad in realtime: ok
+check priority from power shell: ok
+check priority from task manager: ok
+
+grade: 30/30

@@ -1,0 +1,15 @@
+
+Grade: /50
+
+Comments:
+
+Testing:
+  -Submission quality:
+  -Build/Makefile:
+  -Compiling:
+  -Correctness (25 points):
+  -Speedup (10 points):
+  -Limiting number of threads (10 points):
+
+Design and Documentation:
+	README.md (5 points):

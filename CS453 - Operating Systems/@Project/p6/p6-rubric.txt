@@ -1,0 +1,33 @@
+
+Grade:  /100
+
+Late penalty:
+
+Comments:
+
+=========================================================================
+Testing:
+    -Submission quality:
+    -Build/Makefile:
+    -Compiling:
+    -Functional Requirements:
+		-buddy system (70 points):
+			-Malloc and free 1 byte works (30):
+			-Allocation beyond maximum fails gracefully (10):
+			-Stability test - run buddy-test with at least 10M iterations without crashing (20):
+			-Other unit or functional tests (10):
+
+		-dash integration via interposing (20 points):
+			-Mydash project (p3) works with buddy manager with interposing:
+
+		-buddy system performance (10 points, extra credit for ug):
+		-thread-safe buddy system (extra credit: +10 points):
+
+Version control:
+
+Documentation (10 points):
+	README file:
+	Code organization & style:
+    Testing plan:
+
+

@@ -1,0 +1,17 @@
+{
+    "files.associations": {
+        "pwd.h": "c",
+        "mydash.h": "c",
+        "sysexits.h": "c",
+        "node.h": "c",
+        "errno.h": "c",
+        "setjmp.h": "c",
+        "list.h": "c",
+        "history.h": "c",
+        "string.h": "c",
+        "signal.h": "c",
+        "mydash_commands.h": "c",
+        "unistd.h": "c",
+        "types.h": "c"
+    }
+}

@@ -1,0 +1,24 @@
+Grade: /100
+
+Comments:
+
+=================================================
+Testing:
+    -Submission quality: OK
+    -Build/Makefile: OK
+    -Compiling: OK
+ 
+Main driver (70 points):
+  - Supports read properly:    30/30
+  - Use of /dev/random:             10/10
+  - Writing acts like /dev/null:    10/10
+  - Kill process writing to booga3: 20/20
+  - Proper use of semaphores:       10/10
+
+
+Get Booga Stats from /proc (10 points):
+  - Report on number bytes written/read: 5/5
+  - Report on strings :                  5/5
+
+Documentation (20 points):
+  - Plan for testing: 20/20

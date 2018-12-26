@@ -1,0 +1,58 @@
+
+/********** Case 1 **********/
+akim@localhost p5]$ sudo ./booga_load 
+[akim@localhost p5]$ ./test-booga 0 100 read
+ booga returned 100 characters
+neka! make! neka! make! neka! make! neka! make! neka! make! neka! make! neka! make! neka! make! neka
+[akim@localhost p5]$ ./test-booga 0 100 read
+ booga returned 100 characters
+neka! make! neka! make! neka! make! neka! make! neka! make! neka! make! neka! make! neka! make! neka
+[akim@localhost p5]$ ./test-booga 0 100 write
+Attempting to write to booga device
+Wrote 100 bytes.
+[akim@localhost p5]$ ./test-booga 3 100 write
+Attempting to write to booga device
+Terminated
+[akim@localhost p5]$ ./test-booga 0 100 write
+Attempting to write to booga device
+Wrote 100 bytes.
+[akim@localhost p5]$ cat /proc/driver/booga 
+bytes read = 200
+bytes written = 300
+number of opens:
+  /dev/booga0 = 4
+  /dev/booga1 = 0
+  /dev/booga2 = 0
+  /dev/booga3 = 1
+strings output:
+  booga! booga!   = 0
+  googoo! gaagaa! = 0
+  neka! maka!     = 0
+  wooga! wooga!   = 2
+[akim@localhost p5]$ 
+
+
+/********** Case 2 **********/
+[akim@localhost p5]$ ./test-booga 0 100 write
+Attempting to write to booga device
+Wrote 100 bytes.
+[akim@localhost p5]$ ./test-booga 0 100 read
+ booga returned 100 characters
+neka! make! neka! make! neka! make! neka! make! neka! make! neka! make! neka! make! neka! make! neka
+[akim@localhost p5]$ ./test-booga 0 100 read
+ booga returned 100 characters
+booga! booga! booga! booga! booga! booga! booga! booga! booga! booga! booga! booga! booga! booga! bo
+[akim@localhost p5]$ ./test-booga 3 100 write
+Attempting to write to booga device
+Terminated
+[akim@localhost p5]$ /sbin/lsmod 
+Module                  Size  Used by
+booga                  16384  0 
+ip6t_rpfilter          16384  1 
+ipt_REJECT             16384  2 
+nf_reject_ipv4         16384  1 ipt_REJECT
+ip6t_REJECT            16384  2 
+nf_reject_ipv6         16384  1 ip6t_REJECT
+xt_conntrack           16384  13 
+ip_set                 45056  0 
+nfnetlink              16384  1 ip_set

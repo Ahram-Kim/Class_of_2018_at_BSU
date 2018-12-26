@@ -1,0 +1,19 @@
+--- old-fork.c	2018-09-05 01:29:56.000000000 -0600
++++ /home/akim/workspace/linux-4.18.6/kernel/fork.c	2018-09-05 19:38:01.851169320 -0600
+@@ -758,13 +758,13 @@
+ 
+ 	set_max_threads(MAX_THREADS);
+ 
+-	init_task.signal->rlim[RLIMIT_NPROC].rlim_cur = max_threads/2;
+-	init_task.signal->rlim[RLIMIT_NPROC].rlim_max = max_threads/2;
++	init_task.signal->rlim[RLIMIT_NPROC].rlim_cur = max_threads*95/100;
++	init_task.signal->rlim[RLIMIT_NPROC].rlim_max = max_threads*95/100;
+ 	init_task.signal->rlim[RLIMIT_SIGPENDING] =
+ 		init_task.signal->rlim[RLIMIT_NPROC];
+ 
+ 	for (i = 0; i < UCOUNT_COUNTS; i++) {
+-		init_user_ns.ucount_max[i] = max_threads/2;
++		init_user_ns.ucount_max[i] = max_threads*95/100;
+ 	}
+ 
+ #ifdef CONFIG_VMAP_STACK

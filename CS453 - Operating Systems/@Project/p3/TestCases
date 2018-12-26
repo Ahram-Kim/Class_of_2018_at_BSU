@@ -1,0 +1,79 @@
+#
+#An incomplete list of test cases
+#
+
+#####Test1
+exit
+#####
+
+
+#####Test2
+<Ctrl>-d
+#####
+
+
+#####Test3
+#test for empty and blank commands
+
+
+exit
+#####
+
+#####Test4
+mydash -v
+#####
+
+
+#####Test5
+export DASH_PROMPT="myprompt:"
+mydash
+exit
+#####
+
+
+#####Test6
+ls
+date
+ls -l -t -t -l
+exit
+#####
+
+
+#####Test7
+vim
+gvim
+exit
+
+
+#####Test8
+cd
+pwd
+cd /tmp
+pwd
+cd /home/amit/workspace/mydash/mydash-src/
+pwd
+cd jfdkjfdjfd
+exit
+#####
+
+##### Test Case for P3 #####
+
+[ahramkim@onyx p3(master)]$ mydash
+mydashhhhh -> sleep 1 &
+[1] 1030188 sleep 1 &
+mydashhhhh -> sleep 2 &
+[1] Done sleep 1 &
+[1] 1030188 Running sleep 1 &
+[1] 1030217 sleep 2 &
+mydashhhhh -> sleep 10 &
+[1] Done sleep 2 &
+[1] 1030217 Running sleep 2 &
+[1] 1030266 sleep 10 &
+mydashhhhh -> jobs
+[1] 1030266 Running sleep 10 &
+mydashhhhh -> bg
+Segmentation fault (core dumped)
+[ahramkim@onyx p3(master)]$
+
+
+#####

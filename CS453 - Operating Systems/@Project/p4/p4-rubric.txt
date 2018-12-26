@@ -1,0 +1,17 @@
+Grade: /100
+Late penalty:  N/A
+
+Comments:
+
+=======================================================================
+Testing:
+    -Submission quality: 
+    -Build/Makefile: 
+    -Compiling: 
+    -Functional Requirements:
+       -Single-queue monitor: 
+       -Multiple-queue monitor (+10 for undergrads): 
+
+Documentation:
+	README.md file: 
+	Code organization & style: 

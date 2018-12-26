@@ -1,0 +1,33 @@
+
+Grade:   /100
+
+Late penalty:
+
+Comments:
+
+Testing:
+	-Submission layout:
+	-Build/Makefile:
+	-Compiling:
+	-Linking correctly to readline:
+	-Functional Requirements:
+		-filename completion and command history (10 points):
+		-normal command execution (20 points):
+		-handling empty commands (3 points):
+		-handling EOF (3 points):
+		-handling exit command (3 points):
+		-change directory command (11 points):
+		-prompt (5 points):
+        -show version (10 points):
+		-other issues:
+
+Valgrind (5 points):
+
+Source code control use (5 points):
+
+Design & documentation (25 points):
+	-README.md file (15 points):
+		-Self-assessment and reflection:
+	-Doxygen docs:
+	-Test plan (10 points):
+	-Code organization & style:

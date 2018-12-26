@@ -1,0 +1,9 @@
+
+Name: AhramKim@u.boisestate.edu
+
+pseudocode (10 points): ok
+C/PThreads version (20 points): ok
+Java version  (15 points): 
+	-ok, but doesn't quit if threads cannot get through. Use a timer to make that work better -5
+comments:
+grade: 40/45

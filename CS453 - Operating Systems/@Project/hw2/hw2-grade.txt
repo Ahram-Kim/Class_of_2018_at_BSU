@@ -1,0 +1,7 @@
+
+Name: AhramKim@u.boisestate.edu
+
+-kernel build (20 points): ok
+-kernel modify (10 points): ok
+-README file and patch (10 points): ok
+-grade:   40/40

@@ -1,0 +1,27 @@
+
+Grade:   /50
+
+Late penalty:
+
+Comments:
+
+=======================
+
+Testing: 
+	-Submission quality: 
+	-Build/Makefile:  
+	-Compiling:  
+	-Functional Requirements:
+		-command line arguments (5 points):
+		-uses specified system calls (10 points):
+		-appropriate output (25 points):
+
+Valgrind (5 points):
+
+Source code control use:  
+
+Design & documentation:
+	-README.md file (5 points): 
+	-Code quality:
+
+

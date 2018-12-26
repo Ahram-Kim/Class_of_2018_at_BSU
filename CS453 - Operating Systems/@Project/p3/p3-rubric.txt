@@ -1,0 +1,34 @@
+
+Grade:   /100
+
+Late penalty:
+
+Comments:
+
+Testing:
+	-Submission layout:
+	-Build/Makefile:
+	-Compiling:
+	-Linking to provided list library (5 points):
+	-Functional Requirements:
+		-history command (5 points):
+	 	-background jobs (40 points):
+			-command with ampersand at end starts in background
+			-shell informs user of jobs that have finished since (each time
+			 the user presses enter)
+			-each done job is reported only once
+			-jobs command reports currently running background jobs as well as
+			 done jobs
+			-job number assignment is a describe d in the specs
+		-signal handling (15 points):
+		-extre credit: recursive invocation (+5 points):
+		-extra credit: fg/bg commands (+10 points):
+
+	-Valgrind memory checking (10 points):
+	-Version control (5 points):
+
+Documentation and Testing
+	-README.md (10 points):
+	-Test plan (10 points):
+	-Javadocs and doxygen:
+	-Code organization and style:
