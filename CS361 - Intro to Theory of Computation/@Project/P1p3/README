@@ -1,0 +1,26 @@
+# Project 3 : Regular Expressions
+
+* Author: Ahram Kim, Ella Lee
+* Class: CS361
+* Semester: Fall 2018
+
+# Overview
+
+This java program constructs an NFA for a given regular expressions.
+
+# Compiling and Using
+To compile, execute the following command in the main project
+directory:
+```
+$ javac -cp ".:./CS361FA.jar" re/REDriver.java
+```
+Run the compiled class with the command:
+```
+$ java -cp ".:./CS361FA.jar" re.REDriver ./tests/p3tc1.txt
+
+```
+# Discussion
+It was very helpful to be able to reference the recursive descent parsing documentation.
+We started with drawing NFAs by hand to see how Regular expressions can be converted to NFA.
+In the book, Example 1.58 (p 69) was helpful to see a few of the minor steps.
+We were so glad to use DFA/NFA libraries! 

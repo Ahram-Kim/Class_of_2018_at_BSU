@@ -1,0 +1,11 @@
+2 4
+0
+1 3
+0a0 0b0 0a3 0b1 1b2 2a2 2b2 3a4 4a4 4b4
+aaabbbabaabbaba
+bb
+bab
+ababab
+aaaa
+bbbb
+abaaba
