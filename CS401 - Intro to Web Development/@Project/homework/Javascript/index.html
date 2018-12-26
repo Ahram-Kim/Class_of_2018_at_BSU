@@ -1,0 +1,369 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<script type="text/javascript">
+	 function validateForm(){
+	 	var name = document.forms["contact-form"]["firstName"].value;
+	 	var email = document.forms["contact-form"]["email"].value;
+	 	var phnNumber = document.forms["contact-form"]["phnNumber"].value;
+	 	var Message = document.forms["contact-form"]["Message"].value;
+	 	var phoneno = /^\d{10}$/;
+    		if (name == "") {
+			        alert("Name must be filled out");
+			       document.getElementById("name").focus();
+			        return false;
+    		}
+    		else if(email==""){
+    			 alert("Please fill up your email Id");
+    			 document.getElementById("email").focus();
+    			 return false;
+    		}
+    		else if(phnNumber==""){
+    			 alert("Please provide us your phone number");
+    			 document.getElementById("phnNumber").focus();
+    			 return false;
+    		}
+    		else if(!phnNumber.match(phoneno))  
+				  {  
+				  	 alert("Not a valid Phone Number");  
+				     document.getElementById("phnNumber").focus();
+				     return false;  
+				  } 
+			else if(Message==""){
+			    		alert("Please leave a message for us");
+			    		document.getElementById("Message").focus();
+			    		return false;
+			    		}
+			else
+			{
+				alert("Thank You!! We would get back to you soon..");
+				return true;
+			}
+	 }
+
+</script>
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Website</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css'/>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lora:400italic' rel='stylesheet' type='text/css'>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+<!-- Gallery -->
+<link rel="stylesheet" type="text/css" href="css/component.css" />
+<script src="js/modernizr.custom.js"></script>
+<script src="js/toucheffects.js"></script>
+
+<!--start-smoth-scrolling-->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+				});
+			});
+		</script>
+<!--start-smoth-scrolling-->
+</head>
+<body>
+<!--header-->
+<div id="home" class="banner">
+	<div class="top-menu">
+		<span class="menu"> </span> 
+			<nav class="cl-effect-1" id="cl-effect-1">
+				 <ul>
+					<li><a class="scroll" href="#banner-top">HOME</a></li>
+					<li><a class="scroll" href="#about">ABOUT</a></li>
+					<li><a class="scroll" href="#portfolio">PORTFOLIO</a></li>
+					<li><a class="scroll" href="#services">SERVICES</a></li>
+					<li><a class="scroll" href="#contact">CONTACT</a></li>				 
+				</ul>	
+			</nav>			 
+	</div>	
+			 <!-- script-for-menu -->
+		 <script>
+				$("span.menu").click(function(){
+					$(".top-menu ul").slideToggle("slow" , function(){
+					});
+				});
+		 </script>
+		 <!-- script-for-menu -->	
+			<div id="banner-top" class="banner-top">		  		  
+				<h1>ONE PAGE WEBSITE</h1>
+				<h2>Welcome to my website</h2>
+				<div class="logo">
+				</div>	
+			</div>
+</div>
+<!--/header-->
+<!--about-->
+<div id="about" class="about">
+	<div class="container">
+		<div class="about-info">
+				<h3>ABOUT</h3>
+				<h4>Who I am and why I design</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+				   ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+				   ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		 </div>
+		   <div class="about-grids">
+		   	<div class="col-md-6 about-grid">
+		   		<h4>What I do and my experience</h4>
+		   		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                   eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                   Ut enim ad minim veniam, quis nostrud exercitation
+                   ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		   	</div>
+		   	<div class="col-md-6 about-grid">
+		   		<h4>My goals</h4>
+		   		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                   eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                   Ut enim ad minim veniam, quis nostrud exercitation
+                   ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		   	</div>
+            <center><button type="button" class="btn btn-primary" id="hello_button" onClick="alert('Hello Welcome to My Website')">SAY HELLO</button></center>
+		   	<div class="clearfix"> </div>
+		   </div>
+	</div>
+</div>
+<!--/about-->
+<!--portfolio-->
+<div id="portfolio" class="portfolio">
+	<div class="container">
+		<div class="portfolio-info">
+				<h3>PORTFOLIO</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adispicing elit, sed do
+                   eiusmod tempor incidunt ut labore et dolore magna aliqua.</p>
+		 </div>
+         
+         <ul class="grid cs-style-3">
+				<li>
+					<figure>
+						<img src="images/g-one.jpg" alt="">
+						<figcaption>
+							<h3>Loren Ipsum</h3>
+							<span>Loren ipsum dolor sit</span>
+							<a href="">More</a>
+						</figcaption>
+					</figure>
+				</li>
+				<li>
+					<figure>
+						<img src="images/g-three.jpg" alt="img01">
+						<figcaption>
+							<h3>Loren Ipsum</h3>
+							<span>Loren ipsum dolor sit</span>
+							<a href="">More</a>
+						</figcaption>
+					</figure>
+				</li>
+				<li>
+					<figure>
+						<img src="images/g-two.jpg" alt="img02">
+						<figcaption>
+							<h3>Loren Ipsum</h3>
+							<span>Loren ipsum dolor sit</span>
+							<a href="">More</a>
+						</figcaption>
+					</figure>
+				</li>
+				<li>
+					<figure>
+						<img src="images/g-four.jpg" alt="img05">
+						<figcaption>
+							<h3>Loren Ipsum</h3>
+							<span>Loren ipsum dolor sit</span>
+							<a href="">More</a>
+						</figcaption>
+					</figure>
+				</li>
+				<li>
+					<figure>
+						<img src="images/g-five.jpg" alt="img03">
+						<figcaption>
+							<h3>Loren Ipsum</h3>
+							<span>Loren ipsum dolor sit</span>
+							<a href="">More</a>
+						</figcaption>
+					</figure>
+				</li>
+				<li>
+					<figure>
+						<img src="images/g-six.jpg" alt="img06">
+						<figcaption>
+							<h3>Loren Ipsum</h3>
+							<span>Loren ipsum dolor sit</span>
+							<a href="">More</a>
+						</figcaption>
+					</figure>
+				</li>
+			</ul>
+         
+         
+
+	</div>
+</div>
+<!--portfolio-->
+<!--services-->
+<div id="services" class="services">
+	<div class="container">
+		<div class="services-info">
+				<h3>SERVICES</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adispicing elit, sed do eiusmod
+                   tempor incidunt ut labore et dolore magna aliqua.</p>
+		 </div>
+		 <div class="services-info-bottom">
+				<h4>Logo design</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+				   ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+				   ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		 </div>						
+			<div class="pricing-grids">
+						<div class="col-md-6 pricing-grid">
+								<div class="price-bg">
+									<p class="price-label-1">$10</p>	
+									<p class="price-label-11">/ Icon Logo</p>
+										<ul class="count">
+											<li>1 Simple Logo</li>
+											<li>Completely customised</li>
+											<li>Fully vectored</li>
+											<li>Multiple formats</li>
+										</ul>	
+										<div class="price-button">
+											<a href="#" class="hvr-shutter-in-vertical">BUY NOWl</a>
+										</div>					
+								</div>
+						</div>
+						<div class="col-md-6 pricing-grid">
+								<div class="price-bg">
+										<p class="price-label-2">$5</p>	
+										<p class="price-label-22">/ Simple Logo</p>							
+									<ul class="count">
+										<li>24/7 Tech Support</li>
+										<li>Advanced Options</li>
+										<li>200GB Storage</li>
+										<li>3GB BandWidth</li>
+									</ul>
+									  <div class="price-button">
+										<a href="#" class="hvr-shutter-in-vertical">BUY NOW</a>
+									</div>	
+								</div>
+						</div>
+				       <div class="clearfix"> </div>
+		  </div>
+		  <div class="pricing-data">
+				<h4>Social media design</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+					ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+					 ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		 </div>	
+		 		<div class="col-md-4 pricing-grid">
+					<div class="price-bg">
+						<p class="price-label-2">$18</p>	
+						<p class="price-label-22">/ Social Media Pack</p>							
+						<ul class="count">
+							<li>24/7 Tech Support</li>
+							<li>Advanced Options</li>
+							<li>200GB Storage</li>
+							<li>3GB BandWidth</li>
+						</ul>
+						<div class="price-button">
+							<a href="#" class="hvr-shutter-in-vertical">BUY NOW</a>
+						</div>	
+					</div>
+				</div>
+				<div class="col-md-4 pricing-grid">
+					<div class="price-bg">
+						<p class="price-label-2">$10</p>	
+						<p class="price-label-22">/ Twitter Layout</p>							
+						<ul class="count">
+							<li>24/7 Tech Support</li>
+							<li>Advanced Options</li>
+							<li>200GB Storage</li>
+							<li>3GB BandWidth</li>
+						</ul>
+						<div class="price-button">
+							<a href="#" class="hvr-shutter-in-vertical">BUY NOW</a>
+						</div>	
+					</div>
+				</div>
+				<div class="col-md-4 pricing-grid">
+					<div class="price-bg">
+						<p class="price-label-2">$10</p>	
+						<p class="price-label-22">/ YouTube Layout</p>							
+						<ul class="count">
+							<li>24/7 Tech Support</li>
+							<li>Advanced Options</li>
+							<li>200GB Storage</li>
+							<li>3GB BandWidth</li>
+						</ul>
+						<div class="price-button">
+							<a href="#" class="hvr-shutter-in-vertical">BUY NOW</a>
+						</div>	
+					</div>
+				</div>
+	</div>
+</div>
+<!--/services-->
+<!--contact-->
+<div id="contact" class="contact">
+	<div class="container">
+		<div class="contact-info">
+				<h3>CONTACT</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adispicing elit</p>
+		 </div>
+		 <div class="contact-form">
+		 	<form id="contact-form" onsubmit="return validateForm()">
+					<input type="text" class="text" placeholder="First Name" id="firstName">
+					<input type="email" class="text" placeholder="Email Address" id="email">
+					<input type="text" class="text" placeholder="Phone Number" id="phnNumber">
+					<textarea placeholder="Enter Your Message" id="Message"></textarea>
+                    <center><input type="submit" class="btn btn-primary" name="SEND" value="SEND"></center>
+			</form>
+
+		 </div>
+	</div>
+</div>
+<!--/contact-->
+<!--footer-->
+<div class="footer">
+	<div class="container">
+			<div class="footer-icons">
+				<a href="#"><span class="you"> </span></a>
+				<a href="#"><span class="tw"> </span></a>			 
+			 </div>
+			<p>Copyrights &copy; 2017  All rights reserved</p>
+	</div>
+			<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+		<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+</div>
+<!--/footer-->
+</body>
+</html>

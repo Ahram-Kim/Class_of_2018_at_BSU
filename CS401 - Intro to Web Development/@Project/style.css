@@ -1,0 +1,145 @@
+body {
+    background-color: white;
+    margin: 0;
+}
+
+div {
+    display: block;
+}
+.headerelement {
+    overflow: hidden;
+    height: 50px;
+    text-align: center;
+    background-color: black;
+}
+
+.signupinForm {
+    letter-spacing: 1px;
+    float: right;
+    padding: 10px 10px 10px 10px;
+    line-height: 12px;
+}
+
+.signupinForm > li {
+    float: left;
+    margin: 0 6px 0 0;
+    padding: 0 6px 0 0;
+    position: relative;
+    line-height: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+li {
+    list-style: none;
+    color: white;
+}
+
+.headerlogo {
+    overflow: hidden;
+    height: 185px;
+    text-align: center;
+    background-color: white;
+}
+
+.subheader {
+    height: 60px;
+    padding: 2px;
+    margin: 0 0 0 0;
+    letter-spacing: 60px;
+    text-align: center;
+    background: white;
+}
+.ul {
+    font-size: 15px;
+    line-height: 20px;
+    list-style: none;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    display: inline;
+}
+
+hr {
+    border-top-style: solid;
+    border-color: black;   
+}
+.layout {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+.content {
+    padding: 15px 20px;
+    background-color: white;
+    line-height: 20px;
+    margin: 0px 125px;
+}
+
+.content > hr {
+    border-color: black;
+}
+
+#footer {
+    padding: 20px;
+    text-align: center;
+}
+
+#footer > li {
+    display: inline;
+    border-left: solid 1px #D1D8E1;
+    padding: 0 15px;
+}
+
+.footer .copyright {
+    padding: 0 15px;
+}
+
+.posting {
+    border-collapse: collapse;
+}
+.posting thead {
+    font-size: 20px;
+    text-align: center;
+}
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+th {
+    font-weight: bold;
+    text-align: -internal-center;
+    display: table-cell;
+    vertical-align: inherit;
+    padding: 20px;
+}
+td {
+    display: table-cell;
+    vertical-align: inherit;
+    padding: 15px;
+}
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+    text-align: center;
+}
+
+.posting td {
+    padding: 3px 10px;
+    /* border-top: solid 1px #D1D8E1; */
+}
+
+.hometable {
+    align-content: center;
+}
+
+.headerelement a {
+    color: white;
+}
