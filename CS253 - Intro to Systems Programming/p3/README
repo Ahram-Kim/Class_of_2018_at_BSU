@@ -1,0 +1,96 @@
+
+
+***************************
+* Smash - Part 1, 2, and 3
+* CS253 
+* November 10, 2017
+* Ahram Kim
+***************************
+
+OVERVIEW:
+
+ Part 1 - 
+ This project is to implement the basic shell which can extend to actually execute 
+ other programs, and to write code that is well documented and easy to extend.
+ It makes me work on processing strings and using the appropriate system calls. 
+
+ Part 2 - 
+ The part 2 for this project is to add in a 'history' command that will iterate through
+ the array of cmd structs and print out each string that I inputed in the command.
+
+ Part 3 -
+ The part 3 for this project is to add normal command execution with environment variable. 
+
+INCLUDED FILES:
+
+ * Makefile - build system of all set up
+ * smash.c
+ * history.c
+ * history.h - struct list
+ * README - this file
+
+COMPILING AND RUNNING:
+
+ Clean up my directory
+ $ make clean
+ $ make
+ 
+ Compile and running:
+ $ ./smash
+
+TESTING:
+
+ Part 1 - 
+ I had some failures even to get the same output as an example on the website.
+ I had several times errors in '$cd /asdfasdf'. 
+ Even if there is no path for /asdfasdf, I got the output for this path. 
+ I used getcwd(NULL,0) instead of getcwd(token, sizeof(token)).
+ That problem was fixed. 
+
+ Part 2 -
+ At first, I needed to make an array of cmd structs to capture multiple commands.
+ I used linked-list to add a 'history' command. They were kinds of similar but using a 
+ pointer was confused for me.  I couldn't get the correct result from clear history
+ command and I got a segment fault. To figure out this problem, I was asking CS253 tutor
+ and got the answer. I shoule have used strlen and strcpy. I only got the result 'history' 
+ not what I typed in konsole. After then, I could get the correct command what I typed.  
+ Also, I had some problem about the size of history. However, I could solve this problem 
+ to change 'size' to 'size -1' easily.
+
+ Part 3 - 
+ I am going to improve the code from part 1 and 2. I make parsing code and make sure the 
+ memory layout is correct and compatible with the exec system call. I take the string 
+ that I need to read from fgets and attempt to fork/exec and new process. I need to consult
+ the man pages for the fork(), exec(), waitpid() and other related system calls. 
+ I also used the example what the professor shane gave us to use to help our design. 
+ I used get environment variable and random variable to randomly fail to fork exec some 
+ processes because it has too many process running on the server. 
+
+KNOW ISSUES:
+ 
+ Part 1 -
+ I got lots of information and knowledge about standard library function and etc.
+ I used strtok to split string into tokens. Strtok is a sequence of calls to function
+ split into tokens, which are sequences of contiguous characters separated by any of the characters 
+ that are part of delimiters. And, I needed to use strcmp to compare the string and token. 
+ fgets is needed to read input from standard-in. 
+ When I was working on cd command, I needed chdir to change the directory of the current processing
+ to the given directory and getcwd to get the current working directory after the cddir() command.
+ 
+ Part 2 -
+ I was trying to make all history command codes in main method in history.c. However, it was not 
+ a class for main and I should have worked in smash.c for main. For all commands that a user runs
+ I want to save the string that the user typed. I needed to use the struct data type to accimplish it. 
+ From this project part 2, I learned how to use pointer and arrayList. 
+ 
+ Part 3 - 
+ I got lots of knowledge of C programming. Fork() system call use for creates a new process, which is 
+ called child process, which runs concurrently with process and this process is called parent process. 
+ The exec() family of functions will initiate a program from within a program. The waitpid() system call
+ suspends execution of the calling process until a child specified by pid argument has changed state. 
+ It waits only for terminated children, but this behavior is modifiable via the options argument. 
+ The getenv() function searches the environment list to find the environment variable name, and returns 
+ a pointer to the corresponding value string. 
+
+----------------------------------------------------------------------------
+

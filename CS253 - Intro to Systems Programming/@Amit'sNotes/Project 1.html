@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Project 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css"
+href="http://nullptr.boisestate.edu/CS-LMS/css/normalize.css" media="screen" />
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"
+type="text/css" />
+    <link rel="stylesheet" type="text/css"
+href="http://nullptr.boisestate.edu/CS-LMS/css/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css"
+href="http://nullptr.boisestate.edu/CS-LMS/css/github-light.css" media="screen" />
+    <link rel="shortcut icon"
+	  href="http://coen.boisestate.edu/cs/wp-content/themes/framewerk/framewerk/frontend/images/layout/favicon.ico">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis.min.css" rel="stylesheet" type="text/css">
+    
+  </head>
+  <body>
+    <!-- content from each course page -->
+<section class="page-header">
+  <h1 class="project-name">{ Project 1 }</h1>
+  <h2 class="project-tagline">Lab setup and a Small program</h2>
+  <a href="http://github.com/BoiseState/CS253-resources" class="btn">Class resources</a>
+  <a href="https://piazza.com/boisestate/" class="btn">Piazza</a>
+  <a href="http://coen.boisestate.edu/cs/computer-science-tutoring-center-cstc/tutors/" class="btn">Tutors</a>
+</section>
+
+<section class="main-content">
+  <div class="container">
+    <!-- <h1>DUE: Week 27 <small>(Jul 10, 2016 at 11:59:59 PM)</small> </h1> -->
+    <h1>DUE: 7/6/2016 (by midnight)</h1> 
+
+    <h2>Objectives</h2>
+    <ol>
+      <li> Checkout the lab examples from the public git repository.</li>
+      <li> Familiarize yourself with C.</li>
+      <li> Use command-line development tools.</li>
+    </ol>
+
+    <h2>Intro</h2>
+    <p>
+      This class will be using the C programming language and the Linux operating
+      system. All the code examples and your programs must compile and run on the
+      onyx cluster. Thus, we will take the time to setup our account and get everything
+      working so we can complete the required assignments. All the necessary tools are
+      already installed on the cluster. During this course we will be using Vim, Git, GCC,
+      Valgrind, and Make (to name a few).
+    </p>
+
+    <h2>Lab Repository Checkout (Git)</h2>
+    <p>
+      You will need to checkout a local copy of all the examples and project starter files
+      you will need throughout the semester.
+    </p>
+    <ol>
+      <li> Create a directory somewhere on your development system for your lab files.</li>
+      <li> Navigate into the directory you created and check out the CS253 lab repository using the following command.</li>
+      <pre>git clone https://github.com/BoiseState/CS253-resources</pre>
+    </ol>
+
+    <h2>Backpack Repository Checkout (Git)</h2>
+    <p>
+      You will be using Git to submit your assignments this semester. You should have received
+      an e-mail from your instructor with a setup file for backpack. Instructions for
+      setting up backpack on the onyx cluster are located at
+      <a href="http://cs.boisestate.edu/~cs253/#backpack">http://cs.boisestate.edu/~cs253/#backpack</a>. 
+      Once you have setup your backpack repository you can start working on your assignment.
+    </p>
+    <h2>Setting up Git</h2>
+    <p>
+      In the top-level of your backpack checkout, add a <strong>.gitignore</strong> file. Look at the
+      <a href="https://github.com/BoiseState/CS253-resources/blob/master/.gitignore"
+	 title="sample .gitignore file">.gitignore</a> in the CS253-resources directory and use it as an example.
+    </p>
+    <h2>Word Counting in C</h2>
+    <p>
+      Write a C program that reads text from standard input stdin and counts the number
+      of words, lines, characters and each digit (0-9) found in the input. Your program will
+      print the results to standard output stdout.
+      <p>
+	<h3> Getting started </h3>
+	<ol>
+	  <li>
+	    Navigate to the project folder in your backpack
+	    directory you will find your stater files that you can edit.
+	  </li>
+	  <li> You can open a file in Vim with the command <kbd>vim <filename></kbd>
+            (Read the <a href="http://cs.boisestate.edu/~cs253/handouts/vim-handout.pdf">notes on vim</a>
+              if you need some help getting started with Vim.)
+	  </li>
+	  <li> You can build your project with the command <kbd>make</kbd></li>
+	  <li> You can clean all your files with the command <kbd>make clean</kbd></li>
+	</ol>
+
+	<h3> Implementation </h3>
+	<ol>
+	  <li>
+	    Your program should read from stdin and write to stdout. You are
+	    NOT supposed to use file operations (fopen, fclose, etc.). To send a text file to
+	    your program via stdin, use the shell input redirect operator, <var>&lt;</var>.
+	    For example:
+	    <pre>./homework &lt; data</pre>
+	    will send the contents of <var>data</var> to your
+	    program. Redirecting from standard-in is more convenient from the command line than from an IDE. 
+	  </li>
+
+	  <li> Use <code>getchar()</code> for reading the input. Each line read from stdin
+	    will be terminated with a newline character. When getchar returns EOF,
+	    the end of the file has been reached.</li>
+
+	  <li> You may use the examples in Chapter 1 of The C Programming Language book and in
+	    your '<samp>CS253-resources/C-examples/intro</samp>' directory as a starting point.</li>
+
+	  <li> The output will be a table containing the number of words, lines, characters,
+	    and each digit (0-9) in the given input. Run the provided grader to see an example
+	    of the output.
+	    <pre>./grader &lt; data</pre>
+	  </li>
+
+	  <li> The output is expected to be sent to stdout (the console).  You can use the output
+	    redirect operator, <var>&gt;</var>, to save (redirect) the output of a program to a
+	    text file. Therefore, running something like
+	    <pre>./homework &lt; data &gt; results</pre>
+	    will store the results of your program in a file called <samp>results</samp> instead
+	    of printing it on the screen.</li>
+
+	  <li> Your program should compile with no warnings when compiled with the <var>-Wall</var>
+	    option.</li>
+
+	</ol>
+
+		<section>
+		<h1>Running the Auto-grader on onyx </h1>
+		<iframe width="840" height="630" src="https://www.youtube.com/embed/L562zz33m-s" frameborder="0" allowfullscreen></iframe>
+
+		<h2>Turning in your assignment</h2>
+			<p>
+			Once you have finished your assignment you can turn it in
+			with the instructions below.
+			</p>
+			<ul>
+				<li>
+					Open up a terminal or console and navigate to the backpack folder for the class.
+					<!--Once you have a terminal open the submit process is the same
+					across all operating systems.-->
+				</li>
+				<li>
+					Navigate to the subdirectory that contains the source files that you worked on 
+					for the project/homework. Suppose that we are submitting <strong> README.md</strong>,
+					<strong>main.c</strong> and <strong>utility.c</strong>.
+				</li>
+        <li> Clean up your directory
+<pre>make clean</pre>
+        Remove any other unnecessary files that were generated by you or the auto-grader.
+        </li>
+				<li> Add all your changes to Git
+<pre>git add main.c utility.c README.md</pre>
+        </li>
+				<li> Commit your changes to Git
+<pre>git commit -a -m "Finished project XXX"</pre>
+        </li>
+				<li> Push your files to the Backpack server
+<pre>git push origin master</pre>
+        </li>
+			</ul>
+			<iframe width="840" height="630" src="https://www.youtube.com/embed/xP8IfKxRmWA" frameborder="0" allowfullscreen></iframe>
+		<h3>Grading breakdown</h3>
+		<ul>
+			<li>
+				<strong>50 pts - Passing all the grader scripts</strong>. 
+				This portion of your project is
+				pass fail.  Once you have successfully passed all the tests
+				lined out in the ./backpack.sh script you will automatically
+				get 50% of the total grade. <strong>If you intentionally write
+				code that subverts the grading script (E.g. hard coding the
+				answer to elicit a pass, exploiting a bug in the grader, etc)
+				your grade for the entire project will be set to 0. </strong>
+				Everything that you need to pass the grader is enumerated in
+				the project specification. If you think you have found a bug
+				in the grader then please report it to your instructor.
+			</li>
+
+			<li>
+				<strong>40 pts - General code quality</strong>.
+                <ul>
+                    <li>
+                        <font color="green">5 pts</font> - Code is formatted in a consistent manner (Hint #1: Use a code 
+                        formater such as astyle. See the script 
+						<a href="https://github.com/BoiseState/CS253-resources/blob/master/format.sh">format.sh</a>  from CS253-resources repo) 
+                        (Hint #2: Use Vim to format your code automatically)
+                    </li>
+
+                    <li>
+                        <font color="green">5 pts</font> - Code is well documented. Each *public* function must be 
+						documented in the .h (header) file. You will use javadoc style comments (using the Doxygen 
+						program) to document your functions. Most of the code that you will use this semester has 
+						this already done for you. For an example look 
+                        at <a href="https://github.com/BoiseState/CS253-resources/blob/master/C-examples/linked-lists/doubly-linked/libsrc/List.h">List.h in the class repository</a>.  Documentation for *.c files is not required unless you 
+						expose functions publicly in the .c file in which case it must be documented. 
+                    </li>
+
+                    <li>
+                        <font color="green">15 pts</font> - Modularity. Code is broken into appropriate files 
+						and functions. If you are copying and pasting code then you should be putting that code 
+						into a function and then calling the function.  Copy/pasting code is a well known source of bugs.
+                    </li>
+
+                    <li>
+                        <font color="green">15 pts</font> - Code is semantically and logically correct. 
+						C/C++ are unsafe languages which can allow dangerous bugs to "lurk" for years until they pop up. 
+						Even if your code passes the 
+                        grader you can still have errors. For example statically allocating a global array can 
+                        allow off by one errors that even the venerable Valgrind can not detect. Thus, when grading
+                        your code any errors that are found will still be docked regardless if your code "runs perfect" 
+                    </li>
+                </ul>
+			</li>
+			<li>
+				<strong>10 pts - README.md file</strong>. Fill out the template located at
+				<a href="https://github.com/BoiseState/CS253-lab/blob/master/README_TEMPLATE.md">README.md</a>.
+				Our README's will be using the Markdown format. You can get more information at
+				<a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown cheat-sheet</a>
+                <ul>
+                   <li> <font color="green">5 pts</font> - Used the template that was linked off of the project 
+				   	    specification page 
+				   </li>
+                   <li> <font color="green">2 pts</font> - Each section is <strong>relatively</strong> free of 
+				        grammar and spelling errors. At a bare minimum you should run spell checker on your document. 
+						Vim has the ability to spell check.
+                   </li>
+                   <li> <font color="green">2 pts</font> - Everything in the README.md is correct. </li>
+                   <li> <font color="green">1pt</font> - The "Sources Used" section is properly filled out. </li>
+                </ul>
+                    
+			</li>
+		</ul>
+		<h4>Late policy</h4>
+		<a name="late_policy"></a>
+		<p>
+			For each day after the stated due date you will lose 10% off the total
+			score. Late scores are all calculated programmatically so a submission
+			that is 1 second late (on our server)  will still be marked as late by
+			the grading scripts.  <strong>No extensions will be given beyond what
+			is listed in the table below.</strong>
+
+		<p>
+		<table>
+			<tr>
+			<th>Days Late</th>
+			<th>Maximum possible score</th>
+			</tr>
+		  <tr>
+			<td>0</td>
+			<td>100%</td>
+		  </tr>
+		  <tr>
+			<td>less than 1 day</td>
+			<td>90%</td>
+		  </tr>
+		  <tr>
+			<td>less than 2 days</td>
+			<td>80%</td>
+		  </tr>
+		  <tr>
+			<td>less than 3 days</td>
+			<td>70%</td>
+		  </tr>
+		  <tr>
+			<td>less than 4 days</td>
+			<td>60%</td>
+		  </tr>
+		  <tr>
+			<td>4+</td>
+			<td>0%</td>
+		  </tr>
+		</table>
+	</section>
+</section>
+	</body>
+</html>
+

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>CS 253</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css"
+href="http://nullptr.boisestate.edu/CS-LMS/css/normalize.css" media="screen" />
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"
+type="text/css" />
+    <link rel="stylesheet" type="text/css"
+href="http://nullptr.boisestate.edu/CS-LMS/css/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css"
+href="http://nullptr.boisestate.edu/CS-LMS/css/github-light.css" media="screen" />
+    <link rel="shortcut icon"
+	  href="http://coen.boisestate.edu/cs/wp-content/themes/framewerk/framewerk/frontend/images/layout/favicon.ico">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis.min.css" rel="stylesheet" type="text/css">
+    
+  </head>
+  <body>
+    <!-- content from each course page -->
+<section class="page-header"
+	 style="background-image: url(http://cs.boisestate.edu/~cs253/archive/tree-in-code.png); 
+		background-position: center top;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-color: black ">
+  <h1 class="project-name">{ CS 253 }</h1>
+  <h2 class="project-tagline">Summer2 2016</h2>
+  <a href="http://github.com/BoiseState/CS253-resources" class="btn" style="background-color: rgba(255,255,255,.5)">Class resources</a>
+  <a href="./syllabus.pdf" class="btn" style="background-color: rgba(255,255,255,.5">Syllabus</a>
+</section>
+
+<section class="main-content">
+  <div class="schedule">
+    <p>
+      <!--The following schedule is a guideline and may change as we progress. </br>
+          <strong>We are currently in week 0</strong>-->
+    </p>
+    <table>
+      <thead>
+	<tr>
+	  <th>Week</th>
+	  <th>Topic</th>
+	  <th>Reading</th>
+	  <th>Project</th>
+	  <th>Quiz Topic</th>
+	</tr>
+      </thead>
+      <tbody>
+	<tr><td>1</td><td><a href='http://cs.boisestate.edu/~cs253/handouts/cs253-intro-handout.pdf'>Introduction</a></br>
+		    <a href='http://cs.boisestate.edu/~cs253/handouts/c-tutorial-intro-handout.pdf'>C Part 1</a></br>
+		    <a href='#backpack'>Backpack</a></br> <a href='http://cs.boisestate.edu/~cs253/handouts/c-types-operators-expressions-handout.pdf'>C Part 2</a></br>
+    	        <a href='http://cs.boisestate.edu/~cs253/handouts/c-functions-program-structure-handout.pdf'>Functions, Program Structure</a></br></td><td>Chapter 1 of K&R </br>
+		  <a href='http://cs.boisestate.edu/~amit/teaching/handouts/cs-linux.pdf'>Local Linux guide 3.1 - 3.4 and 4.1 - 4.6</a></br> Chapter 2.1 - 2.8 and 2.10 - 2.12 and Chapter 3 in K&R</br>
+                  <a href='http://cs.boisestate.edu/~cs253/handouts/vim-handout.pdf'>VIM</a></br>
+                  <a href='http://cs.boisestate.edu/~cs253/handouts/git-handout.pdf'>Git</a></br></td><td> <a href=p1/>p1</a></br></td><td>Quiz 1 - Syllabus Quiz</br>  Quiz 2 - Local Linux guide</br></td></tr><tr><td>2</td><td><a href='http://cs.boisestate.edu/~cs253/handouts/c-pointers-arrays-strings-handout.pdf'>Pointers, arrays, and strings</a></br> <a href='http://cs.boisestate.edu/~cs253/handouts/c-structures-handout.pdf'>Structures</a></br>
+                <a href='http://cs.boisestate.edu/~cs253/handouts/c-generic-coding-handout.pdf'>Generic Coding</a></br></td><td>Chapter 4 and 5 in K&R</br>
+                  <a href='http://cs.boisestate.edu/~cs253/handouts/valgrind-handout.pdf'>Valgrind</a></br>
+                  <a href='http://cs.boisestate.edu/~cs253/handouts/gdb-handout.pdf'>GDB</a></br> Chapter 6</br></td><td><a href=p2/>p2</a></br> </td><td> Quiz 3</br></td></tr><tr><td>3</td><td><a href='http://cs.boisestate.edu/~cs253/handouts/c-generic-coding-handout.pdf'>Generic Coding</a></br>
+                <a href='http://cs.boisestate.edu/~cs253/handouts/c-linked-lists-handout.pdf'>Linked Lists</a></br> <a href='http://cs.boisestate.edu/~cs253/handouts/make-handout.pdf'>Make</a></br>
+            	<a href='http://cs.boisestate.edu/~cs253/handouts/shell-programming-handout.pdf'>Shell</a></br></td><td>Class Notes</br> Chapter's 1-2 Unix Book</br>
+                 </br><a href='http://cs.boisestate.edu/~cs253/handouts/doxygen-handout.pdf'>Doxygen</a></br></td><td><a href=p3/>p3</a></br> <a href=p3/#checkpoint1>p3 checkpoint 1</a></br></td><td> Quiz 4</br></td></tr><tr><td>4</td><td><a href='http://cs.boisestate.edu/~cs253/handouts/shell-programming-handout.pdf'>Shell</a></br> <a href='http://cs.boisestate.edu/~cs253/handouts/c-io-handout.pdf'>C-IO</a></br></td><td>Chapter's 3-4 Unix Book</br> Chapter 7 in K&R</br></td><td><a href=p3/#checkpoint2>p3 checkpoint 2</a></br> </td><td> Quiz 5</br></td></tr><tr><td>5</td><td><a
+	href=http://cs.boisestate.edu/~cs253/handouts/sysprog-files-and-processes-handout.pdf>Files/Processes</br> <a href='http://cs.boisestate.edu/~cs253/handouts/sysprog-signals-handout.pdf'>Signals</a></br></td><td>Review Class notes and examples</br> </td><td><a href=p4/>p4</a></br> <a href=p5/>p5</a></br></td><td> Quiz 6</br></td></tr><tr><td>6</td><td><a
+	href='http://cs.boisestate.edu/~cs253/handouts/sysprog-threads-part1-handout.pdf'>Threading
+	(part 1)</a></br> <a
+	href='http://cs.boisestate.edu/~cs253/handouts/sysprog-threads-part2-handout.pdf'>Threading
+	(part 2)</a></br></td><td>Review Class notes and examples</br> </td><td> <a href=p6/>p6</a></br></td><td> Quiz 7</br></td></tr><tr><td>7</td><td> <a href='http://cs.boisestate.edu/~cs253/handouts/c-bitwise-operators-handout.pdf'>Bits</a></br> Overflow topics</br></td><td>Chapter 2.9 K&R Book</br> </td><td> <a href=p7/>p7</a></br></td><td> Quiz 8</br></td></tr>      </tbody>
+    </table>
+  </div>
+  <section class="backpack-setup">
+  <a name="backpack"></a>
+  <h1>Backpack - online project submission</h1>
+  <p>
+  The Backpack submission system uses the Git version control software to manage project assignment
+  and submission. You should receive an email from your instructor (youremail@u.boisestate.edu)
+  with instructions for cloning your personal backpack repository. You may use the same repository
+  in several courses, so you will only need to set it up once. Support is only provided for
+  the CS department labs.
+  </p>
+  <h2>Setting up Git</h2>
+  <ol>
+	<li>In one of the lab machines, open a console. Or you can ssh into the onyx server
+	and do the commands below in that console.</li>
+
+	<li>
+		Tell Git your name so your commits will be properly labeled.
+		Type everything after the $ into your terminal window:
+	</li>
+<pre>
+$ git config --global user.name "YOUR NAME"
+</pre>
+	<li>
+		Tell Git the email address that will be associated with your Git commits. This should be
+		your Boise State University e-mail address (youremail@u.boisestate.edu).
+	</li>
+<pre>
+$ git config --global user.email "YOUR EMAIL ADDRESS"
+</pre>
+   <li> If you have a personal Linux system, then repeat the above steps there as well. You may have to install the Git software on it first.</li>
+  </ol>
+
+  <h2>Installing Backpack</h2>
+  <ol>
+	 <li>
+	  After you have setup Git, you will need to run the install script that was sent to
+	  your boisestate.edu email account. If you can't find the email, search your inbox for
+	  &quot;Welcome to Backpack at BSU&quot; (the name of the email).  Make sure and check
+	  your spam folder! If you still can't find the email, contact your instructor. This
+	  key will allow you to access your repository without using a password.
+	  <strong>
+		Each installer is custom built for every student. Whoever you share the file backpack.tgz
+		with, will be able to access all of your personal information. You need
+		to treat the files in backpack.tgz just like your ATM pin number.
+	  </strong>
+	<li>
+		To install your key, download the key attachment from your email and navigate to
+		the directory that contains the downloaded file and execute the following command:
+	</li>
+<pre>
+$ tar xzf backpack.tgz &amp;&amp; ./install
+</pre>
+	<p>This will copy your keys into the correct location and set up the correct permissions. Note that in a shell, the &amp;&amp; means to run the <code>./install</code> command only if the <code>tar</code> command before it succeeds.</p></li>
+	
+  </ol>
+  <iframe width="820" height="630" src="https://www.youtube.com/embed/uJNnQ6VVp9A" frameborder="0" allowfullscreen></iframe>
+
+<!--
+  <h2>Videos for Installing backpack on Windows</h2>
+	<p>
+	For windows there are two steps. First complete the steps 
+	for installing Git. Then follow the backpack install video.
+	</p>
+  <iframe width="410" height="315" src="https://www.youtube.com/embed/sLYgZwsnObQ" frameborder="0" allowfullscreen></iframe>
+  <iframe width="410" height="315" src="https://www.youtube.com/embed/f7bCKMb51do" frameborder="0" allowfullscreen></iframe>
+-->
+  <h3>Common Issues</h3>
+  <ul>
+	<li>
+	  <h4>Unprotected Private Key File</h4>
+	  <p>You may see the following error when you attempt to clone your repository.</p>
+	  <pre>
+[you@domain github]$ git clone git@nullptr.boisestate.edu:YOUR_REPO_NAME_FROM_THE_WELCOME_EMAIL
+Cloning into &#39;YOUR_REPO_NAME_FROM_THE_WELCOME_EMAIL&#39;...
+The authenticity of host &#39;nullptr.boisestate.edu (132.178.226.85)&#39;
+can&#39;t be established.
+ECDSA key fingerprint is 36:c6:5b:1a:db:08:29:9b:98:dc:9b:08:fd:26:84:15.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added &#39;nullptr.boisestate.edu&#39; (ECDSA) to the list
+of known hosts.
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Permissions 0660 for &#39;/home/you/.ssh/id_rsa&#39; are too open.
+It is required that your private key files are NOT accessible by others.
+This private key will be ignored.
+bad permissions: ignore key: /home/you/.ssh/id_rsa
+git@nullptr.boisestate.edu&#39;s password:
+
+
+</pre>
+	  <p>Solution: Update the permissions on your private key file using the following
+	  command.</p>
+<pre>
+$ chmod 600 ~/.ssh/id_rsa
+</pre>
+	</li>
+	<li>
+	  <h4>Prompted for Password</h4>
+	  <p>If your ssh keys are set up correctly, you should not be prompted for a password. If
+	  you are asked for you password as shown below, follow the suggested solution.</p>
+<pre>
+$ git clone git@nullptr.boisestate.edu:YOUR_REPO_NAME_FROM_THE_WELCOME_EMAIL
+Cloning into &#39;YOUR_REPO_NAME_FROM_THE_WELCOME_EMAIL&#39;...
+git@nullptr.boisestate.edu&#39;s password:
+</pre>
+	  <p>Solution: Remove any existing keys from your .ssh directory and re-run the installer.</p>
+<pre>
+$ rm ~/.ssh/id_rsa*
+</pre>
+	</li>
+	<li>
+	  <h4>Running as root</h4>
+	  <p>
+	  If you are running as root the installer will not put the keys in the
+	  correct directory. You must be running as a normal user.
+	  </p>
+<pre>
+[root@event_horizon Documents]# ./install
+ERROR: You are logged in as root!!!!
+ERROR: This installer can NOT be ran as root!!!!
+ERROR: Exit from root and try again!!!!
+</pre>
+	  <p>
+	  Solution: Don't run as root. You should never be running as root unless you
+	  absolutely have to. This script does not need root permissions and should
+	  be executed under your local user account.
+	  </p>
+
+<pre>
+root$ exit
+</pre>
+	</li>
+  </ul>
+  <h2>Working on your Project</h2>
+  <p>
+	  After you check out your repository, you will see a directory called
+	  <strong>YourName@u.boisestate.edu</strong>.
+	  Each project directory will include all the necessary starter files for
+	  each project that you will be working on this semester.
+	  You can work on your files in this directory since they are your own copies.
+	  You don&#39;t need to worry about copying them to a different directory.
+	  You can push your changes to the repository as often as you would like to
+	  save versions of your work.
+</p>
+</section>
+</section>
+
+	</body>
+</html>

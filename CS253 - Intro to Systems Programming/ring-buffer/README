@@ -1,0 +1,53 @@
+
+***************************
+* Ring-Buffer - Part 1
+* CS253 
+* November 17, 2017
+* Ahram Kim
+***************************
+
+OVERVIEW:
+
+ Part 1 - 
+ This project is to develop a simple ring buffer library that will allow fast
+ debug logging for all of my system applications. 
+
+INCLUDED FILES:
+
+ * Makefile - build system of all set up
+ * test-ring-buffer.c
+ * ring.c
+ * ring.h - struct list
+ * README - this file
+
+COMPILING AND RUNNING:
+
+ Clean up my directory
+ $ make clean
+ $ make
+ 
+ Compile and running:
+ $ ./grader
+
+TESTING:
+
+ Part 1 - 
+ My professor gave lots of hints to make this project. He gave a 80 percentages of code.
+ I could understand what the project is going from the code he given. 
+ When I compiled and runned ./grader, I need to do 
+ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:./lib in the command. 
+ It was a simple programming and easy to finish before the compiling in the command. 
+ 
+KNOW ISSUES:
+ 
+ Part 1 -
+ I got lots of information and knowledge about C library.
+ The C library function FILE *fopen(cost char *filename, const char *mode) opens the filename
+ pointed to, by filename using the given mode. There are mode and descriptios for fopen.
+ I used "w" which creates an empty file for writing. If a file with the same name already exists, 
+ its content is erased and the file is considered as a new empty file.
+ 
+
+----------------------------------------------------------------------------
+
+         

@@ -1,0 +1,4 @@
+#This file should contain 3 matches (there is one on line 3)
+#You don't have to find the overlapping string in the middle
+#run wc-match -m test < data1
+testtestest

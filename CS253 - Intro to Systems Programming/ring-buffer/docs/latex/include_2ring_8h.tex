@@ -1,0 +1,82 @@
+\hypertarget{include_2ring_8h}{\section{include/ring.h File Reference}
+\label{include_2ring_8h}\index{include/ring.\-h@{include/ring.\-h}}
+}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{include_2ring_8h_a492326be687908bee1e52e4063a1090f}{M\-A\-X\-\_\-\-L\-O\-G\-\_\-\-E\-N\-T\-R\-Y}~5
+\item 
+\#define \hyperlink{include_2ring_8h_a6789ebc0df71a8ef76bfbb4fb5f74aad}{M\-A\-X\-\_\-\-S\-T\-R\-I\-N\-G\-\_\-\-L\-E\-N\-G\-T\-H}~80
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{include_2ring_8h_aa2b94f1a58a55f9e276f9709d88ef52a}{init\-\_\-buffer} ()
+\begin{DoxyCompactList}\small\item\em Initialize the buffer for use. \end{DoxyCompactList}\item 
+void \hyperlink{include_2ring_8h_a794eb7c1847f8ee4ab2b18a6828cddd0}{log\-\_\-msg} (char $\ast$entry)
+\begin{DoxyCompactList}\small\item\em Add entry into the ring buffer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const char $\ast$ \hyperlink{include_2ring_8h_af319079d5f268e0c85e18920a3b7f120}{log\-\_\-name} = \char`\"{}ring.\-log\char`\"{}
+\item 
+const int \hyperlink{include_2ring_8h_a239ca27856d573ae908e127861c71a82}{alarm\-\_\-interval} = 2
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{include_2ring_8h_a492326be687908bee1e52e4063a1090f}{\index{include/ring.\-h@{include/ring.\-h}!M\-A\-X\-\_\-\-L\-O\-G\-\_\-\-E\-N\-T\-R\-Y@{M\-A\-X\-\_\-\-L\-O\-G\-\_\-\-E\-N\-T\-R\-Y}}
+\index{M\-A\-X\-\_\-\-L\-O\-G\-\_\-\-E\-N\-T\-R\-Y@{M\-A\-X\-\_\-\-L\-O\-G\-\_\-\-E\-N\-T\-R\-Y}!include/ring.h@{include/ring.\-h}}
+\subsubsection[{M\-A\-X\-\_\-\-L\-O\-G\-\_\-\-E\-N\-T\-R\-Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-A\-X\-\_\-\-L\-O\-G\-\_\-\-E\-N\-T\-R\-Y~5}}\label{include_2ring_8h_a492326be687908bee1e52e4063a1090f}
+\hypertarget{include_2ring_8h_a6789ebc0df71a8ef76bfbb4fb5f74aad}{\index{include/ring.\-h@{include/ring.\-h}!M\-A\-X\-\_\-\-S\-T\-R\-I\-N\-G\-\_\-\-L\-E\-N\-G\-T\-H@{M\-A\-X\-\_\-\-S\-T\-R\-I\-N\-G\-\_\-\-L\-E\-N\-G\-T\-H}}
+\index{M\-A\-X\-\_\-\-S\-T\-R\-I\-N\-G\-\_\-\-L\-E\-N\-G\-T\-H@{M\-A\-X\-\_\-\-S\-T\-R\-I\-N\-G\-\_\-\-L\-E\-N\-G\-T\-H}!include/ring.h@{include/ring.\-h}}
+\subsubsection[{M\-A\-X\-\_\-\-S\-T\-R\-I\-N\-G\-\_\-\-L\-E\-N\-G\-T\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-A\-X\-\_\-\-S\-T\-R\-I\-N\-G\-\_\-\-L\-E\-N\-G\-T\-H~80}}\label{include_2ring_8h_a6789ebc0df71a8ef76bfbb4fb5f74aad}
+
+
+\subsection{Function Documentation}
+\hypertarget{include_2ring_8h_aa2b94f1a58a55f9e276f9709d88ef52a}{\index{include/ring.\-h@{include/ring.\-h}!init\-\_\-buffer@{init\-\_\-buffer}}
+\index{init\-\_\-buffer@{init\-\_\-buffer}!include/ring.h@{include/ring.\-h}}
+\subsubsection[{init\-\_\-buffer}]{\setlength{\rightskip}{0pt plus 5cm}void init\-\_\-buffer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{include_2ring_8h_aa2b94f1a58a55f9e276f9709d88ef52a}
+
+
+Initialize the buffer for use. 
+
+We must call this function before calling log\-\_\-msg to ensure all the memory has been allocated and is ready to use.
+
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\hypertarget{include_2ring_8h_a794eb7c1847f8ee4ab2b18a6828cddd0}{\index{include/ring.\-h@{include/ring.\-h}!log\-\_\-msg@{log\-\_\-msg}}
+\index{log\-\_\-msg@{log\-\_\-msg}!include/ring.h@{include/ring.\-h}}
+\subsubsection[{log\-\_\-msg}]{\setlength{\rightskip}{0pt plus 5cm}void log\-\_\-msg (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{entry}
+\end{DoxyParamCaption}
+)}}\label{include_2ring_8h_a794eb7c1847f8ee4ab2b18a6828cddd0}
+
+
+Add entry into the ring buffer. 
+
+We can assume that entry is a properly terminated string. However we can N\-O\-T assume that entry is less than M\-A\-X\-\_\-\-S\-T\-R\-I\-N\-G\-\_\-\-L\-E\-N\-G\-T\-H, so we must be careful when copying our data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em entry} & null-\/terminated string that contains the log message \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+\subsection{Variable Documentation}
+\hypertarget{include_2ring_8h_a239ca27856d573ae908e127861c71a82}{\index{include/ring.\-h@{include/ring.\-h}!alarm\-\_\-interval@{alarm\-\_\-interval}}
+\index{alarm\-\_\-interval@{alarm\-\_\-interval}!include/ring.h@{include/ring.\-h}}
+\subsubsection[{alarm\-\_\-interval}]{\setlength{\rightskip}{0pt plus 5cm}const int alarm\-\_\-interval = 2}}\label{include_2ring_8h_a239ca27856d573ae908e127861c71a82}
+\hypertarget{include_2ring_8h_af319079d5f268e0c85e18920a3b7f120}{\index{include/ring.\-h@{include/ring.\-h}!log\-\_\-name@{log\-\_\-name}}
+\index{log\-\_\-name@{log\-\_\-name}!include/ring.h@{include/ring.\-h}}
+\subsubsection[{log\-\_\-name}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ log\-\_\-name = \char`\"{}ring.\-log\char`\"{}}}\label{include_2ring_8h_af319079d5f268e0c85e18920a3b7f120}
