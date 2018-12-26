@@ -1,0 +1,71 @@
+1.
+
+
+Name the failed test where you began your hunt: testContains_validElement
+Where the breakpoints placed: TestSimpleSet_3.java:116
+Where the bug was found: ArraySet.java:75
+What I fixed: I changed the range of while loop.
+How I recognized the bug: 
+	Before :
+		while (i < rear ) {
+					setArray[i] = setArray[i+1];
+					i++;
+		}
+	After : 
+		while (i < rear-1 ) {
+					setArray[i] = setArray[i+1];
+					i++;
+		}
+	The rear is the size of array. When the value in index move to the previous
+	index and the size of array should be decrease, the last index doesn't have 
+	the value to get from the next index, and it just needed to take off.
+	
+2.
+
+
+-Name the failed test where you began your hunt: testIsEmpty
+-Where the breakpoints placed: TestSimpleSet_1.java:58
+-Where the bug was found: ArraySet.java:40
+-What I fixed: I changed the return value.
+-How I recognized the bug: 
+	Before : 
+	public boolean is Empty() {
+		return (rear < 0);
+	}
+	After:
+	public boolean isEmpty() {
+		return (rear == 0);
+	}
+	The expectedresult and boolean result was not the same value. 
+	The rear can not be smaller than 0. 
+	
+
+3.
+
+
+Name the failed test where you began your hunt: testContains_A
+Where the breakpoints placed: TestSimpleSet_5.java:72
+Where the bug was found: ArraySet.java:59
+What I fixed: 
+How I recognized the bug: 
+	Before:
+	public void add(T element) {
+		if (!contains(element)) {
+			if (rear >= setArray.length) {
+				expandCapacity();
+			}
+			setArray[rear] = element;
+		}
+	}
+	After:
+	public void add(T element) {
+		if (!contains(element)) {
+			if (rear >= setArray.length) {
+				expandCapacity();
+			}
+			setArray[rear] = element;
+			rear++;
+		}
+	}
+	The index was not increment so it made only zero index in if statement.
+	

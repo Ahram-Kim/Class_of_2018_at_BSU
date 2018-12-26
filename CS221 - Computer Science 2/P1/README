@@ -1,0 +1,66 @@
+****************
+* Project 1 - GridMonitor
+* CS221-003
+* 01/28/17
+* Ahram Kim
+**************** 
+
+OVERVIEW:
+
+ This program is making two-dimensional arrays by using TestNG framework 
+ to check correctness of a Java class.
+
+
+INCLUDED FILES:
+
+ List the files required for the project with a brief
+ explanation of why each is included.
+
+ * GridMonitor.java - source file
+ * GridMonitorTester.java - source file
+ * README - this file
+
+ In GridMonitor.java, there is constructor for compiling.
+ GridMonitorTester.java is needed for TestNG.
+
+COMPILING AND RUNNING:
+
+ From the directory containing all source files, compile the
+ driver class (and all dependencies) with the command:
+ $ javac GridMonitor.java
+
+ Run the compiled class file with the command:
+ $ java GridMonitor
+ $ java org.testng.TestNG gridMonitor.xml
+ 
+
+PROGRAM DESIGN AND IMPORTANT CONCEPTS:
+ 
+ I made all things in constructor in GridMonitor and returns in their class each other.
+ 
+
+TESTING:
+
+ That was the first time to use TestNG.
+ It was confused to me to catch up what the problems are. 
+ I could handle how it works and how I can catch up problems from this project.
+
+
+DISCUSSION:
+
+ At first, I had problem about the text file "widerange.txt". 
+ I couldn't catch up that professor said to download this file and try it as new.
+ That was why the problem about that wasn't working at all. 
+ Also, I had some problems about the basicGrid when two-dimensional arrays are not in square.
+ Not only them, there are small errors like negative value, and logical in basicGrid.
+ I asked those to tutor in the lab. So I got it now everything!
+ I didn't like to use TestNG because I couldn't catch up the problems.
+ However, I felt great when the errors were decreasing.
+ 
+ 
+EXTRA CREDIT:
+
+N/A
+
+----------------------------------------------------------------------------
+

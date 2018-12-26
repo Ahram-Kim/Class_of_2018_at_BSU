@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Iterator">
+
+  <test name="IUArrayList">   
+  	<parameter name="listType" value="arrayList"/> 
+    <classes>     
+      <class name="ItrTest_1_newlist"/>
+      <class name="ItrTest_10_A_addToRearB_AB"/>
+      <class name="ItrTest_11_A_addAfterBA_AB"/>
+       <class name="ItrTest_12_A_remove0_emptylist"/>
+      <class name="ItrTest_13_A_set0B_B"/>
+      <class name="ItrTest_14_A_add0B_BA"/>
+       <class name="ItrTest_15_A_add1B_AB"/>
+      <class name="ItrTest_16_AB_removeFirst_B"/>
+      <class name="ItrTest_17_AB_removeLast_A"/>
+       <class name="ItrTest_18_AB_removeA_B"/>
+      <class name="ItrTest_19_AB_removeB_A"/>
+      <class name="ItrTest_2_emptylist_addToFrontA_A"/>
+       <class name="ItrTest_20_AB_addToFrontC_CAB"/>
+      <class name="ItrTest_21_AB_addToRearC_ABC"/>
+      <class name="ItrTest_22_AB_addAfterCA_ACB"/>
+       <class name="ItrTest_23_AB_addAfterCB_ABC"/>
+      <class name="ItrTest_24_AB_remove0_B"/>
+      <class name="ItrTest_25_AB_remove1_A"/>
+       <class name="ItrTest_26_AB_set0C_CB"/>
+      <class name="ItrTest_27_AB_set1C_AC"/>
+      <class name="ItrTest_28_AB_addC_ABC"/>
+       <class name="ItrTest_29_AB_add0C_CAB"/>
+      <class name="ItrTest_3_emptylist_addToRearA_A"/>
+      <class name="ItrTest_30_AB_add1C_ACB"/>
+       <class name="ItrTest_31_AB_add2C_ABC"/>
+      <class name="ItrTest_32_ABC_removeFirst_BC"/>
+      <class name="ItrTest_33_ABC_removeLast_AB"/>
+      <class name="ItrTest_34_ABC_removeA_BC"/>
+       <class name="ItrTest_35_ABC_removeB_AC"/>
+      <class name="ItrTest_36_ABC_removeC_AB"/>
+      <class name="ItrTest_37_ABC_remove0_BC"/>
+       <class name="ItrTest_38_ABC_remove1_AC"/>
+      <class name="ItrTest_39_ABC_remove2_AB"/>
+      <class name="ItrTest_4_emptylist_addA_A"/>
+       <class name="ItrTest_40_ABC_set0D_DBC"/>
+      <class name="ItrTest_41_ABC_set1D_ADC"/>
+      <class name="ItrTest_42_ABC_set2D_ABD"/>
+       <class name="ItrTest_5_emptylist_add0A_A"/>
+      <class name="ItrTest_6_A_removeFirst_emptylist"/>
+      <class name="ItrTest_7_A_removeLast_emptylist"/>
+       <class name="ItrTest_8_A_removeA_emptylist"/>
+      <class name="ItrTest_9_A_addToFrontB_BA"/>
+
+    </classes>
+  </test> <!-- IUArrayList -->
+
+</suite> <!-- Iterator -->

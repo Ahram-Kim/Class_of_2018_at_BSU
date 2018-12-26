@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Format Checker">
+  <test name="Format Checker Tests">   
+    <classes>     
+      <class name="FormatCheckerTester"/>
+    </classes>
+  </test> <!-- Format Checker Tests -->
+
+</suite> <!-- Format Checker -->

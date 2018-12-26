@@ -1,0 +1,99 @@
+****************
+* P4 - Circuit Tracer
+* CS221-003
+* 05.05.17
+* Ahram Kim
+**************** 
+
+OVERVIEW:
+
+ This project is to search for shortest paths between start 
+ and end points on a circuit board
+
+
+INCLUDED FILES:
+
+ * CircuitTracer.java - displaying output to the console or to
+   a GUI according to options specified via command-line arguments
+ * CircuitBoard.java - Represents a 2D circuit board as read from an 
+   input file
+ * Storage.java - contains an enumeration defining the available underlying
+   data structures that the user can choose from when a storage object is 
+   instantiated
+ * TraceState.java - represent a search state with the trace path
+ * README - this file
+
+
+COMPILING AND RUNNING:
+
+ From the directory containing all source files, compile the
+ driver class (and all dependencies) with the command:
+ $ javac CircuitTracer.java
+
+ Run the compiled class file with the command:
+ $ java CircuitTracer -s -c (file name)
+  ex) $ java CircuitTracer -s -c circuit1.dat
+
+ Console output will give the results after the program finishes.
+
+PROGRAM DESIGN AND IMPORTANT CONCEPTS:
+
+ I implemented a brute-force search algorithm. It is read in command
+ line arguments by managing Exceptions while parsing an input file.
+ At first, I tried to understand what I need to do for this project by
+ working on search algorithm by hand and made sense. I wrote the code 
+ for reading the given files and made an exception which I should not
+ make a result. 
+ 
+ I made all of the exceptions and the code to read the circuit files
+ in CircuitBoard.java. I wrote the code to display circuit in console
+ in CircuitTracer.java.   
+
+TESTING:
+ 
+ I could find circuit files would be read and invalid files would not be read.
+ Both files which is acceptable to read and files which is not acceptable
+ to read were given to me. I could check my code is right or not for those
+ files. However, some of files which should not be read was read and others
+ which should read was not read. I did debug for those failure and fixed them. 
+
+DISCUSSION:
+ 
+ I could work on CircuitBoard to find the given files because I learned those
+ in CS121 class. However, working on algorithms is the first time. I could not
+ get it what I need to do, and how it works. Invalid should not be worked but 
+ it worked in console. I needed to make more code for an exception in CircitBoard.java.
+ It is the hardest one for me to find the error and write codes for an 
+ exception.
+ For example, I got a result for invalid file 'invalid5.dat' but it should not 
+ have read at all because it is an invalid file.
+ 
+ 
+ANALYSIS:
+
+ 1. What is the order of state evaluation and new state generation for a 
+ Storage object that uses a stack compared to one that uses a queue?
+ 	
+ 
+ 2. How is the total number of search states affected by the choice of stack or queus?
+ 	n+1
+ 
+ 3. What is the Big-Oh runtime for the search algorithms?
+ 	O(n)
+ 	
+ 4. How is memory use (the number of states in Storage at one time) affected 
+ by the choice of underlying structure?
+ 	
+ 	
+ 5. Does using one of the storage structures find a solution faster than the other? Always?
+ 	I think that using one of the storage structures find a solution faster than others 
+ 	but not always.
+ 	
+ 6.Does using either of the storage structures guarantee that the first solution
+ found will be an ideal solution?
+ 	I think that is yes.
+ 	
+ 	
+
+----------------------------------------------------------------------------
+
