@@ -1,0 +1,6 @@
+Usage: java CPUScheduling <max-process-time> <max-level> <time-to-increment-priority> <simulation-time> <process arrival rate>
+<max-process-time>: max number of unit time for executing a process.
+<max-level>: priority levels are 1, 2, .. <max-level>
+<time-to-increment-priority>: number of unit times before a process to increment its priority by 1 if this process does not get any CPU time during this time period.
+<simulation-time>: number of unit time for this simulation.
+<process arrival rate>: the process arrival probability within each time unit.

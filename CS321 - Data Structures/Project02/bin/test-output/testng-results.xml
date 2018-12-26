@@ -1,0 +1,2183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="268" passed="268">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Priority Queue Testing Suite" duration-ms="102" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+    <groups>
+    </groups>
+    <test name="Max Heap Tests" duration-ms="36" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+      <class name="MaxHeapTest_12_tenElements_increaseKey_mid">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_12_tenElements_increaseKey_mid@47089e5f]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_12_tenElements_increaseKey_mid@47089e5f]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_12_tenElements_increaseKey_mid@47089e5f]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_12_tenElements_increaseKey_mid@47089e5f]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testHeapMax()[pri:0, instance:MaxHeapTest_12_tenElements_increaseKey_mid@47089e5f]" name="testHeapMax" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testExtractHeapMax()[pri:0, instance:MaxHeapTest_12_tenElements_increaseKey_mid@47089e5f]" name="testExtractHeapMax" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testGetHeapSize()[pri:0, instance:MaxHeapTest_12_tenElements_increaseKey_mid@47089e5f]" name="testGetHeapSize" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_12_tenElements_increaseKey_mid@47089e5f]" name="testIncreaseHeapKey" duration-ms="1" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_12_tenElements_increaseKey_mid@47089e5f]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_12_tenElements_increaseKey_mid@47089e5f]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_12_tenElements_increaseKey_mid@47089e5f]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_12_tenElements_increaseKey_mid@47089e5f]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_12_tenElements_increaseKey_mid@47089e5f]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_12_tenElements_increaseKey_mid@47089e5f]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_12_tenElements_increaseKey_mid@47089e5f]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_12_tenElements_increaseKey_mid@47089e5f]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_12_tenElements_increaseKey_mid@47089e5f]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[6]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_12_tenElements_increaseKey_mid@47089e5f]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[8]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_12_tenElements_increaseKey_mid@47089e5f]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_12_tenElements_increaseKey_mid@47089e5f]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_12_tenElements_increaseKey_mid@47089e5f]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIsEmpty()[pri:0, instance:MaxHeapTest_12_tenElements_increaseKey_mid@47089e5f]" name="testIsEmpty" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_12_tenElements_increaseKey_mid@47089e5f]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_12_tenElements_increaseKey_mid@47089e5f]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_12_tenElements_increaseKey_mid@47089e5f]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_12_tenElements_increaseKey_mid@47089e5f]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_12_tenElements_increaseKey_mid@47089e5f]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_12_tenElements_increaseKey_mid@47089e5f]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[9]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_12_tenElements_increaseKey_mid@47089e5f]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testMaxHeapInsert()[pri:0, instance:MaxHeapTest_12_tenElements_increaseKey_mid@47089e5f]" name="testMaxHeapInsert" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+      </class>
+      <class name="MaxHeapTest_5_fiveElements_insert">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_5_fiveElements_insert@38cccef]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_5_fiveElements_insert@38cccef]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_5_fiveElements_insert@38cccef]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testHeapMax()[pri:0, instance:MaxHeapTest_5_fiveElements_insert@38cccef]" name="testHeapMax" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testExtractHeapMax()[pri:0, instance:MaxHeapTest_5_fiveElements_insert@38cccef]" name="testExtractHeapMax" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testGetHeapSize()[pri:0, instance:MaxHeapTest_5_fiveElements_insert@38cccef]" name="testGetHeapSize" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_5_fiveElements_insert@38cccef]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_5_fiveElements_insert@38cccef]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_5_fiveElements_insert@38cccef]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_5_fiveElements_insert@38cccef]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_5_fiveElements_insert@38cccef]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_5_fiveElements_insert@38cccef]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_5_fiveElements_insert@38cccef]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_5_fiveElements_insert@38cccef]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[6]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testMaxHeapInsert()[pri:0, instance:MaxHeapTest_5_fiveElements_insert@38cccef]" name="testMaxHeapInsert" duration-ms="1" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_5_fiveElements_insert@38cccef]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_5_fiveElements_insert@38cccef]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIsEmpty()[pri:0, instance:MaxHeapTest_5_fiveElements_insert@38cccef]" name="testIsEmpty" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_5_fiveElements_insert@38cccef]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_5_fiveElements_insert@38cccef]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_5_fiveElements_insert@38cccef]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_5_fiveElements_insert@38cccef]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+      </class>
+      <class name="MaxHeapTest_11_fiveElements_increaseKey_mid">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_11_fiveElements_increaseKey_mid@68f7aae2]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testExtractHeapMax()[pri:0, instance:MaxHeapTest_11_fiveElements_increaseKey_mid@68f7aae2]" name="testExtractHeapMax" duration-ms="1" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_11_fiveElements_increaseKey_mid@68f7aae2]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testGetHeapSize()[pri:0, instance:MaxHeapTest_11_fiveElements_increaseKey_mid@68f7aae2]" name="testGetHeapSize" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_11_fiveElements_increaseKey_mid@68f7aae2]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_11_fiveElements_increaseKey_mid@68f7aae2]" name="initialize" is-config="true" duration-ms="1" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_11_fiveElements_increaseKey_mid@68f7aae2]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_11_fiveElements_increaseKey_mid@68f7aae2]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_11_fiveElements_increaseKey_mid@68f7aae2]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_11_fiveElements_increaseKey_mid@68f7aae2]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_11_fiveElements_increaseKey_mid@68f7aae2]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIsEmpty()[pri:0, instance:MaxHeapTest_11_fiveElements_increaseKey_mid@68f7aae2]" name="testIsEmpty" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_11_fiveElements_increaseKey_mid@68f7aae2]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_11_fiveElements_increaseKey_mid@68f7aae2]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_11_fiveElements_increaseKey_mid@68f7aae2]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_11_fiveElements_increaseKey_mid@68f7aae2]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testHeapMax()[pri:0, instance:MaxHeapTest_11_fiveElements_increaseKey_mid@68f7aae2]" name="testHeapMax" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_11_fiveElements_increaseKey_mid@68f7aae2]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_11_fiveElements_increaseKey_mid@68f7aae2]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testMaxHeapInsert()[pri:0, instance:MaxHeapTest_11_fiveElements_increaseKey_mid@68f7aae2]" name="testMaxHeapInsert" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+      </class>
+      <class name="MaxHeapTest_7_fiveElements_increaseKey_max">
+        <test-method status="PASS" signature="testGetHeapSize()[pri:0, instance:MaxHeapTest_7_fiveElements_increaseKey_max@4f47d241]" name="testGetHeapSize" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_7_fiveElements_increaseKey_max@4f47d241]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testExtractHeapMax()[pri:0, instance:MaxHeapTest_7_fiveElements_increaseKey_max@4f47d241]" name="testExtractHeapMax" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_7_fiveElements_increaseKey_max@4f47d241]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_7_fiveElements_increaseKey_max@4f47d241]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_7_fiveElements_increaseKey_max@4f47d241]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_7_fiveElements_increaseKey_max@4f47d241]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_7_fiveElements_increaseKey_max@4f47d241]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_7_fiveElements_increaseKey_max@4f47d241]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_7_fiveElements_increaseKey_max@4f47d241]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_7_fiveElements_increaseKey_max@4f47d241]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_7_fiveElements_increaseKey_max@4f47d241]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testHeapMax()[pri:0, instance:MaxHeapTest_7_fiveElements_increaseKey_max@4f47d241]" name="testHeapMax" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_7_fiveElements_increaseKey_max@4f47d241]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_7_fiveElements_increaseKey_max@4f47d241]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_7_fiveElements_increaseKey_max@4f47d241]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testMaxHeapInsert()[pri:0, instance:MaxHeapTest_7_fiveElements_increaseKey_max@4f47d241]" name="testMaxHeapInsert" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_7_fiveElements_increaseKey_max@4f47d241]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIsEmpty()[pri:0, instance:MaxHeapTest_7_fiveElements_increaseKey_max@4f47d241]" name="testIsEmpty" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_7_fiveElements_increaseKey_max@4f47d241]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+      </class>
+      <class name="MaxHeapTest_3_tenElements_extract">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_3_tenElements_extract@27ddd392]" name="initialize" is-config="true" duration-ms="1" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_3_tenElements_extract@27ddd392]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testHeapMax()[pri:0, instance:MaxHeapTest_3_tenElements_extract@27ddd392]" name="testHeapMax" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_3_tenElements_extract@27ddd392]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_3_tenElements_extract@27ddd392]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_3_tenElements_extract@27ddd392]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_3_tenElements_extract@27ddd392]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testExtractHeapMax()[pri:0, instance:MaxHeapTest_3_tenElements_extract@27ddd392]" name="testExtractHeapMax" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testGetHeapSize()[pri:0, instance:MaxHeapTest_3_tenElements_extract@27ddd392]" name="testGetHeapSize" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_3_tenElements_extract@27ddd392]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_3_tenElements_extract@27ddd392]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_3_tenElements_extract@27ddd392]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_3_tenElements_extract@27ddd392]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_3_tenElements_extract@27ddd392]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[9]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_3_tenElements_extract@27ddd392]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_3_tenElements_extract@27ddd392]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_3_tenElements_extract@27ddd392]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_3_tenElements_extract@27ddd392]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_3_tenElements_extract@27ddd392]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_3_tenElements_extract@27ddd392]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_3_tenElements_extract@27ddd392]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_3_tenElements_extract@27ddd392]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_3_tenElements_extract@27ddd392]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[8]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testIsEmpty()[pri:0, instance:MaxHeapTest_3_tenElements_extract@27ddd392]" name="testIsEmpty" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_3_tenElements_extract@27ddd392]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[6]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_3_tenElements_extract@27ddd392]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testMaxHeapInsert()[pri:0, instance:MaxHeapTest_3_tenElements_extract@27ddd392]" name="testMaxHeapInsert" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_3_tenElements_extract@27ddd392]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+      </class>
+      <class name="MaxHeapTest_2_fiveElements_extract">
+        <test-method status="PASS" signature="testGetHeapSize()[pri:0, instance:MaxHeapTest_2_fiveElements_extract@2f410acf]" name="testGetHeapSize" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_2_fiveElements_extract@2f410acf]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testExtractHeapMax()[pri:0, instance:MaxHeapTest_2_fiveElements_extract@2f410acf]" name="testExtractHeapMax" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testHeapMax()[pri:0, instance:MaxHeapTest_2_fiveElements_extract@2f410acf]" name="testHeapMax" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_2_fiveElements_extract@2f410acf]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_2_fiveElements_extract@2f410acf]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_2_fiveElements_extract@2f410acf]" name="testIncreaseHeapKey" duration-ms="1" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_2_fiveElements_extract@2f410acf]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_2_fiveElements_extract@2f410acf]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testMaxHeapInsert()[pri:0, instance:MaxHeapTest_2_fiveElements_extract@2f410acf]" name="testMaxHeapInsert" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_2_fiveElements_extract@2f410acf]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_2_fiveElements_extract@2f410acf]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_2_fiveElements_extract@2f410acf]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_2_fiveElements_extract@2f410acf]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_2_fiveElements_extract@2f410acf]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_2_fiveElements_extract@2f410acf]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_2_fiveElements_extract@2f410acf]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIsEmpty()[pri:0, instance:MaxHeapTest_2_fiveElements_extract@2f410acf]" name="testIsEmpty" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+      </class>
+      <class name="MaxHeapTest_1_oneElement_extract">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_1_oneElement_extract@4141d797]" name="initialize" is-config="true" duration-ms="5" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testGetHeapSize()[pri:0, instance:MaxHeapTest_1_oneElement_extract@4141d797]" name="testGetHeapSize" duration-ms="2" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testMaxHeapInsert()[pri:0, instance:MaxHeapTest_1_oneElement_extract@4141d797]" name="testMaxHeapInsert" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_1_oneElement_extract@4141d797]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_1_oneElement_extract@4141d797]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIsEmpty()[pri:0, instance:MaxHeapTest_1_oneElement_extract@4141d797]" name="testIsEmpty" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+      </class>
+      <class name="MaxHeapTest_10_tenElements_increaseKey_min">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_10_tenElements_increaseKey_min@4c3e4790]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testExtractHeapMax()[pri:0, instance:MaxHeapTest_10_tenElements_increaseKey_min@4c3e4790]" name="testExtractHeapMax" duration-ms="1" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_10_tenElements_increaseKey_min@4c3e4790]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_10_tenElements_increaseKey_min@4c3e4790]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_10_tenElements_increaseKey_min@4c3e4790]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_10_tenElements_increaseKey_min@4c3e4790]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_10_tenElements_increaseKey_min@4c3e4790]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testGetHeapSize()[pri:0, instance:MaxHeapTest_10_tenElements_increaseKey_min@4c3e4790]" name="testGetHeapSize" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_10_tenElements_increaseKey_min@4c3e4790]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_10_tenElements_increaseKey_min@4c3e4790]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_10_tenElements_increaseKey_min@4c3e4790]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_10_tenElements_increaseKey_min@4c3e4790]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testHeapMax()[pri:0, instance:MaxHeapTest_10_tenElements_increaseKey_min@4c3e4790]" name="testHeapMax" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_10_tenElements_increaseKey_min@4c3e4790]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_10_tenElements_increaseKey_min@4c3e4790]" name="initialize" is-config="true" duration-ms="1" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_10_tenElements_increaseKey_min@4c3e4790]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_10_tenElements_increaseKey_min@4c3e4790]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_10_tenElements_increaseKey_min@4c3e4790]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[8]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_10_tenElements_increaseKey_min@4c3e4790]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[6]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_10_tenElements_increaseKey_min@4c3e4790]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_10_tenElements_increaseKey_min@4c3e4790]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testMaxHeapInsert()[pri:0, instance:MaxHeapTest_10_tenElements_increaseKey_min@4c3e4790]" name="testMaxHeapInsert" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_10_tenElements_increaseKey_min@4c3e4790]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_10_tenElements_increaseKey_min@4c3e4790]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[9]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_10_tenElements_increaseKey_min@4c3e4790]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_10_tenElements_increaseKey_min@4c3e4790]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_10_tenElements_increaseKey_min@4c3e4790]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_10_tenElements_increaseKey_min@4c3e4790]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_10_tenElements_increaseKey_min@4c3e4790]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testIsEmpty()[pri:0, instance:MaxHeapTest_10_tenElements_increaseKey_min@4c3e4790]" name="testIsEmpty" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+      </class>
+      <class name="MaxHeapTest_9_fiveElements_increaseKey_min">
+        <test-method status="PASS" signature="testHeapMax()[pri:0, instance:MaxHeapTest_9_fiveElements_increaseKey_min@5679c6c6]" name="testHeapMax" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_9_fiveElements_increaseKey_min@5679c6c6]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testExtractHeapMax()[pri:0, instance:MaxHeapTest_9_fiveElements_increaseKey_min@5679c6c6]" name="testExtractHeapMax" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testGetHeapSize()[pri:0, instance:MaxHeapTest_9_fiveElements_increaseKey_min@5679c6c6]" name="testGetHeapSize" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_9_fiveElements_increaseKey_min@5679c6c6]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_9_fiveElements_increaseKey_min@5679c6c6]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testMaxHeapInsert()[pri:0, instance:MaxHeapTest_9_fiveElements_increaseKey_min@5679c6c6]" name="testMaxHeapInsert" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIsEmpty()[pri:0, instance:MaxHeapTest_9_fiveElements_increaseKey_min@5679c6c6]" name="testIsEmpty" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_9_fiveElements_increaseKey_min@5679c6c6]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_9_fiveElements_increaseKey_min@5679c6c6]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_9_fiveElements_increaseKey_min@5679c6c6]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_9_fiveElements_increaseKey_min@5679c6c6]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_9_fiveElements_increaseKey_min@5679c6c6]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_9_fiveElements_increaseKey_min@5679c6c6]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_9_fiveElements_increaseKey_min@5679c6c6]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_9_fiveElements_increaseKey_min@5679c6c6]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_9_fiveElements_increaseKey_min@5679c6c6]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_9_fiveElements_increaseKey_min@5679c6c6]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_9_fiveElements_increaseKey_min@5679c6c6]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_9_fiveElements_increaseKey_min@5679c6c6]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+      </class>
+      <class name="MaxHeapTest_4_empty_insert">
+        <test-method status="PASS" signature="testExtractHeapMax()[pri:0, instance:MaxHeapTest_4_empty_insert@7cef4e59]" name="testExtractHeapMax" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_4_empty_insert@7cef4e59]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey()[pri:0, instance:MaxHeapTest_4_empty_insert@7cef4e59]" name="testIncreaseHeapKey" duration-ms="1" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_4_empty_insert@7cef4e59]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testGetHeapSize()[pri:0, instance:MaxHeapTest_4_empty_insert@7cef4e59]" name="testGetHeapSize" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_4_empty_insert@7cef4e59]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_4_empty_insert@7cef4e59]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testHeapMax()[pri:0, instance:MaxHeapTest_4_empty_insert@7cef4e59]" name="testHeapMax" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testMaxHeapInsert()[pri:0, instance:MaxHeapTest_4_empty_insert@7cef4e59]" name="testMaxHeapInsert" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_4_empty_insert@7cef4e59]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIsEmpty()[pri:0, instance:MaxHeapTest_4_empty_insert@7cef4e59]" name="testIsEmpty" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_4_empty_insert@7cef4e59]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+      </class>
+      <class name="MaxHeapTest_6_tenElements_insert">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_6_tenElements_insert@19e1023e]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_6_tenElements_insert@19e1023e]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_6_tenElements_insert@19e1023e]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_6_tenElements_insert@19e1023e]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_6_tenElements_insert@19e1023e]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testGetHeapSize()[pri:0, instance:MaxHeapTest_6_tenElements_insert@19e1023e]" name="testGetHeapSize" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_6_tenElements_insert@19e1023e]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testHeapMax()[pri:0, instance:MaxHeapTest_6_tenElements_insert@19e1023e]" name="testHeapMax" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testExtractHeapMax()[pri:0, instance:MaxHeapTest_6_tenElements_insert@19e1023e]" name="testExtractHeapMax" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_6_tenElements_insert@19e1023e]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_6_tenElements_insert@19e1023e]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_6_tenElements_insert@19e1023e]" name="testIncreaseHeapKey" duration-ms="1" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_6_tenElements_insert@19e1023e]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_6_tenElements_insert@19e1023e]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_6_tenElements_insert@19e1023e]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_6_tenElements_insert@19e1023e]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_6_tenElements_insert@19e1023e]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[9]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_6_tenElements_insert@19e1023e]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[8]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_6_tenElements_insert@19e1023e]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[11]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_6_tenElements_insert@19e1023e]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_6_tenElements_insert@19e1023e]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_6_tenElements_insert@19e1023e]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_6_tenElements_insert@19e1023e]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_6_tenElements_insert@19e1023e]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_6_tenElements_insert@19e1023e]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[6]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_6_tenElements_insert@19e1023e]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_6_tenElements_insert@19e1023e]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_6_tenElements_insert@19e1023e]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_6_tenElements_insert@19e1023e]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIsEmpty()[pri:0, instance:MaxHeapTest_6_tenElements_insert@19e1023e]" name="testIsEmpty" duration-ms="1" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_6_tenElements_insert@19e1023e]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testMaxHeapInsert()[pri:0, instance:MaxHeapTest_6_tenElements_insert@19e1023e]" name="testMaxHeapInsert" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+      </class>
+      <class name="MaxHeapTest_8_tenElements_increaseKey_max">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_8_tenElements_increaseKey_max@64b8f8f4]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testHeapMax()[pri:0, instance:MaxHeapTest_8_tenElements_increaseKey_max@64b8f8f4]" name="testHeapMax" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_8_tenElements_increaseKey_max@64b8f8f4]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testExtractHeapMax()[pri:0, instance:MaxHeapTest_8_tenElements_increaseKey_max@64b8f8f4]" name="testExtractHeapMax" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_8_tenElements_increaseKey_max@64b8f8f4]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testGetHeapSize()[pri:0, instance:MaxHeapTest_8_tenElements_increaseKey_max@64b8f8f4]" name="testGetHeapSize" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_8_tenElements_increaseKey_max@64b8f8f4]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_8_tenElements_increaseKey_max@64b8f8f4]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_8_tenElements_increaseKey_max@64b8f8f4]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_8_tenElements_increaseKey_max@64b8f8f4]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_8_tenElements_increaseKey_max@64b8f8f4]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_8_tenElements_increaseKey_max@64b8f8f4]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_8_tenElements_increaseKey_max@64b8f8f4]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[8]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_8_tenElements_increaseKey_max@64b8f8f4]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_8_tenElements_increaseKey_max@64b8f8f4]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_8_tenElements_increaseKey_max@64b8f8f4]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_8_tenElements_increaseKey_max@64b8f8f4]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[6]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_8_tenElements_increaseKey_max@64b8f8f4]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_8_tenElements_increaseKey_max@64b8f8f4]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[9]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_8_tenElements_increaseKey_max@64b8f8f4]" name="initialize" is-config="true" duration-ms="1" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_8_tenElements_increaseKey_max@64b8f8f4]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_8_tenElements_increaseKey_max@64b8f8f4]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_8_tenElements_increaseKey_max@64b8f8f4]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_8_tenElements_increaseKey_max@64b8f8f4]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_8_tenElements_increaseKey_max@64b8f8f4]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIsEmpty()[pri:0, instance:MaxHeapTest_8_tenElements_increaseKey_max@64b8f8f4]" name="testIsEmpty" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testMaxHeapInsert()[pri:0, instance:MaxHeapTest_8_tenElements_increaseKey_max@64b8f8f4]" name="testMaxHeapInsert" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_8_tenElements_increaseKey_max@64b8f8f4]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MaxHeapTest_8_tenElements_increaseKey_max@64b8f8f4]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseHeapKey(int)[pri:0, instance:MaxHeapTest_8_tenElements_increaseKey_max@64b8f8f4]" name="testIncreaseHeapKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+      </class>
+    </test>
+    <test name="Priority Queue Tests" duration-ms="17" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+      <class name="PriorityQueueTest_8_tenElements_increaseKey_max">
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_8_tenElements_increaseKey_max@29444d75]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testExtractMax()[pri:0, instance:PriorityQueueTest_8_tenElements_increaseKey_max@29444d75]" name="testExtractMax" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_8_tenElements_increaseKey_max@29444d75]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_8_tenElements_increaseKey_max@29444d75]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_8_tenElements_increaseKey_max@29444d75]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[9]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_8_tenElements_increaseKey_max@29444d75]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_8_tenElements_increaseKey_max@29444d75]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_8_tenElements_increaseKey_max@29444d75]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_8_tenElements_increaseKey_max@29444d75]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_8_tenElements_increaseKey_max@29444d75]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[6]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_8_tenElements_increaseKey_max@29444d75]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_8_tenElements_increaseKey_max@29444d75]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_8_tenElements_increaseKey_max@29444d75]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_8_tenElements_increaseKey_max@29444d75]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_8_tenElements_increaseKey_max@29444d75]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_8_tenElements_increaseKey_max@29444d75]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_8_tenElements_increaseKey_max@29444d75]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_8_tenElements_increaseKey_max@29444d75]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_8_tenElements_increaseKey_max@29444d75]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[8]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_8_tenElements_increaseKey_max@29444d75]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_8_tenElements_increaseKey_max@29444d75]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_8_tenElements_increaseKey_max@29444d75]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_8_tenElements_increaseKey_max@29444d75]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIsEmpty()[pri:0, instance:PriorityQueueTest_8_tenElements_increaseKey_max@29444d75]" name="testIsEmpty" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_8_tenElements_increaseKey_max@29444d75]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_8_tenElements_increaseKey_max@29444d75]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testInsert()[pri:0, instance:PriorityQueueTest_8_tenElements_increaseKey_max@29444d75]" name="testInsert" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_8_tenElements_increaseKey_max@29444d75]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testSize()[pri:0, instance:PriorityQueueTest_8_tenElements_increaseKey_max@29444d75]" name="testSize" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testMaximum()[pri:0, instance:PriorityQueueTest_8_tenElements_increaseKey_max@29444d75]" name="testMaximum" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+      </class>
+      <class name="PriorityQueueTest_11_fiveElements_increaseKey_mid">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_11_fiveElements_increaseKey_mid@44e81672]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testInsert()[pri:0, instance:PriorityQueueTest_11_fiveElements_increaseKey_mid@44e81672]" name="testInsert" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_11_fiveElements_increaseKey_mid@44e81672]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_11_fiveElements_increaseKey_mid@44e81672]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_11_fiveElements_increaseKey_mid@44e81672]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_11_fiveElements_increaseKey_mid@44e81672]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_11_fiveElements_increaseKey_mid@44e81672]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_11_fiveElements_increaseKey_mid@44e81672]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_11_fiveElements_increaseKey_mid@44e81672]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_11_fiveElements_increaseKey_mid@44e81672]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_11_fiveElements_increaseKey_mid@44e81672]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testExtractHeapMax()[pri:0, instance:PriorityQueueTest_11_fiveElements_increaseKey_mid@44e81672]" name="testExtractHeapMax" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIsEmpty()[pri:0, instance:PriorityQueueTest_11_fiveElements_increaseKey_mid@44e81672]" name="testIsEmpty" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_11_fiveElements_increaseKey_mid@44e81672]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_11_fiveElements_increaseKey_mid@44e81672]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_11_fiveElements_increaseKey_mid@44e81672]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testMaximum()[pri:0, instance:PriorityQueueTest_11_fiveElements_increaseKey_mid@44e81672]" name="testMaximum" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_11_fiveElements_increaseKey_mid@44e81672]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testSize()[pri:0, instance:PriorityQueueTest_11_fiveElements_increaseKey_mid@44e81672]" name="testSize" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_11_fiveElements_increaseKey_mid@44e81672]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+      </class>
+      <class name="PriorityQueueTest_9_fiveElements_increaseKey_min">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_9_fiveElements_increaseKey_min@4fccd51b]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_9_fiveElements_increaseKey_min@4fccd51b]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_9_fiveElements_increaseKey_min@4fccd51b]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_9_fiveElements_increaseKey_min@4fccd51b]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_9_fiveElements_increaseKey_min@4fccd51b]" name="testIncreaseKey" duration-ms="1" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_9_fiveElements_increaseKey_min@4fccd51b]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testExtractMax()[pri:0, instance:PriorityQueueTest_9_fiveElements_increaseKey_min@4fccd51b]" name="testExtractMax" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_9_fiveElements_increaseKey_min@4fccd51b]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_9_fiveElements_increaseKey_min@4fccd51b]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_9_fiveElements_increaseKey_min@4fccd51b]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_9_fiveElements_increaseKey_min@4fccd51b]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_9_fiveElements_increaseKey_min@4fccd51b]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_9_fiveElements_increaseKey_min@4fccd51b]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIsEmpty()[pri:0, instance:PriorityQueueTest_9_fiveElements_increaseKey_min@4fccd51b]" name="testIsEmpty" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_9_fiveElements_increaseKey_min@4fccd51b]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testInsert()[pri:0, instance:PriorityQueueTest_9_fiveElements_increaseKey_min@4fccd51b]" name="testInsert" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testMaximum()[pri:0, instance:PriorityQueueTest_9_fiveElements_increaseKey_min@4fccd51b]" name="testMaximum" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_9_fiveElements_increaseKey_min@4fccd51b]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testSize()[pri:0, instance:PriorityQueueTest_9_fiveElements_increaseKey_min@4fccd51b]" name="testSize" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_9_fiveElements_increaseKey_min@4fccd51b]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+      </class>
+      <class name="PriorityQueueTest_1_oneElement_extract">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_1_oneElement_extract@2280cdac]" name="initialize" is-config="true" duration-ms="1" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_1_oneElement_extract@2280cdac]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_1_oneElement_extract@2280cdac]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testPQueueInsert()[pri:0, instance:PriorityQueueTest_1_oneElement_extract@2280cdac]" name="testPQueueInsert" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testSize()[pri:0, instance:PriorityQueueTest_1_oneElement_extract@2280cdac]" name="testSize" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIsEmpty()[pri:0, instance:PriorityQueueTest_1_oneElement_extract@2280cdac]" name="testIsEmpty" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+      </class>
+      <class name="PriorityQueueTest_4_empty_insert">
+        <test-method status="PASS" signature="testExtractMax()[pri:0, instance:PriorityQueueTest_4_empty_insert@1517365b]" name="testExtractMax" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_4_empty_insert@1517365b]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_4_empty_insert@1517365b]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testInsert()[pri:0, instance:PriorityQueueTest_4_empty_insert@1517365b]" name="testInsert" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_4_empty_insert@1517365b]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIsEmpty()[pri:0, instance:PriorityQueueTest_4_empty_insert@1517365b]" name="testIsEmpty" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey()[pri:0, instance:PriorityQueueTest_4_empty_insert@1517365b]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testSize()[pri:0, instance:PriorityQueueTest_4_empty_insert@1517365b]" name="testSize" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_4_empty_insert@1517365b]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testMaximum()[pri:0, instance:PriorityQueueTest_4_empty_insert@1517365b]" name="testMaximum" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_4_empty_insert@1517365b]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_4_empty_insert@1517365b]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+      </class>
+      <class name="PriorityQueueTest_3_tenElements_extract">
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_3_tenElements_extract@51016012]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testExtractMax()[pri:0, instance:PriorityQueueTest_3_tenElements_extract@51016012]" name="testExtractMax" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_3_tenElements_extract@51016012]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_3_tenElements_extract@51016012]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_3_tenElements_extract@51016012]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_3_tenElements_extract@51016012]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_3_tenElements_extract@51016012]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_3_tenElements_extract@51016012]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_3_tenElements_extract@51016012]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_3_tenElements_extract@51016012]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_3_tenElements_extract@51016012]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_3_tenElements_extract@51016012]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_3_tenElements_extract@51016012]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_3_tenElements_extract@51016012]" name="testIncreaseKey" duration-ms="1" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[6]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_3_tenElements_extract@51016012]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_3_tenElements_extract@51016012]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_3_tenElements_extract@51016012]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[8]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_3_tenElements_extract@51016012]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testInsert()[pri:0, instance:PriorityQueueTest_3_tenElements_extract@51016012]" name="testInsert" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_3_tenElements_extract@51016012]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testMaximum()[pri:0, instance:PriorityQueueTest_3_tenElements_extract@51016012]" name="testMaximum" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_3_tenElements_extract@51016012]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIsEmpty()[pri:0, instance:PriorityQueueTest_3_tenElements_extract@51016012]" name="testIsEmpty" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testSize()[pri:0, instance:PriorityQueueTest_3_tenElements_extract@51016012]" name="testSize" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_3_tenElements_extract@51016012]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_3_tenElements_extract@51016012]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_3_tenElements_extract@51016012]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[9]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_3_tenElements_extract@51016012]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+      </class>
+      <class name="PriorityQueueTest_12_tenElements_increaseKey_mid">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_12_tenElements_increaseKey_mid@6fdb1f78]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_12_tenElements_increaseKey_mid@6fdb1f78]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_12_tenElements_increaseKey_mid@6fdb1f78]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testExtractMax()[pri:0, instance:PriorityQueueTest_12_tenElements_increaseKey_mid@6fdb1f78]" name="testExtractMax" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_12_tenElements_increaseKey_mid@6fdb1f78]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_12_tenElements_increaseKey_mid@6fdb1f78]" name="initialize" is-config="true" duration-ms="1" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_12_tenElements_increaseKey_mid@6fdb1f78]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[6]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_12_tenElements_increaseKey_mid@6fdb1f78]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_12_tenElements_increaseKey_mid@6fdb1f78]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_12_tenElements_increaseKey_mid@6fdb1f78]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_12_tenElements_increaseKey_mid@6fdb1f78]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_12_tenElements_increaseKey_mid@6fdb1f78]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_12_tenElements_increaseKey_mid@6fdb1f78]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_12_tenElements_increaseKey_mid@6fdb1f78]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_12_tenElements_increaseKey_mid@6fdb1f78]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_12_tenElements_increaseKey_mid@6fdb1f78]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_12_tenElements_increaseKey_mid@6fdb1f78]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_12_tenElements_increaseKey_mid@6fdb1f78]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_12_tenElements_increaseKey_mid@6fdb1f78]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testMaximum()[pri:0, instance:PriorityQueueTest_12_tenElements_increaseKey_mid@6fdb1f78]" name="testMaximum" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_12_tenElements_increaseKey_mid@6fdb1f78]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_12_tenElements_increaseKey_mid@6fdb1f78]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_12_tenElements_increaseKey_mid@6fdb1f78]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[9]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_12_tenElements_increaseKey_mid@6fdb1f78]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[8]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_12_tenElements_increaseKey_mid@6fdb1f78]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testSize()[pri:0, instance:PriorityQueueTest_12_tenElements_increaseKey_mid@6fdb1f78]" name="testSize" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_12_tenElements_increaseKey_mid@6fdb1f78]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIsEmpty()[pri:0, instance:PriorityQueueTest_12_tenElements_increaseKey_mid@6fdb1f78]" name="testIsEmpty" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_12_tenElements_increaseKey_mid@6fdb1f78]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testInsert()[pri:0, instance:PriorityQueueTest_12_tenElements_increaseKey_mid@6fdb1f78]" name="testInsert" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+      </class>
+      <class name="PriorityQueueTest_6_tenElements_insert">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_6_tenElements_insert@60215eee]" name="initialize" is-config="true" duration-ms="1" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_6_tenElements_insert@60215eee]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[9]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_6_tenElements_insert@60215eee]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_6_tenElements_insert@60215eee]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_6_tenElements_insert@60215eee]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_6_tenElements_insert@60215eee]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[6]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_6_tenElements_insert@60215eee]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_6_tenElements_insert@60215eee]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[8]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_6_tenElements_insert@60215eee]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_6_tenElements_insert@60215eee]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_6_tenElements_insert@60215eee]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_6_tenElements_insert@60215eee]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_6_tenElements_insert@60215eee]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_6_tenElements_insert@60215eee]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_6_tenElements_insert@60215eee]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_6_tenElements_insert@60215eee]" name="testIncreaseKey" duration-ms="1" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_6_tenElements_insert@60215eee]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_6_tenElements_insert@60215eee]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_6_tenElements_insert@60215eee]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_6_tenElements_insert@60215eee]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_6_tenElements_insert@60215eee]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testExtractMax()[pri:0, instance:PriorityQueueTest_6_tenElements_insert@60215eee]" name="testExtractMax" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_6_tenElements_insert@60215eee]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_6_tenElements_insert@60215eee]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIsEmpty()[pri:0, instance:PriorityQueueTest_6_tenElements_insert@60215eee]" name="testIsEmpty" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testMaximum()[pri:0, instance:PriorityQueueTest_6_tenElements_insert@60215eee]" name="testMaximum" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_6_tenElements_insert@60215eee]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testSize()[pri:0, instance:PriorityQueueTest_6_tenElements_insert@60215eee]" name="testSize" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_6_tenElements_insert@60215eee]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[11]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testInsert()[pri:0, instance:PriorityQueueTest_6_tenElements_insert@60215eee]" name="testInsert" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_6_tenElements_insert@60215eee]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_6_tenElements_insert@60215eee]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+      </class>
+      <class name="PriorityQueueTest_5_fiveElements_insert">
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_5_fiveElements_insert@27abe2cd]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_5_fiveElements_insert@27abe2cd]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testExtractMax()[pri:0, instance:PriorityQueueTest_5_fiveElements_insert@27abe2cd]" name="testExtractMax" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_5_fiveElements_insert@27abe2cd]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_5_fiveElements_insert@27abe2cd]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_5_fiveElements_insert@27abe2cd]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_5_fiveElements_insert@27abe2cd]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_5_fiveElements_insert@27abe2cd]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testInsert()[pri:0, instance:PriorityQueueTest_5_fiveElements_insert@27abe2cd]" name="testInsert" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_5_fiveElements_insert@27abe2cd]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_5_fiveElements_insert@27abe2cd]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_5_fiveElements_insert@27abe2cd]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_5_fiveElements_insert@27abe2cd]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_5_fiveElements_insert@27abe2cd]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[6]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testSize()[pri:0, instance:PriorityQueueTest_5_fiveElements_insert@27abe2cd]" name="testSize" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_5_fiveElements_insert@27abe2cd]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_5_fiveElements_insert@27abe2cd]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIsEmpty()[pri:0, instance:PriorityQueueTest_5_fiveElements_insert@27abe2cd]" name="testIsEmpty" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_5_fiveElements_insert@27abe2cd]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testMaximum()[pri:0, instance:PriorityQueueTest_5_fiveElements_insert@27abe2cd]" name="testMaximum" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_5_fiveElements_insert@27abe2cd]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_5_fiveElements_insert@27abe2cd]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+      </class>
+      <class name="PriorityQueueTest_2_fiveElements_extract">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_2_fiveElements_extract@3f102e87]" name="initialize" is-config="true" duration-ms="1" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_2_fiveElements_extract@3f102e87]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_2_fiveElements_extract@3f102e87]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testIsEmpty()[pri:0, instance:PriorityQueueTest_2_fiveElements_extract@3f102e87]" name="testIsEmpty" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_2_fiveElements_extract@3f102e87]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_2_fiveElements_extract@3f102e87]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_2_fiveElements_extract@3f102e87]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_2_fiveElements_extract@3f102e87]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testMaximum()[pri:0, instance:PriorityQueueTest_2_fiveElements_extract@3f102e87]" name="testMaximum" duration-ms="1" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testInsert()[pri:0, instance:PriorityQueueTest_2_fiveElements_extract@3f102e87]" name="testInsert" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_2_fiveElements_extract@3f102e87]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_2_fiveElements_extract@3f102e87]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_2_fiveElements_extract@3f102e87]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_2_fiveElements_extract@3f102e87]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_2_fiveElements_extract@3f102e87]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testExtractMax()[pri:0, instance:PriorityQueueTest_2_fiveElements_extract@3f102e87]" name="testExtractMax" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testSize()[pri:0, instance:PriorityQueueTest_2_fiveElements_extract@3f102e87]" name="testSize" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_2_fiveElements_extract@3f102e87]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+      </class>
+      <class name="PriorityQueueTest_7_fiveElements_increaseKey_max">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_7_fiveElements_increaseKey_max@4ca8195f]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testInsert()[pri:0, instance:PriorityQueueTest_7_fiveElements_increaseKey_max@4ca8195f]" name="testInsert" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_7_fiveElements_increaseKey_max@4ca8195f]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_7_fiveElements_increaseKey_max@4ca8195f]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_7_fiveElements_increaseKey_max@4ca8195f]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testExtractMax()[pri:0, instance:PriorityQueueTest_7_fiveElements_increaseKey_max@4ca8195f]" name="testExtractMax" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_7_fiveElements_increaseKey_max@4ca8195f]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_7_fiveElements_increaseKey_max@4ca8195f]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_7_fiveElements_increaseKey_max@4ca8195f]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_7_fiveElements_increaseKey_max@4ca8195f]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_7_fiveElements_increaseKey_max@4ca8195f]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIsEmpty()[pri:0, instance:PriorityQueueTest_7_fiveElements_increaseKey_max@4ca8195f]" name="testIsEmpty" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testMaximum()[pri:0, instance:PriorityQueueTest_7_fiveElements_increaseKey_max@4ca8195f]" name="testMaximum" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_7_fiveElements_increaseKey_max@4ca8195f]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_7_fiveElements_increaseKey_max@4ca8195f]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_7_fiveElements_increaseKey_max@4ca8195f]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_7_fiveElements_increaseKey_max@4ca8195f]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_7_fiveElements_increaseKey_max@4ca8195f]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testSize()[pri:0, instance:PriorityQueueTest_7_fiveElements_increaseKey_max@4ca8195f]" name="testSize" duration-ms="1" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_7_fiveElements_increaseKey_max@4ca8195f]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+      </class>
+      <class name="PriorityQueueTest_10_tenElements_increaseKey_min">
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_10_tenElements_increaseKey_min@5f5a92bb]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_10_tenElements_increaseKey_min@5f5a92bb]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_10_tenElements_increaseKey_min@5f5a92bb]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testExtractMax()[pri:0, instance:PriorityQueueTest_10_tenElements_increaseKey_min@5f5a92bb]" name="testExtractMax" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_10_tenElements_increaseKey_min@5f5a92bb]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_10_tenElements_increaseKey_min@5f5a92bb]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_10_tenElements_increaseKey_min@5f5a92bb]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_10_tenElements_increaseKey_min@5f5a92bb]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[8]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_10_tenElements_increaseKey_min@5f5a92bb]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_10_tenElements_increaseKey_min@5f5a92bb]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_10_tenElements_increaseKey_min@5f5a92bb]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_10_tenElements_increaseKey_min@5f5a92bb]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_10_tenElements_increaseKey_min@5f5a92bb]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_10_tenElements_increaseKey_min@5f5a92bb]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_10_tenElements_increaseKey_min@5f5a92bb]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIsEmpty()[pri:0, instance:PriorityQueueTest_10_tenElements_increaseKey_min@5f5a92bb]" name="testIsEmpty" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testMaximum()[pri:0, instance:PriorityQueueTest_10_tenElements_increaseKey_min@5f5a92bb]" name="testMaximum" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_10_tenElements_increaseKey_min@5f5a92bb]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_10_tenElements_increaseKey_min@5f5a92bb]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_10_tenElements_increaseKey_min@5f5a92bb]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testInsert()[pri:0, instance:PriorityQueueTest_10_tenElements_increaseKey_min@5f5a92bb]" name="testInsert" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_10_tenElements_increaseKey_min@5f5a92bb]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_10_tenElements_increaseKey_min@5f5a92bb]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_10_tenElements_increaseKey_min@5f5a92bb]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_10_tenElements_increaseKey_min@5f5a92bb]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_10_tenElements_increaseKey_min@5f5a92bb]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[9]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_10_tenElements_increaseKey_min@5f5a92bb]" name="initialize" is-config="true" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="initialize()[pri:0, instance:PriorityQueueTest_10_tenElements_increaseKey_min@5f5a92bb]" name="initialize" is-config="true" duration-ms="1" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+        <test-method status="PASS" signature="testIncreaseKey(int)[pri:0, instance:PriorityQueueTest_10_tenElements_increaseKey_min@5f5a92bb]" name="testIncreaseKey" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[6]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testSize()[pri:0, instance:PriorityQueueTest_10_tenElements_increaseKey_min@5f5a92bb]" name="testSize" duration-ms="0" started-at="2017-09-29T16:37:41Z" finished-at="2017-09-29T16:37:41Z">
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>

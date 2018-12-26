@@ -1,0 +1,749 @@
+<html>
+<head>
+<title>TestNG:  Priority Queue Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Priority Queue Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>134/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Sep 30 17:41:56 MDT 2017</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (95 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='PriorityQueueTest_11_fiveElements_increaseKey_mid.testExtractHeapMax()'><b>testExtractHeapMax</b><br>Test class: PriorityQueueTest_11_fiveElements_increaseKey_mid</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_11_fiveElements_increaseKey_mid@27efef64</td></tr>
+<tr>
+<td title='PriorityQueueTest_2_fiveElements_extract.testExtractMax()'><b>testExtractMax</b><br>Test class: PriorityQueueTest_2_fiveElements_extract</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_2_fiveElements_extract@61832929</td></tr>
+<tr>
+<td title='PriorityQueueTest_3_tenElements_extract.testExtractMax()'><b>testExtractMax</b><br>Test class: PriorityQueueTest_3_tenElements_extract</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_3_tenElements_extract@29774679</td></tr>
+<tr>
+<td title='PriorityQueueTest_4_empty_insert.testExtractMax()'><b>testExtractMax</b><br>Test class: PriorityQueueTest_4_empty_insert</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_4_empty_insert@3ffc5af1</td></tr>
+<tr>
+<td title='PriorityQueueTest_5_fiveElements_insert.testExtractMax()'><b>testExtractMax</b><br>Test class: PriorityQueueTest_5_fiveElements_insert</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_5_fiveElements_insert@5e5792a0</td></tr>
+<tr>
+<td title='PriorityQueueTest_6_tenElements_insert.testExtractMax()'><b>testExtractMax</b><br>Test class: PriorityQueueTest_6_tenElements_insert</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_6_tenElements_insert@26653222</td></tr>
+<tr>
+<td title='PriorityQueueTest_7_fiveElements_increaseKey_max.testExtractMax()'><b>testExtractMax</b><br>Test class: PriorityQueueTest_7_fiveElements_increaseKey_max</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_7_fiveElements_increaseKey_max@3532ec19</td></tr>
+<tr>
+<td title='PriorityQueueTest_8_tenElements_increaseKey_max.testExtractMax()'><b>testExtractMax</b><br>Test class: PriorityQueueTest_8_tenElements_increaseKey_max</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_8_tenElements_increaseKey_max@68c4039c</td></tr>
+<tr>
+<td title='PriorityQueueTest_9_fiveElements_increaseKey_min.testExtractMax()'><b>testExtractMax</b><br>Test class: PriorityQueueTest_9_fiveElements_increaseKey_min</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_9_fiveElements_increaseKey_min@ae45eb6</td></tr>
+<tr>
+<td title='PriorityQueueTest_10_tenElements_increaseKey_min.testExtractMax()'><b>testExtractMax</b><br>Test class: PriorityQueueTest_10_tenElements_increaseKey_min</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_10_tenElements_increaseKey_min@59f99ea</td></tr>
+<tr>
+<td title='PriorityQueueTest_12_tenElements_increaseKey_mid.testExtractMax()'><b>testExtractMax</b><br>Test class: PriorityQueueTest_12_tenElements_increaseKey_mid</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_12_tenElements_increaseKey_mid@6f7fd0e6</td></tr>
+<tr>
+<td title='PriorityQueueTest_2_fiveElements_extract.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_2_fiveElements_extract<br>Parameters: 1</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_2_fiveElements_extract@61832929</td></tr>
+<tr>
+<td title='PriorityQueueTest_2_fiveElements_extract.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_2_fiveElements_extract<br>Parameters: 2</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_2_fiveElements_extract@61832929</td></tr>
+<tr>
+<td title='PriorityQueueTest_2_fiveElements_extract.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_2_fiveElements_extract<br>Parameters: 3</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_2_fiveElements_extract@61832929</td></tr>
+<tr>
+<td title='PriorityQueueTest_2_fiveElements_extract.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_2_fiveElements_extract<br>Parameters: 4</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_2_fiveElements_extract@61832929</td></tr>
+<tr>
+<td title='PriorityQueueTest_3_tenElements_extract.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_3_tenElements_extract<br>Parameters: 1</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_3_tenElements_extract@29774679</td></tr>
+<tr>
+<td title='PriorityQueueTest_3_tenElements_extract.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_3_tenElements_extract<br>Parameters: 2</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_3_tenElements_extract@29774679</td></tr>
+<tr>
+<td title='PriorityQueueTest_3_tenElements_extract.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_3_tenElements_extract<br>Parameters: 3</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_3_tenElements_extract@29774679</td></tr>
+<tr>
+<td title='PriorityQueueTest_3_tenElements_extract.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_3_tenElements_extract<br>Parameters: 4</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_3_tenElements_extract@29774679</td></tr>
+<tr>
+<td title='PriorityQueueTest_3_tenElements_extract.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_3_tenElements_extract<br>Parameters: 5</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_3_tenElements_extract@29774679</td></tr>
+<tr>
+<td title='PriorityQueueTest_3_tenElements_extract.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_3_tenElements_extract<br>Parameters: 6</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_3_tenElements_extract@29774679</td></tr>
+<tr>
+<td title='PriorityQueueTest_3_tenElements_extract.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_3_tenElements_extract<br>Parameters: 7</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_3_tenElements_extract@29774679</td></tr>
+<tr>
+<td title='PriorityQueueTest_3_tenElements_extract.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_3_tenElements_extract<br>Parameters: 8</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_3_tenElements_extract@29774679</td></tr>
+<tr>
+<td title='PriorityQueueTest_3_tenElements_extract.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_3_tenElements_extract<br>Parameters: 9</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_3_tenElements_extract@29774679</td></tr>
+<tr>
+<td title='PriorityQueueTest_4_empty_insert.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_4_empty_insert</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_4_empty_insert@3ffc5af1</td></tr>
+<tr>
+<td title='PriorityQueueTest_5_fiveElements_insert.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_5_fiveElements_insert<br>Parameters: 1</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_5_fiveElements_insert@5e5792a0</td></tr>
+<tr>
+<td title='PriorityQueueTest_5_fiveElements_insert.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_5_fiveElements_insert<br>Parameters: 2</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_5_fiveElements_insert@5e5792a0</td></tr>
+<tr>
+<td title='PriorityQueueTest_5_fiveElements_insert.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_5_fiveElements_insert<br>Parameters: 3</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_5_fiveElements_insert@5e5792a0</td></tr>
+<tr>
+<td title='PriorityQueueTest_5_fiveElements_insert.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_5_fiveElements_insert<br>Parameters: 4</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_5_fiveElements_insert@5e5792a0</td></tr>
+<tr>
+<td title='PriorityQueueTest_5_fiveElements_insert.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_5_fiveElements_insert<br>Parameters: 5</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_5_fiveElements_insert@5e5792a0</td></tr>
+<tr>
+<td title='PriorityQueueTest_5_fiveElements_insert.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_5_fiveElements_insert<br>Parameters: 6</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_5_fiveElements_insert@5e5792a0</td></tr>
+<tr>
+<td title='PriorityQueueTest_6_tenElements_insert.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_6_tenElements_insert<br>Parameters: 1</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_6_tenElements_insert@26653222</td></tr>
+<tr>
+<td title='PriorityQueueTest_6_tenElements_insert.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_6_tenElements_insert<br>Parameters: 2</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_6_tenElements_insert@26653222</td></tr>
+<tr>
+<td title='PriorityQueueTest_6_tenElements_insert.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_6_tenElements_insert<br>Parameters: 3</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_6_tenElements_insert@26653222</td></tr>
+<tr>
+<td title='PriorityQueueTest_6_tenElements_insert.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_6_tenElements_insert<br>Parameters: 4</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_6_tenElements_insert@26653222</td></tr>
+<tr>
+<td title='PriorityQueueTest_6_tenElements_insert.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_6_tenElements_insert<br>Parameters: 5</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_6_tenElements_insert@26653222</td></tr>
+<tr>
+<td title='PriorityQueueTest_6_tenElements_insert.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_6_tenElements_insert<br>Parameters: 6</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_6_tenElements_insert@26653222</td></tr>
+<tr>
+<td title='PriorityQueueTest_6_tenElements_insert.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_6_tenElements_insert<br>Parameters: 7</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_6_tenElements_insert@26653222</td></tr>
+<tr>
+<td title='PriorityQueueTest_6_tenElements_insert.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_6_tenElements_insert<br>Parameters: 8</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_6_tenElements_insert@26653222</td></tr>
+<tr>
+<td title='PriorityQueueTest_6_tenElements_insert.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_6_tenElements_insert<br>Parameters: 9</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_6_tenElements_insert@26653222</td></tr>
+<tr>
+<td title='PriorityQueueTest_6_tenElements_insert.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_6_tenElements_insert<br>Parameters: 10</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_6_tenElements_insert@26653222</td></tr>
+<tr>
+<td title='PriorityQueueTest_6_tenElements_insert.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_6_tenElements_insert<br>Parameters: 11</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_6_tenElements_insert@26653222</td></tr>
+<tr>
+<td title='PriorityQueueTest_7_fiveElements_increaseKey_max.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_7_fiveElements_increaseKey_max<br>Parameters: 1</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_7_fiveElements_increaseKey_max@3532ec19</td></tr>
+<tr>
+<td title='PriorityQueueTest_7_fiveElements_increaseKey_max.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_7_fiveElements_increaseKey_max<br>Parameters: 2</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_7_fiveElements_increaseKey_max@3532ec19</td></tr>
+<tr>
+<td title='PriorityQueueTest_7_fiveElements_increaseKey_max.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_7_fiveElements_increaseKey_max<br>Parameters: 3</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_7_fiveElements_increaseKey_max@3532ec19</td></tr>
+<tr>
+<td title='PriorityQueueTest_7_fiveElements_increaseKey_max.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_7_fiveElements_increaseKey_max<br>Parameters: 4</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_7_fiveElements_increaseKey_max@3532ec19</td></tr>
+<tr>
+<td title='PriorityQueueTest_7_fiveElements_increaseKey_max.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_7_fiveElements_increaseKey_max<br>Parameters: 5</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_7_fiveElements_increaseKey_max@3532ec19</td></tr>
+<tr>
+<td title='PriorityQueueTest_8_tenElements_increaseKey_max.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_8_tenElements_increaseKey_max<br>Parameters: 1</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_8_tenElements_increaseKey_max@68c4039c</td></tr>
+<tr>
+<td title='PriorityQueueTest_8_tenElements_increaseKey_max.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_8_tenElements_increaseKey_max<br>Parameters: 2</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_8_tenElements_increaseKey_max@68c4039c</td></tr>
+<tr>
+<td title='PriorityQueueTest_8_tenElements_increaseKey_max.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_8_tenElements_increaseKey_max<br>Parameters: 3</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_8_tenElements_increaseKey_max@68c4039c</td></tr>
+<tr>
+<td title='PriorityQueueTest_8_tenElements_increaseKey_max.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_8_tenElements_increaseKey_max<br>Parameters: 4</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_8_tenElements_increaseKey_max@68c4039c</td></tr>
+<tr>
+<td title='PriorityQueueTest_8_tenElements_increaseKey_max.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_8_tenElements_increaseKey_max<br>Parameters: 5</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_8_tenElements_increaseKey_max@68c4039c</td></tr>
+<tr>
+<td title='PriorityQueueTest_8_tenElements_increaseKey_max.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_8_tenElements_increaseKey_max<br>Parameters: 6</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_8_tenElements_increaseKey_max@68c4039c</td></tr>
+<tr>
+<td title='PriorityQueueTest_8_tenElements_increaseKey_max.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_8_tenElements_increaseKey_max<br>Parameters: 7</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_8_tenElements_increaseKey_max@68c4039c</td></tr>
+<tr>
+<td title='PriorityQueueTest_8_tenElements_increaseKey_max.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_8_tenElements_increaseKey_max<br>Parameters: 8</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_8_tenElements_increaseKey_max@68c4039c</td></tr>
+<tr>
+<td title='PriorityQueueTest_8_tenElements_increaseKey_max.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_8_tenElements_increaseKey_max<br>Parameters: 9</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_8_tenElements_increaseKey_max@68c4039c</td></tr>
+<tr>
+<td title='PriorityQueueTest_8_tenElements_increaseKey_max.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_8_tenElements_increaseKey_max<br>Parameters: 10</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_8_tenElements_increaseKey_max@68c4039c</td></tr>
+<tr>
+<td title='PriorityQueueTest_9_fiveElements_increaseKey_min.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_9_fiveElements_increaseKey_min<br>Parameters: 1</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_9_fiveElements_increaseKey_min@ae45eb6</td></tr>
+<tr>
+<td title='PriorityQueueTest_9_fiveElements_increaseKey_min.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_9_fiveElements_increaseKey_min<br>Parameters: 2</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_9_fiveElements_increaseKey_min@ae45eb6</td></tr>
+<tr>
+<td title='PriorityQueueTest_9_fiveElements_increaseKey_min.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_9_fiveElements_increaseKey_min<br>Parameters: 3</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_9_fiveElements_increaseKey_min@ae45eb6</td></tr>
+<tr>
+<td title='PriorityQueueTest_9_fiveElements_increaseKey_min.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_9_fiveElements_increaseKey_min<br>Parameters: 4</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_9_fiveElements_increaseKey_min@ae45eb6</td></tr>
+<tr>
+<td title='PriorityQueueTest_9_fiveElements_increaseKey_min.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_9_fiveElements_increaseKey_min<br>Parameters: 5</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_9_fiveElements_increaseKey_min@ae45eb6</td></tr>
+<tr>
+<td title='PriorityQueueTest_10_tenElements_increaseKey_min.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_10_tenElements_increaseKey_min<br>Parameters: 1</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_10_tenElements_increaseKey_min@59f99ea</td></tr>
+<tr>
+<td title='PriorityQueueTest_10_tenElements_increaseKey_min.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_10_tenElements_increaseKey_min<br>Parameters: 2</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_10_tenElements_increaseKey_min@59f99ea</td></tr>
+<tr>
+<td title='PriorityQueueTest_10_tenElements_increaseKey_min.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_10_tenElements_increaseKey_min<br>Parameters: 3</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_10_tenElements_increaseKey_min@59f99ea</td></tr>
+<tr>
+<td title='PriorityQueueTest_10_tenElements_increaseKey_min.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_10_tenElements_increaseKey_min<br>Parameters: 4</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_10_tenElements_increaseKey_min@59f99ea</td></tr>
+<tr>
+<td title='PriorityQueueTest_10_tenElements_increaseKey_min.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_10_tenElements_increaseKey_min<br>Parameters: 5</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_10_tenElements_increaseKey_min@59f99ea</td></tr>
+<tr>
+<td title='PriorityQueueTest_10_tenElements_increaseKey_min.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_10_tenElements_increaseKey_min<br>Parameters: 6</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_10_tenElements_increaseKey_min@59f99ea</td></tr>
+<tr>
+<td title='PriorityQueueTest_10_tenElements_increaseKey_min.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_10_tenElements_increaseKey_min<br>Parameters: 7</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_10_tenElements_increaseKey_min@59f99ea</td></tr>
+<tr>
+<td title='PriorityQueueTest_10_tenElements_increaseKey_min.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_10_tenElements_increaseKey_min<br>Parameters: 8</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_10_tenElements_increaseKey_min@59f99ea</td></tr>
+<tr>
+<td title='PriorityQueueTest_10_tenElements_increaseKey_min.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_10_tenElements_increaseKey_min<br>Parameters: 9</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_10_tenElements_increaseKey_min@59f99ea</td></tr>
+<tr>
+<td title='PriorityQueueTest_10_tenElements_increaseKey_min.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_10_tenElements_increaseKey_min<br>Parameters: 10</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_10_tenElements_increaseKey_min@59f99ea</td></tr>
+<tr>
+<td title='PriorityQueueTest_11_fiveElements_increaseKey_mid.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_11_fiveElements_increaseKey_mid<br>Parameters: 1</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_11_fiveElements_increaseKey_mid@27efef64</td></tr>
+<tr>
+<td title='PriorityQueueTest_11_fiveElements_increaseKey_mid.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_11_fiveElements_increaseKey_mid<br>Parameters: 2</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_11_fiveElements_increaseKey_mid@27efef64</td></tr>
+<tr>
+<td title='PriorityQueueTest_11_fiveElements_increaseKey_mid.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_11_fiveElements_increaseKey_mid<br>Parameters: 3</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_11_fiveElements_increaseKey_mid@27efef64</td></tr>
+<tr>
+<td title='PriorityQueueTest_11_fiveElements_increaseKey_mid.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_11_fiveElements_increaseKey_mid<br>Parameters: 4</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_11_fiveElements_increaseKey_mid@27efef64</td></tr>
+<tr>
+<td title='PriorityQueueTest_11_fiveElements_increaseKey_mid.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_11_fiveElements_increaseKey_mid<br>Parameters: 5</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_11_fiveElements_increaseKey_mid@27efef64</td></tr>
+<tr>
+<td title='PriorityQueueTest_12_tenElements_increaseKey_mid.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_12_tenElements_increaseKey_mid<br>Parameters: 1</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_12_tenElements_increaseKey_mid@6f7fd0e6</td></tr>
+<tr>
+<td title='PriorityQueueTest_12_tenElements_increaseKey_mid.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_12_tenElements_increaseKey_mid<br>Parameters: 2</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_12_tenElements_increaseKey_mid@6f7fd0e6</td></tr>
+<tr>
+<td title='PriorityQueueTest_12_tenElements_increaseKey_mid.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_12_tenElements_increaseKey_mid<br>Parameters: 3</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_12_tenElements_increaseKey_mid@6f7fd0e6</td></tr>
+<tr>
+<td title='PriorityQueueTest_12_tenElements_increaseKey_mid.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_12_tenElements_increaseKey_mid<br>Parameters: 4</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_12_tenElements_increaseKey_mid@6f7fd0e6</td></tr>
+<tr>
+<td title='PriorityQueueTest_12_tenElements_increaseKey_mid.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_12_tenElements_increaseKey_mid<br>Parameters: 5</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_12_tenElements_increaseKey_mid@6f7fd0e6</td></tr>
+<tr>
+<td title='PriorityQueueTest_12_tenElements_increaseKey_mid.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_12_tenElements_increaseKey_mid<br>Parameters: 6</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_12_tenElements_increaseKey_mid@6f7fd0e6</td></tr>
+<tr>
+<td title='PriorityQueueTest_12_tenElements_increaseKey_mid.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_12_tenElements_increaseKey_mid<br>Parameters: 7</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_12_tenElements_increaseKey_mid@6f7fd0e6</td></tr>
+<tr>
+<td title='PriorityQueueTest_12_tenElements_increaseKey_mid.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_12_tenElements_increaseKey_mid<br>Parameters: 8</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_12_tenElements_increaseKey_mid@6f7fd0e6</td></tr>
+<tr>
+<td title='PriorityQueueTest_12_tenElements_increaseKey_mid.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_12_tenElements_increaseKey_mid<br>Parameters: 9</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_12_tenElements_increaseKey_mid@6f7fd0e6</td></tr>
+<tr>
+<td title='PriorityQueueTest_12_tenElements_increaseKey_mid.testIncreaseKey()'><b>testIncreaseKey</b><br>Test class: PriorityQueueTest_12_tenElements_increaseKey_mid<br>Parameters: 10</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_12_tenElements_increaseKey_mid@6f7fd0e6</td></tr>
+<tr>
+<td title='PriorityQueueTest_2_fiveElements_extract.testInsert()'><b>testInsert</b><br>Test class: PriorityQueueTest_2_fiveElements_extract</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_2_fiveElements_extract@61832929</td></tr>
+<tr>
+<td title='PriorityQueueTest_3_tenElements_extract.testInsert()'><b>testInsert</b><br>Test class: PriorityQueueTest_3_tenElements_extract</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_3_tenElements_extract@29774679</td></tr>
+<tr>
+<td title='PriorityQueueTest_4_empty_insert.testInsert()'><b>testInsert</b><br>Test class: PriorityQueueTest_4_empty_insert</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_4_empty_insert@3ffc5af1</td></tr>
+<tr>
+<td title='PriorityQueueTest_5_fiveElements_insert.testInsert()'><b>testInsert</b><br>Test class: PriorityQueueTest_5_fiveElements_insert</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_5_fiveElements_insert@5e5792a0</td></tr>
+<tr>
+<td title='PriorityQueueTest_6_tenElements_insert.testInsert()'><b>testInsert</b><br>Test class: PriorityQueueTest_6_tenElements_insert</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_6_tenElements_insert@26653222</td></tr>
+<tr>
+<td title='PriorityQueueTest_7_fiveElements_increaseKey_max.testInsert()'><b>testInsert</b><br>Test class: PriorityQueueTest_7_fiveElements_increaseKey_max</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_7_fiveElements_increaseKey_max@3532ec19</td></tr>
+<tr>
+<td title='PriorityQueueTest_8_tenElements_increaseKey_max.testInsert()'><b>testInsert</b><br>Test class: PriorityQueueTest_8_tenElements_increaseKey_max</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_8_tenElements_increaseKey_max@68c4039c</td></tr>
+<tr>
+<td title='PriorityQueueTest_9_fiveElements_increaseKey_min.testInsert()'><b>testInsert</b><br>Test class: PriorityQueueTest_9_fiveElements_increaseKey_min</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_9_fiveElements_increaseKey_min@ae45eb6</td></tr>
+<tr>
+<td title='PriorityQueueTest_10_tenElements_increaseKey_min.testInsert()'><b>testInsert</b><br>Test class: PriorityQueueTest_10_tenElements_increaseKey_min</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_10_tenElements_increaseKey_min@59f99ea</td></tr>
+<tr>
+<td title='PriorityQueueTest_11_fiveElements_increaseKey_mid.testInsert()'><b>testInsert</b><br>Test class: PriorityQueueTest_11_fiveElements_increaseKey_mid</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_11_fiveElements_increaseKey_mid@27efef64</td></tr>
+<tr>
+<td title='PriorityQueueTest_12_tenElements_increaseKey_mid.testInsert()'><b>testInsert</b><br>Test class: PriorityQueueTest_12_tenElements_increaseKey_mid</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_12_tenElements_increaseKey_mid@6f7fd0e6</td></tr>
+<tr>
+<td title='PriorityQueueTest_1_oneElement_extract.testIsEmpty()'><b>testIsEmpty</b><br>Test class: PriorityQueueTest_1_oneElement_extract</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_1_oneElement_extract@5b275dab</td></tr>
+<tr>
+<td title='PriorityQueueTest_2_fiveElements_extract.testIsEmpty()'><b>testIsEmpty</b><br>Test class: PriorityQueueTest_2_fiveElements_extract</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_2_fiveElements_extract@61832929</td></tr>
+<tr>
+<td title='PriorityQueueTest_3_tenElements_extract.testIsEmpty()'><b>testIsEmpty</b><br>Test class: PriorityQueueTest_3_tenElements_extract</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_3_tenElements_extract@29774679</td></tr>
+<tr>
+<td title='PriorityQueueTest_4_empty_insert.testIsEmpty()'><b>testIsEmpty</b><br>Test class: PriorityQueueTest_4_empty_insert</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_4_empty_insert@3ffc5af1</td></tr>
+<tr>
+<td title='PriorityQueueTest_5_fiveElements_insert.testIsEmpty()'><b>testIsEmpty</b><br>Test class: PriorityQueueTest_5_fiveElements_insert</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_5_fiveElements_insert@5e5792a0</td></tr>
+<tr>
+<td title='PriorityQueueTest_6_tenElements_insert.testIsEmpty()'><b>testIsEmpty</b><br>Test class: PriorityQueueTest_6_tenElements_insert</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_6_tenElements_insert@26653222</td></tr>
+<tr>
+<td title='PriorityQueueTest_7_fiveElements_increaseKey_max.testIsEmpty()'><b>testIsEmpty</b><br>Test class: PriorityQueueTest_7_fiveElements_increaseKey_max</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_7_fiveElements_increaseKey_max@3532ec19</td></tr>
+<tr>
+<td title='PriorityQueueTest_8_tenElements_increaseKey_max.testIsEmpty()'><b>testIsEmpty</b><br>Test class: PriorityQueueTest_8_tenElements_increaseKey_max</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_8_tenElements_increaseKey_max@68c4039c</td></tr>
+<tr>
+<td title='PriorityQueueTest_9_fiveElements_increaseKey_min.testIsEmpty()'><b>testIsEmpty</b><br>Test class: PriorityQueueTest_9_fiveElements_increaseKey_min</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_9_fiveElements_increaseKey_min@ae45eb6</td></tr>
+<tr>
+<td title='PriorityQueueTest_10_tenElements_increaseKey_min.testIsEmpty()'><b>testIsEmpty</b><br>Test class: PriorityQueueTest_10_tenElements_increaseKey_min</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_10_tenElements_increaseKey_min@59f99ea</td></tr>
+<tr>
+<td title='PriorityQueueTest_11_fiveElements_increaseKey_mid.testIsEmpty()'><b>testIsEmpty</b><br>Test class: PriorityQueueTest_11_fiveElements_increaseKey_mid</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_11_fiveElements_increaseKey_mid@27efef64</td></tr>
+<tr>
+<td title='PriorityQueueTest_12_tenElements_increaseKey_mid.testIsEmpty()'><b>testIsEmpty</b><br>Test class: PriorityQueueTest_12_tenElements_increaseKey_mid</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_12_tenElements_increaseKey_mid@6f7fd0e6</td></tr>
+<tr>
+<td title='PriorityQueueTest_2_fiveElements_extract.testMaximum()'><b>testMaximum</b><br>Test class: PriorityQueueTest_2_fiveElements_extract</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_2_fiveElements_extract@61832929</td></tr>
+<tr>
+<td title='PriorityQueueTest_3_tenElements_extract.testMaximum()'><b>testMaximum</b><br>Test class: PriorityQueueTest_3_tenElements_extract</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_3_tenElements_extract@29774679</td></tr>
+<tr>
+<td title='PriorityQueueTest_4_empty_insert.testMaximum()'><b>testMaximum</b><br>Test class: PriorityQueueTest_4_empty_insert</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_4_empty_insert@3ffc5af1</td></tr>
+<tr>
+<td title='PriorityQueueTest_5_fiveElements_insert.testMaximum()'><b>testMaximum</b><br>Test class: PriorityQueueTest_5_fiveElements_insert</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_5_fiveElements_insert@5e5792a0</td></tr>
+<tr>
+<td title='PriorityQueueTest_6_tenElements_insert.testMaximum()'><b>testMaximum</b><br>Test class: PriorityQueueTest_6_tenElements_insert</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_6_tenElements_insert@26653222</td></tr>
+<tr>
+<td title='PriorityQueueTest_7_fiveElements_increaseKey_max.testMaximum()'><b>testMaximum</b><br>Test class: PriorityQueueTest_7_fiveElements_increaseKey_max</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_7_fiveElements_increaseKey_max@3532ec19</td></tr>
+<tr>
+<td title='PriorityQueueTest_8_tenElements_increaseKey_max.testMaximum()'><b>testMaximum</b><br>Test class: PriorityQueueTest_8_tenElements_increaseKey_max</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_8_tenElements_increaseKey_max@68c4039c</td></tr>
+<tr>
+<td title='PriorityQueueTest_9_fiveElements_increaseKey_min.testMaximum()'><b>testMaximum</b><br>Test class: PriorityQueueTest_9_fiveElements_increaseKey_min</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_9_fiveElements_increaseKey_min@ae45eb6</td></tr>
+<tr>
+<td title='PriorityQueueTest_10_tenElements_increaseKey_min.testMaximum()'><b>testMaximum</b><br>Test class: PriorityQueueTest_10_tenElements_increaseKey_min</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_10_tenElements_increaseKey_min@59f99ea</td></tr>
+<tr>
+<td title='PriorityQueueTest_11_fiveElements_increaseKey_mid.testMaximum()'><b>testMaximum</b><br>Test class: PriorityQueueTest_11_fiveElements_increaseKey_mid</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_11_fiveElements_increaseKey_mid@27efef64</td></tr>
+<tr>
+<td title='PriorityQueueTest_12_tenElements_increaseKey_mid.testMaximum()'><b>testMaximum</b><br>Test class: PriorityQueueTest_12_tenElements_increaseKey_mid</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_12_tenElements_increaseKey_mid@6f7fd0e6</td></tr>
+<tr>
+<td title='PriorityQueueTest_1_oneElement_extract.testPQueueInsert()'><b>testPQueueInsert</b><br>Test class: PriorityQueueTest_1_oneElement_extract</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_1_oneElement_extract@5b275dab</td></tr>
+<tr>
+<td title='PriorityQueueTest_1_oneElement_extract.testSize()'><b>testSize</b><br>Test class: PriorityQueueTest_1_oneElement_extract</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_1_oneElement_extract@5b275dab</td></tr>
+<tr>
+<td title='PriorityQueueTest_2_fiveElements_extract.testSize()'><b>testSize</b><br>Test class: PriorityQueueTest_2_fiveElements_extract</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_2_fiveElements_extract@61832929</td></tr>
+<tr>
+<td title='PriorityQueueTest_3_tenElements_extract.testSize()'><b>testSize</b><br>Test class: PriorityQueueTest_3_tenElements_extract</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_3_tenElements_extract@29774679</td></tr>
+<tr>
+<td title='PriorityQueueTest_4_empty_insert.testSize()'><b>testSize</b><br>Test class: PriorityQueueTest_4_empty_insert</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_4_empty_insert@3ffc5af1</td></tr>
+<tr>
+<td title='PriorityQueueTest_5_fiveElements_insert.testSize()'><b>testSize</b><br>Test class: PriorityQueueTest_5_fiveElements_insert</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_5_fiveElements_insert@5e5792a0</td></tr>
+<tr>
+<td title='PriorityQueueTest_6_tenElements_insert.testSize()'><b>testSize</b><br>Test class: PriorityQueueTest_6_tenElements_insert</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_6_tenElements_insert@26653222</td></tr>
+<tr>
+<td title='PriorityQueueTest_7_fiveElements_increaseKey_max.testSize()'><b>testSize</b><br>Test class: PriorityQueueTest_7_fiveElements_increaseKey_max</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_7_fiveElements_increaseKey_max@3532ec19</td></tr>
+<tr>
+<td title='PriorityQueueTest_8_tenElements_increaseKey_max.testSize()'><b>testSize</b><br>Test class: PriorityQueueTest_8_tenElements_increaseKey_max</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_8_tenElements_increaseKey_max@68c4039c</td></tr>
+<tr>
+<td title='PriorityQueueTest_9_fiveElements_increaseKey_min.testSize()'><b>testSize</b><br>Test class: PriorityQueueTest_9_fiveElements_increaseKey_min</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_9_fiveElements_increaseKey_min@ae45eb6</td></tr>
+<tr>
+<td title='PriorityQueueTest_10_tenElements_increaseKey_min.testSize()'><b>testSize</b><br>Test class: PriorityQueueTest_10_tenElements_increaseKey_min</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_10_tenElements_increaseKey_min@59f99ea</td></tr>
+<tr>
+<td title='PriorityQueueTest_11_fiveElements_increaseKey_mid.testSize()'><b>testSize</b><br>Test class: PriorityQueueTest_11_fiveElements_increaseKey_mid</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_11_fiveElements_increaseKey_mid@27efef64</td></tr>
+<tr>
+<td title='PriorityQueueTest_12_tenElements_increaseKey_mid.testSize()'><b>testSize</b><br>Test class: PriorityQueueTest_12_tenElements_increaseKey_mid</td>
+<td></td>
+<td>0</td>
+<td>PriorityQueueTest_12_tenElements_increaseKey_mid@6f7fd0e6</td></tr>
+</table><p>
+</body>
+</html>

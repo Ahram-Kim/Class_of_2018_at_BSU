@@ -1,0 +1,20 @@
+#!/bin/sh
+# CS 321 - Priority Queue Testing
+
+# add TestNG library to Java build path 
+export CLASSPATH="$CLASSPATH:/usr/local/testng/plugins/jcommander-1.12.jar:/usr/local/testng/plugins/testng-6.3.1.jar"
+
+# compile Java class files
+javac *.java
+
+# run the TestNG tests, save in file called output
+java org.testng.TestNG p-queue.xml > PQ_output
+
+# system tests with given probability
+java CPUScheduler 6 5 4 200 c > CPUScheduler_output
+
+# run again to compare results 
+java Test 6 5 4 200 CPUScheduler_output > Test_output
+
+# check if outputs are different 
+c > diff CPUScheduler_output Test_output > diff_output

@@ -1,0 +1,119 @@
+Please do the following before you test your CPUScheduler output
+
+1. Make a directory for this assignment.
+
+2. Implement all your java programs in this directory.
+
+3. Compile all your java files:
+ 
+   javac *.java
+
+4. Copy all files in the zip file to this directory. 
+    
+5. To run the test program, execute the following on the command line
+
+   ./run_test probability
+
+   where the argument "probability" can be any value between 0 and 1 (inclusive)
+
+6. After you run the test, if nothing prints out on the screen, 
+   then the test did not detect any error from your CPUScheduler output.
+   
+   
+   
+********************
+* P2 - Priority Queue
+* CS321-004
+* September 29, 2017
+* Ahram Kim
+********************
+
+OVERVIEW:
+
+ This program is to run a program that simulates a CPU variable-priority,
+ round robin scheduling routine.
+
+
+INCLUDED FILES:
+
+ * MaxHeap.java - represents a Max-Heap ADT
+ * PQueue.java - represents a priority queue ADT
+ * Process.java - models a CPU process
+ * ProcessGenerator.java - models process arriving at a CPU
+ 
+ * Averager.java - Tracks number of processes executed
+ * CPUScheduler.java - the main class to test the cache project.
+ * README - this file
+
+
+COMPILING AND RUNNING:
+
+	# compile Java class files
+	$ javac *.java
+	
+	# run the TestNG tests, save in file called output
+	$ java org.testng.TestNG p-queue.xml > PQ_output
+	
+	# system tests with given probability
+	$ java CPUScheduler 6 5 4 200 $1 > CPUScheduler_output
+	
+	# run again to compare results 
+	$ java Test 6 5 4 200 CPUScheduler_output > Test_output
+	
+	# check if outputs are different 
+	$ diff CPUScheduler_output Test_output > diff_output
+
+
+PROGRAM DESIGN AND IMPORTANT CONCEPTS:
+
+ I implement a Max Heap abstract data type using an array of HeapNode which is provided.
+ I used generics so it can hold objects of any type but maintains type-safety.
+ I got all of the class variables and methods shown in the UML diagram. 
+ I had two constructors: the first array is a list of generic objects that should be added to 
+ the heap, and the second one is list of key valus assiciated with each object.
+ 
+ I implement a Priority queue ADT using an instance Max Heap class.
+ I used generics so it can hole objects of any type but maintains type-safety.
+ I used all of the class variables and methods shown in the UML diagram.
+ I had two consturctors. One constructor is a default constructor which is a list of generic
+ objects that should be added to the priority queue, and the second one is list of key
+ values associated with each object.
+ 
+ I implement a class called Process, which models a CPU process.
+ I got all of the class variables and methods shown in the UML diagram. 
+ The constructor have four integer parameters: the arrival time, the priority level, 
+ the time to finish, and the maximum priority level.
+ 
+ Lastly, I implement a class called ProcessGenerator, which models processes arriving at a CPU.
+ I used all of the class variables and methods shown in the UML diagram. 
+ The getNewProcess have three integer parameters: the current time, the maximum
+ process time, and the maximum priority level. 
+
+
+TESTING:
+
+ I could use the testNG to test my coding. They talked to me which failure 
+ and skip they have in my coding. However, they didn't show me what my code is 
+ exactly wrong. So I used the debug with testNG. When I was debugging, it give 
+ me a guide which statement in my coding make an error. 
+ And, finally, I got zero failure and zero skip.
+
+
+DISCUSSION:
+ 
+ There are some of Pseudocode for the important methods for heapmax project.
+ It made me understand and make a code more easily for the MaxHeap class.
+ I took most of time to finish the MaxHeap class.
+ Pqueue doesn't have much code, because most of the funcationality 
+ should be provided by their maxHeap instance variable.
+ Process doesn't have lots of things to do because all of the increment and reduce
+ methods should increment or decrement by 1.
+ Even if I took lots of time to finish this project, it was great working than cache.
+ 
+EXTRA CREDIT:
+
+N/A
+
+----------------------------------------------------------------------------
+
+   
