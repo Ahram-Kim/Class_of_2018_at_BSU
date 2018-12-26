@@ -1,0 +1,105 @@
+ShuffleDP ab bb bbab
+1  1  1
+0  0  1
+0  0  1
+yes
+Number of table references: 6
+
+ShuffleRec ab bb bbab
+yes
+Number of recursive calls: 5
+
+----------------------------------
+
+ShuffleDP bb ab bbab
+1  0  0
+1  0  0
+1  1  1
+yes
+Number of table references: 7
+
+ShuffleRec bb ab bbab
+yes
+Number of recursive calls: 6
+
+----------------------------------
+
+ShuffleDP aaaa bbbb aaaabbbb
+1  0  0  0  0  
+1  0  0  0  0  
+1  0  0  0  0  
+1  0  0  0  0  
+1  1  1  1  1  
+yes
+Number of table references: 20
+
+ShuffleRec aaaa bbbb aaaabbbb
+yes
+Number of recursive calls: 9
+
+----------------------------------
+
+ShuffleDP aaaa bbbb bbbbaaaa
+1  1  1  1  1  
+0  0  0  0  1  
+0  0  0  0  1  
+0  0  0  0  1  
+0  0  0  0  1  
+yes
+Number of table references: 20
+
+ShuffleRec aaaa bbbb bbbbaaaa
+yes
+Number of recursive calls: 9
+
+----------------------------------
+
+ShuffleDP aaaa bbbb abababab
+1  0  0  0  0  
+1  1  0  0  0  
+0  1  1  0  0  
+0  0  1  1  0  
+0  0  0  1  1  
+yes
+Number of table references: 20
+
+ShuffleRec aaaa bbbb abababab
+yes
+Number of recursive calls: 9
+
+----------------------------------
+
+[jhyeh@onyx sol]$ ShuffleDP aaaa aaaa baaaaaaa
+1  0  0  0  0
+0  0  0  0  0
+0  0  0  0  0
+0  0  0  0  0
+0  0  0  0  0
+no
+Number of table references: 38
+
+[jhyeh@onyx sol]$ ShuffleRec aaaa aaaa baaaaaaa
+no
+Number of recursive calls: 181
+
+
+***************************************************************
+***************************************************************
+
+[jhyeh@onyx sol]$ ./KnapsackDP 17 50 w.txt v.txt
+
+Optimal solution:
+{1,2,3,4,5,8,10,11,12,14,15}
+Total Weight: 50
+Optimal Value: 932
+Number of table references: 1572
+
+-----------------------------------------
+
+[jhyeh@onyx sol]$ ./KnapsackRec 17 50 w.txt v.txt
+Optimal solution:
+{1,2,3,4,5,8,10,11,12,14,15}
+Total Weight: 50
+Optimal Value: 932
+Number of recursive calls: 52457
+

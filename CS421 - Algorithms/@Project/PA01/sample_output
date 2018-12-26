@@ -1,0 +1,73 @@
+The follwing are the sample outputs:
+
+java KnightTour <0/1/2> <n> <x> <y>
+
+[jhyeh@onyx sol]$ java KnightTour 0 6 0 0
+The total number of moves is 5422
+ 1 28 33 20  3 26
+34 19  2 27  8 13
+29 32 21 12 25  4
+18 35 30  7 14  9
+31 22 11 16  5 24
+36 17  6 23 10 15
+
+[jhyeh@onyx sol]$ java KnightTour 1 6 0 0
+The total number of moves is 47
+ 1 22  9 26  3 24
+10 35  2 23 16 27
+21  8 31 36 25  4
+32 11 34 17 28 15
+ 7 20 13 30  5 18
+12 33  6 19 14 29
+
+[jhyeh@onyx sol]$ java KnightTour 2 6 0 0
+The total number of moves is 36
+ 1 32  9 18  3 34 
+10 19  2 33 28 17 
+31  8 29 16 35  4 
+20 11 36 27 24 15 
+ 7 30 13 22  5 26 
+12 21  6 25 14 23 
+
+**************************************************************
+
+[jhyeh@onyx sol]$ java KnightTour 0 6 1 1
+The total number of moves is 2254
+25 32 21  2 23  8
+20  1 24  9 14  3
+33 26 31 22  7 10
+30 19 28 13  4 15
+27 34 17  6 11 36
+18 29 12 35 16  5
+
+[jhyeh@onyx sol]$ java KnightTour 1 6 1 1
+The total number of moves is 1529
+25 22 13  2 35 32
+12  1 24 33 14  3
+23 26 21 36 31 34
+ 8 11 30 17  4 15
+27 20  9  6 29 18
+10  7 28 19 16  5
+
+[jhyeh@onyx sol]$ java KnightTour 2 6 1 1
+The total number of moves is 36
+25 32 11  2 19 34 
+10  1 26 33 12  3 
+31 24  9 18 35 20 
+ 8 17 36 27  4 13 
+23 30 15  6 21 28 
+16  7 22 29 14  5 
+
+***************************************************************
+
+[jhyeh@onyx sol]$ java KnightTour 0 4 0 0
+The total number of moves is 2223
+No solution found!
+
+[jhyeh@onyx sol]$ java KnightTour 1 4 0 0
+The total number of moves is 2223
+No solution found!
+
+[jhyeh@onyx sol]$ java KnightTour 2 4 0 0
+The total number of moves is 2223
+No solution found!
