@@ -1,0 +1,11 @@
+----- testfile -----
+This is a test file for the fourth programming assignment in CS121.  It has
+11 lines of text which contains numbers  and all sorts of "punctuation" as well
+as words like don't and pre-condition which will count as two words.  The
+file has 79  words.  The longest one has 11 characters and the shortest one has
+1.  The average length of a word is 4. There are 465 characters
+in the input.
+
+How do you like this program?
+
+Finally, the Last line!

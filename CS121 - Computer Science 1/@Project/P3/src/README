@@ -1,0 +1,42 @@
+# Project 3: Jukebox
+
+* Author: Ahram Kim
+* Class: CS121 Section 1
+* Semester: Fall 2016
+
+## Overview
+
+This Java application represents a playlist of songs. 
+I reused the class provided with a menu and some methods for read Song data from files.
+
+## Compiling and Using
+
+To compile, execute the following command in the main project directory:
+```
+$ javac PlayList.java
+$ javac Jukebox.java
+$ javac PlayListTest.java
+$ javac Song.java
+$ javac SongTest.java
+```
+
+Run the compiled class with the command:
+```
+$ java PlayList
+$ java Jukebox
+$ java PlayListTest
+$ java Song
+$ java SongTest
+```
+
+
+## Discussion
+
+I develop a class to represent a playlist of songs. Professor provided a driver class with a menu and some methods for rading Song data from files. I reused the class for this project.
+
+I used lots of methods such as arraylist, tostring, setter, getter. It makes me confused to do this project. I couldn't recognize this method should be used what I need to use. And, the programming was so picky. The programming shoule be same so making the same programming makes me so tired.
+
+## Extra Credit
+
+
+## Sources used

@@ -1,0 +1,13 @@
+Sample Playlist
+Classical
+A Classical Artist
+3:01
+sounds/classical.wav
+Eighties Jam
+Some 80's band
+03:21
+sounds/eightiesJam.wav
+New Age
+Javya
+02:12
+sounds/newAgeRhythm.wav
