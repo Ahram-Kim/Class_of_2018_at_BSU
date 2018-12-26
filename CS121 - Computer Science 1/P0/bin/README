@@ -1,0 +1,26 @@
+# Project 0: Naming Ahram
+ * Author: Ahram Kim
+ * Class: CS121 Section 1 
+ * Semester: Fall 2016
+
+ ## 0verview
+ 
+ This Java Program shows author's name 'Ahram' with characters based on the sample of the CS121 pages. 
+ 
+ ## Compiling and Using 
+ 
+ To compile, use the following command in the main project directory: javac ModernArt.java
+ To run the compled class with the command: java ModernArt
+ 
+ ## Discussion 
+ 
+ I create a simple Java program that prints author's name 'Ahram'. 
+ I compiled this program with the command 'javac' and runned with the command 'java'.
+ 
+ ## Extra Credit
+ 
+  N/A
+  
+ ## Sources used
+ 
+ I used the characters based on the sample on CS121 page. 

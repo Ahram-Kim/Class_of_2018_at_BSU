@@ -1,0 +1,27 @@
+# Project 4: Text Statistics
+
+* Author: Ahram Kim
+* Class: CS121 Section 1
+* Semester: Fall 2016
+
+## Overview
+
+This Java Project is to implement a program that analyzes text files to generate some useful statistics.
+This provides the basic statistics like the number of characters, words, and lines, the average word length, and the number of each letter and word length.
+
+
+
+## Compiling and Using
+
+To compile, execute the following command in the main project directory:
+$ javac ProcessText.java
+$ javac TextStatistics.java
+
+Run the compiled class with the command:
+$ java ProcessText
+$ java TextStatistics
+
+
+## Discussion
+
+This project took my time a lot. Command line argument make me so confused. and THere are a lot of problems on autograde.sh. The getting hard java eclipse, getting funnier the class.
