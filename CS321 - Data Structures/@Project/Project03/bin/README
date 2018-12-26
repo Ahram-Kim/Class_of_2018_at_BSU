@@ -1,0 +1,62 @@
+**************************
+* Project 3 - HashTable
+* CS354 -004
+* October 20, 2017
+* Ahram Kim
+**************** 
+
+OVERVIEW:
+
+ To study how the load factor affects the average number of probes 
+ required by open addressing while using linear probing and double hashing
+
+
+INCLUDED FILES:
+
+ * HashObject.java - source file
+ * HashTable.java - source file
+ * HashTable.java - main class for the first experiment
+ * HashTestWithJAVA.java - main class for the second experiment
+ * README - this file
+
+
+COMPILING AND RUNNING:
+
+ From the directory containing all source files, compile the
+ driver class (and all dependencies) with the command:
+ $ javac HashTest.java
+ $ javac HashTestWithJAVA.java
+
+ Run the compiled class file with the command:
+ $ java HashTest
+ $ java HashTestWithJAVA
+ with arguments.
+ e.g. java HashTest 1 0.5 0
+ e.g. java HashTestWithJAVA 3 0.5 95791
+
+ Console output will give the results after the program finishes.
+
+PROGRAM DESIGN AND IMPORTANT CONCEPTS:
+
+ At first, I inserted HashObjects with considering three different sources of data.
+ When implementing the getKey method, I applied Math.abs() to the value returned by hashCode()
+ to ensure than key values are positive. I got two different elements from the same data source
+ have the same key hashCode() values, though the probability is small. ALso, I compared
+ the actual element to check if because it already exist in the table.
+
+TESTING:
+
+ If I get the correct value of inputType 1, I couldn't get the correct value 
+ of inputType 2 and 3. And, if I get the correct value of inputType 2, I couldn't get
+ the other's correct value. When I got the correct value of inputType 1, I could have 
+ hope for my project but it was getting worse to get hope for my project. 
+ There were lots of small gap between the values. 
+
+DISCUSSION:
+ 
+ This project is one of the hardest projects I have ever done. 
+ I should have made all of the classes I need to make this project. 
+ Before, I got some implementation such as the basis but this project didnt have. 
+ To get correct values with small gap was worse challenging. 
+
+----------------------------------------------------------------------------

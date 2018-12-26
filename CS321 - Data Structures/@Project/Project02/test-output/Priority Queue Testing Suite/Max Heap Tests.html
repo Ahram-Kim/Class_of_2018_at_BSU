@@ -1,0 +1,749 @@
+<html>
+<head>
+<title>TestNG:  Max Heap Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Max Heap Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>134/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Sep 30 17:41:56 MDT 2017</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (140 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='MaxHeapTest_2_fiveElements_extract.testExtractHeapMax()'><b>testExtractHeapMax</b><br>Test class: MaxHeapTest_2_fiveElements_extract</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_2_fiveElements_extract@51efea79</td></tr>
+<tr>
+<td title='MaxHeapTest_3_tenElements_extract.testExtractHeapMax()'><b>testExtractHeapMax</b><br>Test class: MaxHeapTest_3_tenElements_extract</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_3_tenElements_extract@5034c75a</td></tr>
+<tr>
+<td title='MaxHeapTest_4_empty_insert.testExtractHeapMax()'><b>testExtractHeapMax</b><br>Test class: MaxHeapTest_4_empty_insert</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_4_empty_insert@396a51ab</td></tr>
+<tr>
+<td title='MaxHeapTest_5_fiveElements_insert.testExtractHeapMax()'><b>testExtractHeapMax</b><br>Test class: MaxHeapTest_5_fiveElements_insert</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_5_fiveElements_insert@51081592</td></tr>
+<tr>
+<td title='MaxHeapTest_6_tenElements_insert.testExtractHeapMax()'><b>testExtractHeapMax</b><br>Test class: MaxHeapTest_6_tenElements_insert</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_6_tenElements_insert@7f9a81e8</td></tr>
+<tr>
+<td title='MaxHeapTest_7_fiveElements_increaseKey_max.testExtractHeapMax()'><b>testExtractHeapMax</b><br>Test class: MaxHeapTest_7_fiveElements_increaseKey_max</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_7_fiveElements_increaseKey_max@9629756</td></tr>
+<tr>
+<td title='MaxHeapTest_8_tenElements_increaseKey_max.testExtractHeapMax()'><b>testExtractHeapMax</b><br>Test class: MaxHeapTest_8_tenElements_increaseKey_max</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_8_tenElements_increaseKey_max@62ee68d8</td></tr>
+<tr>
+<td title='MaxHeapTest_9_fiveElements_increaseKey_min.testExtractHeapMax()'><b>testExtractHeapMax</b><br>Test class: MaxHeapTest_9_fiveElements_increaseKey_min</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_9_fiveElements_increaseKey_min@735b5592</td></tr>
+<tr>
+<td title='MaxHeapTest_10_tenElements_increaseKey_min.testExtractHeapMax()'><b>testExtractHeapMax</b><br>Test class: MaxHeapTest_10_tenElements_increaseKey_min</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_10_tenElements_increaseKey_min@58651fd0</td></tr>
+<tr>
+<td title='MaxHeapTest_11_fiveElements_increaseKey_mid.testExtractHeapMax()'><b>testExtractHeapMax</b><br>Test class: MaxHeapTest_11_fiveElements_increaseKey_mid</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_11_fiveElements_increaseKey_mid@4520ebad</td></tr>
+<tr>
+<td title='MaxHeapTest_12_tenElements_increaseKey_mid.testExtractHeapMax()'><b>testExtractHeapMax</b><br>Test class: MaxHeapTest_12_tenElements_increaseKey_mid</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_12_tenElements_increaseKey_mid@5419f379</td></tr>
+<tr>
+<td title='MaxHeapTest_1_oneElement_extract.testGetHeapSize()'><b>testGetHeapSize</b><br>Test class: MaxHeapTest_1_oneElement_extract</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_1_oneElement_extract@6d00a15d</td></tr>
+<tr>
+<td title='MaxHeapTest_2_fiveElements_extract.testGetHeapSize()'><b>testGetHeapSize</b><br>Test class: MaxHeapTest_2_fiveElements_extract</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_2_fiveElements_extract@51efea79</td></tr>
+<tr>
+<td title='MaxHeapTest_3_tenElements_extract.testGetHeapSize()'><b>testGetHeapSize</b><br>Test class: MaxHeapTest_3_tenElements_extract</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_3_tenElements_extract@5034c75a</td></tr>
+<tr>
+<td title='MaxHeapTest_4_empty_insert.testGetHeapSize()'><b>testGetHeapSize</b><br>Test class: MaxHeapTest_4_empty_insert</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_4_empty_insert@396a51ab</td></tr>
+<tr>
+<td title='MaxHeapTest_5_fiveElements_insert.testGetHeapSize()'><b>testGetHeapSize</b><br>Test class: MaxHeapTest_5_fiveElements_insert</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_5_fiveElements_insert@51081592</td></tr>
+<tr>
+<td title='MaxHeapTest_6_tenElements_insert.testGetHeapSize()'><b>testGetHeapSize</b><br>Test class: MaxHeapTest_6_tenElements_insert</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_6_tenElements_insert@7f9a81e8</td></tr>
+<tr>
+<td title='MaxHeapTest_7_fiveElements_increaseKey_max.testGetHeapSize()'><b>testGetHeapSize</b><br>Test class: MaxHeapTest_7_fiveElements_increaseKey_max</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_7_fiveElements_increaseKey_max@9629756</td></tr>
+<tr>
+<td title='MaxHeapTest_8_tenElements_increaseKey_max.testGetHeapSize()'><b>testGetHeapSize</b><br>Test class: MaxHeapTest_8_tenElements_increaseKey_max</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_8_tenElements_increaseKey_max@62ee68d8</td></tr>
+<tr>
+<td title='MaxHeapTest_9_fiveElements_increaseKey_min.testGetHeapSize()'><b>testGetHeapSize</b><br>Test class: MaxHeapTest_9_fiveElements_increaseKey_min</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_9_fiveElements_increaseKey_min@735b5592</td></tr>
+<tr>
+<td title='MaxHeapTest_10_tenElements_increaseKey_min.testGetHeapSize()'><b>testGetHeapSize</b><br>Test class: MaxHeapTest_10_tenElements_increaseKey_min</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_10_tenElements_increaseKey_min@58651fd0</td></tr>
+<tr>
+<td title='MaxHeapTest_11_fiveElements_increaseKey_mid.testGetHeapSize()'><b>testGetHeapSize</b><br>Test class: MaxHeapTest_11_fiveElements_increaseKey_mid</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_11_fiveElements_increaseKey_mid@4520ebad</td></tr>
+<tr>
+<td title='MaxHeapTest_12_tenElements_increaseKey_mid.testGetHeapSize()'><b>testGetHeapSize</b><br>Test class: MaxHeapTest_12_tenElements_increaseKey_mid</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_12_tenElements_increaseKey_mid@5419f379</td></tr>
+<tr>
+<td title='MaxHeapTest_2_fiveElements_extract.testHeapMax()'><b>testHeapMax</b><br>Test class: MaxHeapTest_2_fiveElements_extract</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_2_fiveElements_extract@51efea79</td></tr>
+<tr>
+<td title='MaxHeapTest_3_tenElements_extract.testHeapMax()'><b>testHeapMax</b><br>Test class: MaxHeapTest_3_tenElements_extract</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_3_tenElements_extract@5034c75a</td></tr>
+<tr>
+<td title='MaxHeapTest_4_empty_insert.testHeapMax()'><b>testHeapMax</b><br>Test class: MaxHeapTest_4_empty_insert</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_4_empty_insert@396a51ab</td></tr>
+<tr>
+<td title='MaxHeapTest_5_fiveElements_insert.testHeapMax()'><b>testHeapMax</b><br>Test class: MaxHeapTest_5_fiveElements_insert</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_5_fiveElements_insert@51081592</td></tr>
+<tr>
+<td title='MaxHeapTest_6_tenElements_insert.testHeapMax()'><b>testHeapMax</b><br>Test class: MaxHeapTest_6_tenElements_insert</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_6_tenElements_insert@7f9a81e8</td></tr>
+<tr>
+<td title='MaxHeapTest_7_fiveElements_increaseKey_max.testHeapMax()'><b>testHeapMax</b><br>Test class: MaxHeapTest_7_fiveElements_increaseKey_max</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_7_fiveElements_increaseKey_max@9629756</td></tr>
+<tr>
+<td title='MaxHeapTest_8_tenElements_increaseKey_max.testHeapMax()'><b>testHeapMax</b><br>Test class: MaxHeapTest_8_tenElements_increaseKey_max</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_8_tenElements_increaseKey_max@62ee68d8</td></tr>
+<tr>
+<td title='MaxHeapTest_9_fiveElements_increaseKey_min.testHeapMax()'><b>testHeapMax</b><br>Test class: MaxHeapTest_9_fiveElements_increaseKey_min</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_9_fiveElements_increaseKey_min@735b5592</td></tr>
+<tr>
+<td title='MaxHeapTest_10_tenElements_increaseKey_min.testHeapMax()'><b>testHeapMax</b><br>Test class: MaxHeapTest_10_tenElements_increaseKey_min</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_10_tenElements_increaseKey_min@58651fd0</td></tr>
+<tr>
+<td title='MaxHeapTest_11_fiveElements_increaseKey_mid.testHeapMax()'><b>testHeapMax</b><br>Test class: MaxHeapTest_11_fiveElements_increaseKey_mid</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_11_fiveElements_increaseKey_mid@4520ebad</td></tr>
+<tr>
+<td title='MaxHeapTest_12_tenElements_increaseKey_mid.testHeapMax()'><b>testHeapMax</b><br>Test class: MaxHeapTest_12_tenElements_increaseKey_mid</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_12_tenElements_increaseKey_mid@5419f379</td></tr>
+<tr>
+<td title='MaxHeapTest_2_fiveElements_extract.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_2_fiveElements_extract<br>Parameters: 1</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_2_fiveElements_extract@51efea79</td></tr>
+<tr>
+<td title='MaxHeapTest_2_fiveElements_extract.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_2_fiveElements_extract<br>Parameters: 2</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_2_fiveElements_extract@51efea79</td></tr>
+<tr>
+<td title='MaxHeapTest_2_fiveElements_extract.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_2_fiveElements_extract<br>Parameters: 3</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_2_fiveElements_extract@51efea79</td></tr>
+<tr>
+<td title='MaxHeapTest_2_fiveElements_extract.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_2_fiveElements_extract<br>Parameters: 4</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_2_fiveElements_extract@51efea79</td></tr>
+<tr>
+<td title='MaxHeapTest_3_tenElements_extract.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_3_tenElements_extract<br>Parameters: 1</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_3_tenElements_extract@5034c75a</td></tr>
+<tr>
+<td title='MaxHeapTest_3_tenElements_extract.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_3_tenElements_extract<br>Parameters: 2</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_3_tenElements_extract@5034c75a</td></tr>
+<tr>
+<td title='MaxHeapTest_3_tenElements_extract.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_3_tenElements_extract<br>Parameters: 3</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_3_tenElements_extract@5034c75a</td></tr>
+<tr>
+<td title='MaxHeapTest_3_tenElements_extract.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_3_tenElements_extract<br>Parameters: 4</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_3_tenElements_extract@5034c75a</td></tr>
+<tr>
+<td title='MaxHeapTest_3_tenElements_extract.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_3_tenElements_extract<br>Parameters: 5</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_3_tenElements_extract@5034c75a</td></tr>
+<tr>
+<td title='MaxHeapTest_3_tenElements_extract.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_3_tenElements_extract<br>Parameters: 6</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_3_tenElements_extract@5034c75a</td></tr>
+<tr>
+<td title='MaxHeapTest_3_tenElements_extract.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_3_tenElements_extract<br>Parameters: 7</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_3_tenElements_extract@5034c75a</td></tr>
+<tr>
+<td title='MaxHeapTest_3_tenElements_extract.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_3_tenElements_extract<br>Parameters: 8</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_3_tenElements_extract@5034c75a</td></tr>
+<tr>
+<td title='MaxHeapTest_3_tenElements_extract.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_3_tenElements_extract<br>Parameters: 9</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_3_tenElements_extract@5034c75a</td></tr>
+<tr>
+<td title='MaxHeapTest_4_empty_insert.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_4_empty_insert</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_4_empty_insert@396a51ab</td></tr>
+<tr>
+<td title='MaxHeapTest_5_fiveElements_insert.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_5_fiveElements_insert<br>Parameters: 1</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_5_fiveElements_insert@51081592</td></tr>
+<tr>
+<td title='MaxHeapTest_5_fiveElements_insert.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_5_fiveElements_insert<br>Parameters: 2</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_5_fiveElements_insert@51081592</td></tr>
+<tr>
+<td title='MaxHeapTest_5_fiveElements_insert.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_5_fiveElements_insert<br>Parameters: 3</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_5_fiveElements_insert@51081592</td></tr>
+<tr>
+<td title='MaxHeapTest_5_fiveElements_insert.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_5_fiveElements_insert<br>Parameters: 4</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_5_fiveElements_insert@51081592</td></tr>
+<tr>
+<td title='MaxHeapTest_5_fiveElements_insert.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_5_fiveElements_insert<br>Parameters: 5</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_5_fiveElements_insert@51081592</td></tr>
+<tr>
+<td title='MaxHeapTest_5_fiveElements_insert.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_5_fiveElements_insert<br>Parameters: 6</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_5_fiveElements_insert@51081592</td></tr>
+<tr>
+<td title='MaxHeapTest_6_tenElements_insert.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_6_tenElements_insert<br>Parameters: 1</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_6_tenElements_insert@7f9a81e8</td></tr>
+<tr>
+<td title='MaxHeapTest_6_tenElements_insert.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_6_tenElements_insert<br>Parameters: 2</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_6_tenElements_insert@7f9a81e8</td></tr>
+<tr>
+<td title='MaxHeapTest_6_tenElements_insert.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_6_tenElements_insert<br>Parameters: 3</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_6_tenElements_insert@7f9a81e8</td></tr>
+<tr>
+<td title='MaxHeapTest_6_tenElements_insert.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_6_tenElements_insert<br>Parameters: 4</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_6_tenElements_insert@7f9a81e8</td></tr>
+<tr>
+<td title='MaxHeapTest_6_tenElements_insert.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_6_tenElements_insert<br>Parameters: 5</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_6_tenElements_insert@7f9a81e8</td></tr>
+<tr>
+<td title='MaxHeapTest_6_tenElements_insert.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_6_tenElements_insert<br>Parameters: 6</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_6_tenElements_insert@7f9a81e8</td></tr>
+<tr>
+<td title='MaxHeapTest_6_tenElements_insert.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_6_tenElements_insert<br>Parameters: 7</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_6_tenElements_insert@7f9a81e8</td></tr>
+<tr>
+<td title='MaxHeapTest_6_tenElements_insert.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_6_tenElements_insert<br>Parameters: 8</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_6_tenElements_insert@7f9a81e8</td></tr>
+<tr>
+<td title='MaxHeapTest_6_tenElements_insert.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_6_tenElements_insert<br>Parameters: 9</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_6_tenElements_insert@7f9a81e8</td></tr>
+<tr>
+<td title='MaxHeapTest_6_tenElements_insert.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_6_tenElements_insert<br>Parameters: 10</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_6_tenElements_insert@7f9a81e8</td></tr>
+<tr>
+<td title='MaxHeapTest_6_tenElements_insert.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_6_tenElements_insert<br>Parameters: 11</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_6_tenElements_insert@7f9a81e8</td></tr>
+<tr>
+<td title='MaxHeapTest_7_fiveElements_increaseKey_max.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_7_fiveElements_increaseKey_max<br>Parameters: 1</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_7_fiveElements_increaseKey_max@9629756</td></tr>
+<tr>
+<td title='MaxHeapTest_7_fiveElements_increaseKey_max.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_7_fiveElements_increaseKey_max<br>Parameters: 2</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_7_fiveElements_increaseKey_max@9629756</td></tr>
+<tr>
+<td title='MaxHeapTest_7_fiveElements_increaseKey_max.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_7_fiveElements_increaseKey_max<br>Parameters: 3</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_7_fiveElements_increaseKey_max@9629756</td></tr>
+<tr>
+<td title='MaxHeapTest_7_fiveElements_increaseKey_max.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_7_fiveElements_increaseKey_max<br>Parameters: 4</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_7_fiveElements_increaseKey_max@9629756</td></tr>
+<tr>
+<td title='MaxHeapTest_7_fiveElements_increaseKey_max.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_7_fiveElements_increaseKey_max<br>Parameters: 5</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_7_fiveElements_increaseKey_max@9629756</td></tr>
+<tr>
+<td title='MaxHeapTest_8_tenElements_increaseKey_max.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_8_tenElements_increaseKey_max<br>Parameters: 1</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_8_tenElements_increaseKey_max@62ee68d8</td></tr>
+<tr>
+<td title='MaxHeapTest_8_tenElements_increaseKey_max.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_8_tenElements_increaseKey_max<br>Parameters: 2</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_8_tenElements_increaseKey_max@62ee68d8</td></tr>
+<tr>
+<td title='MaxHeapTest_8_tenElements_increaseKey_max.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_8_tenElements_increaseKey_max<br>Parameters: 3</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_8_tenElements_increaseKey_max@62ee68d8</td></tr>
+<tr>
+<td title='MaxHeapTest_8_tenElements_increaseKey_max.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_8_tenElements_increaseKey_max<br>Parameters: 4</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_8_tenElements_increaseKey_max@62ee68d8</td></tr>
+<tr>
+<td title='MaxHeapTest_8_tenElements_increaseKey_max.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_8_tenElements_increaseKey_max<br>Parameters: 5</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_8_tenElements_increaseKey_max@62ee68d8</td></tr>
+<tr>
+<td title='MaxHeapTest_8_tenElements_increaseKey_max.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_8_tenElements_increaseKey_max<br>Parameters: 6</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_8_tenElements_increaseKey_max@62ee68d8</td></tr>
+<tr>
+<td title='MaxHeapTest_8_tenElements_increaseKey_max.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_8_tenElements_increaseKey_max<br>Parameters: 7</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_8_tenElements_increaseKey_max@62ee68d8</td></tr>
+<tr>
+<td title='MaxHeapTest_8_tenElements_increaseKey_max.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_8_tenElements_increaseKey_max<br>Parameters: 8</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_8_tenElements_increaseKey_max@62ee68d8</td></tr>
+<tr>
+<td title='MaxHeapTest_8_tenElements_increaseKey_max.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_8_tenElements_increaseKey_max<br>Parameters: 9</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_8_tenElements_increaseKey_max@62ee68d8</td></tr>
+<tr>
+<td title='MaxHeapTest_8_tenElements_increaseKey_max.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_8_tenElements_increaseKey_max<br>Parameters: 10</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_8_tenElements_increaseKey_max@62ee68d8</td></tr>
+<tr>
+<td title='MaxHeapTest_9_fiveElements_increaseKey_min.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_9_fiveElements_increaseKey_min<br>Parameters: 1</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_9_fiveElements_increaseKey_min@735b5592</td></tr>
+<tr>
+<td title='MaxHeapTest_9_fiveElements_increaseKey_min.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_9_fiveElements_increaseKey_min<br>Parameters: 2</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_9_fiveElements_increaseKey_min@735b5592</td></tr>
+<tr>
+<td title='MaxHeapTest_9_fiveElements_increaseKey_min.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_9_fiveElements_increaseKey_min<br>Parameters: 3</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_9_fiveElements_increaseKey_min@735b5592</td></tr>
+<tr>
+<td title='MaxHeapTest_9_fiveElements_increaseKey_min.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_9_fiveElements_increaseKey_min<br>Parameters: 4</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_9_fiveElements_increaseKey_min@735b5592</td></tr>
+<tr>
+<td title='MaxHeapTest_9_fiveElements_increaseKey_min.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_9_fiveElements_increaseKey_min<br>Parameters: 5</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_9_fiveElements_increaseKey_min@735b5592</td></tr>
+<tr>
+<td title='MaxHeapTest_10_tenElements_increaseKey_min.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_10_tenElements_increaseKey_min<br>Parameters: 1</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_10_tenElements_increaseKey_min@58651fd0</td></tr>
+<tr>
+<td title='MaxHeapTest_10_tenElements_increaseKey_min.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_10_tenElements_increaseKey_min<br>Parameters: 2</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_10_tenElements_increaseKey_min@58651fd0</td></tr>
+<tr>
+<td title='MaxHeapTest_10_tenElements_increaseKey_min.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_10_tenElements_increaseKey_min<br>Parameters: 3</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_10_tenElements_increaseKey_min@58651fd0</td></tr>
+<tr>
+<td title='MaxHeapTest_10_tenElements_increaseKey_min.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_10_tenElements_increaseKey_min<br>Parameters: 4</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_10_tenElements_increaseKey_min@58651fd0</td></tr>
+<tr>
+<td title='MaxHeapTest_10_tenElements_increaseKey_min.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_10_tenElements_increaseKey_min<br>Parameters: 5</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_10_tenElements_increaseKey_min@58651fd0</td></tr>
+<tr>
+<td title='MaxHeapTest_10_tenElements_increaseKey_min.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_10_tenElements_increaseKey_min<br>Parameters: 6</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_10_tenElements_increaseKey_min@58651fd0</td></tr>
+<tr>
+<td title='MaxHeapTest_10_tenElements_increaseKey_min.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_10_tenElements_increaseKey_min<br>Parameters: 7</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_10_tenElements_increaseKey_min@58651fd0</td></tr>
+<tr>
+<td title='MaxHeapTest_10_tenElements_increaseKey_min.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_10_tenElements_increaseKey_min<br>Parameters: 8</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_10_tenElements_increaseKey_min@58651fd0</td></tr>
+<tr>
+<td title='MaxHeapTest_10_tenElements_increaseKey_min.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_10_tenElements_increaseKey_min<br>Parameters: 9</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_10_tenElements_increaseKey_min@58651fd0</td></tr>
+<tr>
+<td title='MaxHeapTest_10_tenElements_increaseKey_min.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_10_tenElements_increaseKey_min<br>Parameters: 10</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_10_tenElements_increaseKey_min@58651fd0</td></tr>
+<tr>
+<td title='MaxHeapTest_11_fiveElements_increaseKey_mid.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_11_fiveElements_increaseKey_mid<br>Parameters: 1</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_11_fiveElements_increaseKey_mid@4520ebad</td></tr>
+<tr>
+<td title='MaxHeapTest_11_fiveElements_increaseKey_mid.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_11_fiveElements_increaseKey_mid<br>Parameters: 2</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_11_fiveElements_increaseKey_mid@4520ebad</td></tr>
+<tr>
+<td title='MaxHeapTest_11_fiveElements_increaseKey_mid.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_11_fiveElements_increaseKey_mid<br>Parameters: 3</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_11_fiveElements_increaseKey_mid@4520ebad</td></tr>
+<tr>
+<td title='MaxHeapTest_11_fiveElements_increaseKey_mid.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_11_fiveElements_increaseKey_mid<br>Parameters: 4</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_11_fiveElements_increaseKey_mid@4520ebad</td></tr>
+<tr>
+<td title='MaxHeapTest_11_fiveElements_increaseKey_mid.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_11_fiveElements_increaseKey_mid<br>Parameters: 5</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_11_fiveElements_increaseKey_mid@4520ebad</td></tr>
+<tr>
+<td title='MaxHeapTest_12_tenElements_increaseKey_mid.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_12_tenElements_increaseKey_mid<br>Parameters: 1</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_12_tenElements_increaseKey_mid@5419f379</td></tr>
+<tr>
+<td title='MaxHeapTest_12_tenElements_increaseKey_mid.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_12_tenElements_increaseKey_mid<br>Parameters: 2</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_12_tenElements_increaseKey_mid@5419f379</td></tr>
+<tr>
+<td title='MaxHeapTest_12_tenElements_increaseKey_mid.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_12_tenElements_increaseKey_mid<br>Parameters: 3</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_12_tenElements_increaseKey_mid@5419f379</td></tr>
+<tr>
+<td title='MaxHeapTest_12_tenElements_increaseKey_mid.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_12_tenElements_increaseKey_mid<br>Parameters: 4</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_12_tenElements_increaseKey_mid@5419f379</td></tr>
+<tr>
+<td title='MaxHeapTest_12_tenElements_increaseKey_mid.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_12_tenElements_increaseKey_mid<br>Parameters: 5</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_12_tenElements_increaseKey_mid@5419f379</td></tr>
+<tr>
+<td title='MaxHeapTest_12_tenElements_increaseKey_mid.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_12_tenElements_increaseKey_mid<br>Parameters: 6</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_12_tenElements_increaseKey_mid@5419f379</td></tr>
+<tr>
+<td title='MaxHeapTest_12_tenElements_increaseKey_mid.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_12_tenElements_increaseKey_mid<br>Parameters: 7</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_12_tenElements_increaseKey_mid@5419f379</td></tr>
+<tr>
+<td title='MaxHeapTest_12_tenElements_increaseKey_mid.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_12_tenElements_increaseKey_mid<br>Parameters: 8</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_12_tenElements_increaseKey_mid@5419f379</td></tr>
+<tr>
+<td title='MaxHeapTest_12_tenElements_increaseKey_mid.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_12_tenElements_increaseKey_mid<br>Parameters: 9</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_12_tenElements_increaseKey_mid@5419f379</td></tr>
+<tr>
+<td title='MaxHeapTest_12_tenElements_increaseKey_mid.testIncreaseHeapKey()'><b>testIncreaseHeapKey</b><br>Test class: MaxHeapTest_12_tenElements_increaseKey_mid<br>Parameters: 10</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_12_tenElements_increaseKey_mid@5419f379</td></tr>
+<tr>
+<td title='MaxHeapTest_1_oneElement_extract.testIsEmpty()'><b>testIsEmpty</b><br>Test class: MaxHeapTest_1_oneElement_extract</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_1_oneElement_extract@6d00a15d</td></tr>
+<tr>
+<td title='MaxHeapTest_2_fiveElements_extract.testIsEmpty()'><b>testIsEmpty</b><br>Test class: MaxHeapTest_2_fiveElements_extract</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_2_fiveElements_extract@51efea79</td></tr>
+<tr>
+<td title='MaxHeapTest_3_tenElements_extract.testIsEmpty()'><b>testIsEmpty</b><br>Test class: MaxHeapTest_3_tenElements_extract</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_3_tenElements_extract@5034c75a</td></tr>
+<tr>
+<td title='MaxHeapTest_4_empty_insert.testIsEmpty()'><b>testIsEmpty</b><br>Test class: MaxHeapTest_4_empty_insert</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_4_empty_insert@396a51ab</td></tr>
+<tr>
+<td title='MaxHeapTest_5_fiveElements_insert.testIsEmpty()'><b>testIsEmpty</b><br>Test class: MaxHeapTest_5_fiveElements_insert</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_5_fiveElements_insert@51081592</td></tr>
+<tr>
+<td title='MaxHeapTest_6_tenElements_insert.testIsEmpty()'><b>testIsEmpty</b><br>Test class: MaxHeapTest_6_tenElements_insert</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_6_tenElements_insert@7f9a81e8</td></tr>
+<tr>
+<td title='MaxHeapTest_7_fiveElements_increaseKey_max.testIsEmpty()'><b>testIsEmpty</b><br>Test class: MaxHeapTest_7_fiveElements_increaseKey_max</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_7_fiveElements_increaseKey_max@9629756</td></tr>
+<tr>
+<td title='MaxHeapTest_8_tenElements_increaseKey_max.testIsEmpty()'><b>testIsEmpty</b><br>Test class: MaxHeapTest_8_tenElements_increaseKey_max</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_8_tenElements_increaseKey_max@62ee68d8</td></tr>
+<tr>
+<td title='MaxHeapTest_9_fiveElements_increaseKey_min.testIsEmpty()'><b>testIsEmpty</b><br>Test class: MaxHeapTest_9_fiveElements_increaseKey_min</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_9_fiveElements_increaseKey_min@735b5592</td></tr>
+<tr>
+<td title='MaxHeapTest_10_tenElements_increaseKey_min.testIsEmpty()'><b>testIsEmpty</b><br>Test class: MaxHeapTest_10_tenElements_increaseKey_min</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_10_tenElements_increaseKey_min@58651fd0</td></tr>
+<tr>
+<td title='MaxHeapTest_11_fiveElements_increaseKey_mid.testIsEmpty()'><b>testIsEmpty</b><br>Test class: MaxHeapTest_11_fiveElements_increaseKey_mid</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_11_fiveElements_increaseKey_mid@4520ebad</td></tr>
+<tr>
+<td title='MaxHeapTest_12_tenElements_increaseKey_mid.testIsEmpty()'><b>testIsEmpty</b><br>Test class: MaxHeapTest_12_tenElements_increaseKey_mid</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_12_tenElements_increaseKey_mid@5419f379</td></tr>
+<tr>
+<td title='MaxHeapTest_1_oneElement_extract.testMaxHeapInsert()'><b>testMaxHeapInsert</b><br>Test class: MaxHeapTest_1_oneElement_extract</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_1_oneElement_extract@6d00a15d</td></tr>
+<tr>
+<td title='MaxHeapTest_2_fiveElements_extract.testMaxHeapInsert()'><b>testMaxHeapInsert</b><br>Test class: MaxHeapTest_2_fiveElements_extract</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_2_fiveElements_extract@51efea79</td></tr>
+<tr>
+<td title='MaxHeapTest_3_tenElements_extract.testMaxHeapInsert()'><b>testMaxHeapInsert</b><br>Test class: MaxHeapTest_3_tenElements_extract</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_3_tenElements_extract@5034c75a</td></tr>
+<tr>
+<td title='MaxHeapTest_4_empty_insert.testMaxHeapInsert()'><b>testMaxHeapInsert</b><br>Test class: MaxHeapTest_4_empty_insert</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_4_empty_insert@396a51ab</td></tr>
+<tr>
+<td title='MaxHeapTest_5_fiveElements_insert.testMaxHeapInsert()'><b>testMaxHeapInsert</b><br>Test class: MaxHeapTest_5_fiveElements_insert</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_5_fiveElements_insert@51081592</td></tr>
+<tr>
+<td title='MaxHeapTest_6_tenElements_insert.testMaxHeapInsert()'><b>testMaxHeapInsert</b><br>Test class: MaxHeapTest_6_tenElements_insert</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_6_tenElements_insert@7f9a81e8</td></tr>
+<tr>
+<td title='MaxHeapTest_7_fiveElements_increaseKey_max.testMaxHeapInsert()'><b>testMaxHeapInsert</b><br>Test class: MaxHeapTest_7_fiveElements_increaseKey_max</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_7_fiveElements_increaseKey_max@9629756</td></tr>
+<tr>
+<td title='MaxHeapTest_8_tenElements_increaseKey_max.testMaxHeapInsert()'><b>testMaxHeapInsert</b><br>Test class: MaxHeapTest_8_tenElements_increaseKey_max</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_8_tenElements_increaseKey_max@62ee68d8</td></tr>
+<tr>
+<td title='MaxHeapTest_9_fiveElements_increaseKey_min.testMaxHeapInsert()'><b>testMaxHeapInsert</b><br>Test class: MaxHeapTest_9_fiveElements_increaseKey_min</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_9_fiveElements_increaseKey_min@735b5592</td></tr>
+<tr>
+<td title='MaxHeapTest_10_tenElements_increaseKey_min.testMaxHeapInsert()'><b>testMaxHeapInsert</b><br>Test class: MaxHeapTest_10_tenElements_increaseKey_min</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_10_tenElements_increaseKey_min@58651fd0</td></tr>
+<tr>
+<td title='MaxHeapTest_11_fiveElements_increaseKey_mid.testMaxHeapInsert()'><b>testMaxHeapInsert</b><br>Test class: MaxHeapTest_11_fiveElements_increaseKey_mid</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_11_fiveElements_increaseKey_mid@4520ebad</td></tr>
+<tr>
+<td title='MaxHeapTest_12_tenElements_increaseKey_mid.testMaxHeapInsert()'><b>testMaxHeapInsert</b><br>Test class: MaxHeapTest_12_tenElements_increaseKey_mid</td>
+<td></td>
+<td>0</td>
+<td>MaxHeapTest_12_tenElements_increaseKey_mid@5419f379</td></tr>
+</table><p>
+</body>
+</html>

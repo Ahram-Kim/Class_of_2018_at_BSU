@@ -1,0 +1,104 @@
+second 0 :  
+second 1 :  
+second 2 :  JOB ID 2 arrives, timeRequired 4, priority 2  
+second 3 :  
+second 4 :  JOB ID 4 arrives, timeRequired 3, priority 1  
+second 5 :  (JOB ID 2 finish)
+second 6 :  JOB ID 6 arrives, timeRequired 4, priority 1  
+second 7 :  JOB ID 7 arrives, timeRequired 5, priority 5  
+second 8 :  
+second 9 :  
+second 10 :  JOB ID 10 arrives, timeRequired 4, priority 2  
+second 11 :  (JOB ID 7 finish)
+second 12 :  JOB ID 12 arrives, timeRequired 3, priority 3  
+second 13 :  JOB ID 13 arrives, timeRequired 5, priority 2  
+second 14 :  (JOB ID 12 finish)
+second 15 :  
+second 16 :  JOB ID 16 arrives, timeRequired 4, priority 4  
+second 17 :  
+second 18 :  JOB ID 18 arrives, timeRequired 2, priority 1  
+second 19 :  (JOB ID 16 finish)
+second 20 :  
+second 21 :  
+second 22 :  
+second 23 :  JOB ID 23 arrives, timeRequired 5, priority 3  
+second 24 :  (JOB ID 6 finish)
+second 25 :  JOB ID 25 arrives, timeRequired 1, priority 1  
+second 26 :  (JOB ID 4 finish)
+second 27 :  
+second 28 :  
+second 29 :  
+second 30 :  
+second 31 :  JOB ID 31 arrives, timeRequired 3, priority 4  
+second 32 :  JOB ID 32 arrives, timeRequired 2, priority 2  (JOB ID 13 finish)
+second 33 :  JOB ID 33 arrives, timeRequired 5, priority 2  (JOB ID 10 finish)
+second 34 :  
+second 35 :  
+second 36 :  JOB ID 36 arrives, timeRequired 3, priority 2  
+second 37 :  
+second 38 :  
+second 39 :  JOB ID 39 arrives, timeRequired 3, priority 5  (JOB ID 18 finish)
+second 40 :  JOB ID 40 arrives, timeRequired 1, priority 2  (JOB ID 23 finish)
+second 41 :  
+second 42 :  
+second 43 :  (JOB ID 31 finish)
+second 44 :  JOB ID 44 arrives, timeRequired 1, priority 2  
+second 45 :  JOB ID 45 arrives, timeRequired 2, priority 3  (JOB ID 25 finish)
+second 46 :  JOB ID 46 arrives, timeRequired 1, priority 2  
+second 47 :  
+second 48 :  (JOB ID 32 finish)
+second 49 :  JOB ID 49 arrives, timeRequired 2, priority 1  
+second 50 :  
+second 51 :  
+second 52 :  
+second 53 :  JOB ID 53 arrives, timeRequired 5, priority 4  (JOB ID 33 finish)
+second 54 :  
+second 55 :  
+second 56 :  (JOB ID 36 finish)
+second 57 :  (JOB ID 39 finish)
+second 58 :  JOB ID 58 arrives, timeRequired 5, priority 4  (JOB ID 40 finish)
+second 59 :  (JOB ID 44 finish)
+second 60 :  
+second 61 :  (JOB ID 45 finish)
+second 62 :  (JOB ID 46 finish)
+second 63 :  
+second 64 :  JOB ID 64 arrives, timeRequired 5, priority 3  
+second 65 :  
+second 66 :  JOB ID 66 arrives, timeRequired 5, priority 3  
+second 67 :  JOB ID 67 arrives, timeRequired 2, priority 3  (JOB ID 53 finish)
+second 68 :  JOB ID 68 arrives, timeRequired 1, priority 3  
+second 69 :  JOB ID 69 arrives, timeRequired 1, priority 1  
+second 70 :  JOB ID 70 arrives, timeRequired 2, priority 2  (JOB ID 49 finish)
+second 71 :  
+second 72 :  
+second 73 :  
+second 74 :  (JOB ID 58 finish)
+second 75 :  
+second 76 :  
+second 77 :  
+second 78 :  
+second 79 :  (JOB ID 64 finish)
+second 80 :  
+second 81 :  
+second 82 :  JOB ID 82 arrives, timeRequired 4, priority 5  
+second 83 :  
+second 84 :  JOB ID 84 arrives, timeRequired 3, priority 5  (JOB ID 66 finish)
+second 85 :  
+second 86 :  JOB ID 86 arrives, timeRequired 5, priority 2  (JOB ID 67 finish)
+second 87 :  (JOB ID 68 finish)
+second 88 :  
+second 89 :  (JOB ID 69 finish)
+second 90 :  JOB ID 90 arrives, timeRequired 4, priority 2  (JOB ID 70 finish)
+second 91 :  JOB ID 91 arrives, timeRequired 2, priority 3  
+second 92 :  JOB ID 92 arrives, timeRequired 2, priority 4  
+second 93 :  JOB ID 93 arrives, timeRequired 3, priority 4  
+second 94 :  (JOB ID 82 finish)
+second 95 :  JOB ID 95 arrives, timeRequired 3, priority 5  
+second 96 :  
+second 97 :  (JOB ID 84 finish)
+second 98 :  
+second 99 :  (JOB ID 92 finish)
+--- Simulation completed ---
+Simulation time: 100 unit time.
+Number of processes: 32
+Average Turn around time for a process: 16.53125

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Priority Queue Testing Suite">
+
+  <test name="Max Heap Tests" verbose="2"> 
+    <classes>     
+      <class name="MaxHeapTest_1_oneElement_extract"/>
+      <class name="MaxHeapTest_2_fiveElements_extract"/>
+      <class name="MaxHeapTest_3_tenElements_extract"/>
+      <class name="MaxHeapTest_4_empty_insert"/>
+      <class name="MaxHeapTest_5_fiveElements_insert"/>      
+      <class name="MaxHeapTest_6_tenElements_insert"/> 
+      <class name="MaxHeapTest_7_fiveElements_increaseKey_max"/> 
+      <class name="MaxHeapTest_8_tenElements_increaseKey_max"/>
+      <class name="MaxHeapTest_9_fiveElements_increaseKey_min"/>
+      <class name="MaxHeapTest_10_tenElements_increaseKey_min"/>
+      <class name="MaxHeapTest_11_fiveElements_increaseKey_mid"/>
+      <class name="MaxHeapTest_12_tenElements_increaseKey_mid"/>
+    </classes>
+  </test> <!-- Max Heap Tests -->
+  
+  <test name="Priority Queue Tests" verbose="2"> 
+    <classes>     
+      <class name="PriorityQueueTest_1_oneElement_extract"/>
+      <class name="PriorityQueueTest_2_fiveElements_extract"/>
+      <class name="PriorityQueueTest_3_tenElements_extract"/>
+      <class name="PriorityQueueTest_4_empty_insert"/>
+      <class name="PriorityQueueTest_5_fiveElements_insert"/>      
+      <class name="PriorityQueueTest_6_tenElements_insert"/> 
+      <class name="PriorityQueueTest_7_fiveElements_increaseKey_max"/> 
+      <class name="PriorityQueueTest_8_tenElements_increaseKey_max"/>
+      <class name="PriorityQueueTest_9_fiveElements_increaseKey_min"/>
+      <class name="PriorityQueueTest_10_tenElements_increaseKey_min"/>
+      <class name="PriorityQueueTest_11_fiveElements_increaseKey_mid"/>
+      <class name="PriorityQueueTest_12_tenElements_increaseKey_mid"/>
+    </classes>
+  </test> <!-- Priority Queue Tests -->
+ 
+</suite> <!-- Priority Queue Testing Suite -->
