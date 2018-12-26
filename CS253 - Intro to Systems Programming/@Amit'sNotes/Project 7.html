@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Project 7</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css"
+href="http://nullptr.boisestate.edu/CS-LMS/css/normalize.css" media="screen" />
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"
+type="text/css" />
+    <link rel="stylesheet" type="text/css"
+href="http://nullptr.boisestate.edu/CS-LMS/css/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css"
+href="http://nullptr.boisestate.edu/CS-LMS/css/github-light.css" media="screen" />
+    <link rel="shortcut icon"
+	  href="http://coen.boisestate.edu/cs/wp-content/themes/framewerk/framewerk/frontend/images/layout/favicon.ico">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis.min.css" rel="stylesheet" type="text/css">
+    
+  </head>
+  <body>
+    <!-- content from each course page -->
+ <section class="page-header">
+	<h1 class="project-name">{ Project 7 }</h1>
+	<h2 class="project-tagline">Threads and Signals Part 2</h2>
+	<a href="http://github.com/BoiseState/CS253-resources" class="btn">Class resources</a>
+	<a href="https://piazza.com/boisestate/" class="btn">Piazza</a>
+	<a href="http://coen.boisestate.edu/cs/computer-science-tutoring-center-cstc/tutors/" class="btn">Tutors</a>
+</section>
+
+<section class="main-content">
+	<div class="container">
+	  <!-- <h1>DUE: Week 33 <small>(Aug 21, 2016 at 11:59:59 PM)</small> </h1> -->
+	  <h1>DUE: 8/14/2016 (no late submissions!) </h1> 
+
+		<h2>Objectives</h2>
+		<ol>
+			<li> Convert a library for use in an asynchronous environment</li>
+			<li> Use the Pthreads 
+			(<a href="https://en.wikipedia.org/wiki/POSIX_Threads">POSIX Threads</a>) library </li>
+			<li> Use a simple Mutex to make the ring buffer library thread-safe </li>
+			<li> Update a Makefile to link against the <code>pthread</code> library </li>
+		</ol>
+
+		<h2>Introduction</h2>
+		<p>
+		  This project will build upon your ring buffer part 1 project (p6). In this project
+		  you will add in the ability for your ring buffer to be used in an asynchronous
+		  manner. This will require you to do three things. First, you will need to update
+		  your ring-buffer to use a Mutex to protect reads and writes. Second, you
+		  will need to update the test code to fire off multiple threads all of which
+		  will try to log multiple messages each. Finally, you will need to run some tests on
+		  your code and report the results in your README.md file.
+		</p>
+
+		<h2>Plan</h2>
+		<ol>
+			<li> Copy all the files from your p6 folder to the <code>p7</code> folder and
+			commit it. 
+			</li>
+
+			<li> Start by increasing the size of your ring buffer (<i>MAX_LOG_ENTRY</i>) 
+			from 5 to 100. Test with your original test code <code>test-ring-buffer.c</code> to
+			check that things still work as expected.
+			</li>
+
+			<li> Then make your ring buffer safe. Take a look at the
+			  safe-bank-balance.c example for some guidance
+			  (<a
+			  href="https://github.com/BoiseState/CS253-resources/blob/master/threads/safe-bank-balance.c">threads/safe-bank-balance.c</a>
+			  and <a href="https://github.com/BoiseState/CS253-resources/tree/master/threads/account">threads/account</a>).
+
+			  You will need to update your Makefile so your code will link against
+			  the <code>pthread</code> library. If you forget to do this step you will see some
+			  linking errors when trying to build your program.
+			</li>
+
+			<li> Once you have made your ring buffer thread-safe, create a new test file named
+			<code>test-threads.c</code> to fire off <code>numThreads</code>
+			threads that attempt to log <code>numLogs</code> messages each. 
+			These
+			values will be provided via the command line. Modify the log message
+			to include a thread id and the log message number. You can generate
+			sequential thread ids (<i>0</i> to <i>numThreads - 1</i>) using the technique shown in the example
+			<a href="https://github.com/BoiseState/CS253-resources/blob/master/threads/thread-ids.c">threads/thread-ids.c</a>
+<pre>
+$ grader
+Usage: grader &lt;numThreads&gt; &lt;numLogs&gt; 
+</pre>			  
+			</li>
+
+			<li>
+			Modify the
+			<code>Makefile</code> in the <code>test</code> folder to compile the
+			<code>test-threads.c</code> file instead of
+			the <code>test-ring-buffer.c</code>. 
+			</li>
+
+			<li> All threads will log to the <i>same ring buffer and hence the
+			  same log file</i>. Due to the non-deterministic nature of threads it is
+			  possible that you will get different results every time you run your
+			  program. That is OK and is expected. Testing multi-threaded code is
+			  extremely difficult without introducing artificial and arbitrary
+			  code to force deterministic results.  Try testing with four
+			  threads and 1,000,000 log messages (long enough for the alarm to go off
+			  several times and log file to be written).
+			</li>
+
+			<li> Don't forget to protect the code in your signal handler as
+			well! This could be directly or indirectly depending upon where you
+			lock the Mutex.</li>
+
+			<li> Finally run some tests where you modify the number of threads
+			and the number of log messages (while keeping the total number of log
+			messages constant) to see if you can spot a speed up, slow down or
+			no difference at all when compared to the single threaded version. For example, you can
+			run the grader as shown below.
+<pre>
+grader 1 1000000
+grader 2 500000 
+grader 3 333333
+grader 4 250000
+</pre>
+
+			Report the times and your analysis in the README.md file.
+
+			</li>
+
+			<li> Make sure to look for corrupt messages when you are testing your
+			  code as it may indicate a problem with where you have (or have not) placed
+			  your Mutex locks.
+		    </li>
+		</ol>
+
+
+		<h2>Sample Output</h2>
+
+<pre>
+[amit@localhost amit(master)]$ grader
+Usage: grader &lt;numThreads&gt; &lt;numLogs&gt; 
+
+[amit@localhost amit(master)]$ grader 4 1000000
+Initialize the ring buffer
+Thread 1 starting to log 1000000 messages....
+Thread 0 starting to log 1000000 messages....
+Thread 2 starting to log 1000000 messages....
+Sleeping for 4 seconds to let signals finish
+Thread 3 starting to log 1000000 messages....
+dumping ring buffer
+dumping ring buffer
+dumping ring buffer
+dumping ring buffer
+dumping ring buffer
+Thread 2 finishing....
+Thread 0 finishing....
+Thread 1 finishing....
+Thread 3 finishing....
+
+[amit@localhost amit(master)]$ cat ring.log
+log 0: Mon Aug  8 21:12:55 2016 -- [Thread 2] log message 203574
+log 1: Mon Aug  8 21:12:55 2016 -- [Thread 1] log message 185612
+log 2: Mon Aug  8 21:12:55 2016 -- [Thread 1] log message 185613
+log 3: Mon Aug  8 21:12:55 2016 -- [Thread 3] log message 191630
+log 4: Mon Aug  8 21:12:55 2016 -- [Thread 3] log message 191631
+log 5: Mon Aug  8 21:12:55 2016 -- [Thread 3] log message 191632
+log 6: Mon Aug  8 21:12:55 2016 -- [Thread 3] log message 191633
+log 7: Mon Aug  8 21:12:55 2016 -- [Thread 3] log message 191634
+log 8: Mon Aug  8 21:12:55 2016 -- [Thread 3] log message 191635
+log 9: Mon Aug  8 21:12:55 2016 -- [Thread 3] log message 191636
+...
+[amit@localhost amit(master)]$
+</pre>
+
+
+		<h2>Grading Rubric </h2>
+		<p>
+		  This is the last assignment of the semester. Thus, you will be responsible for 100%
+		  of the testing, the backpack.sh script does not do any testing. The rubric below details the 
+		  grading breakdown for this assignment.
+		</p>
+
+		<ol>
+			<li> Fixed all problems from p6 (10 points) </li>
+			<li> Proper use of command line arguments in test-threads.c (10 pts)</li>
+			<li> Proper use of pthread library in the file test-threads.c (30 pts) </li>
+			<li> Proper use of a Mutex in ring.c (all relevant functions protected) (30 pts) </li>
+			<li> Code quality (10 pts) </li>
+			<li> README.md (10 pts)</li>
+			<ul> 
+			<li> Use the usual template and fill in all sections. Make sure to
+			discuss how you tested it </li>
+			<li> Report the times you get by running different number of threads</li>
+			</ul>
+		</ol>
+
+
+	</div>
+</section>
+	</body>
+</html>

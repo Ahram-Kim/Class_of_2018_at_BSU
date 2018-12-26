@@ -1,0 +1,39 @@
+
+Peer Review: Guided Conversation
+
+Author: Elizabeth simonds
+Project reviewed: Shell - Part 1
+
+The Conversation:
+1. Elizabeth only had part 1 of Smash done so the program just needed to be able to take in command line
+arguments and does not have history saving capabilities.
+
+
+
+
+
+
+
+
+
+Peer Reviewed from Elizabeth: Guided Conversation
+
+Author: Ahram Kim
+Project reviewed: Shell - Part 2
+
+The Conversation:
+1. 
+2.
+3.
+  3. Testing - Between $ command sign and command, better to get space to look easy and better.
+	       Also, the maximum size for history command should be 512 not 5 what I did.
+	       When I add history more than maximum size 512, it should be increment continuously.
+	       
+
+
+
+
+
+
+
+

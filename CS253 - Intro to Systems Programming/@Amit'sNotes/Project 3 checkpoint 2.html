@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Project 3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css"
+href="http://nullptr.boisestate.edu/CS-LMS/css/normalize.css" media="screen" />
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"
+type="text/css" />
+    <link rel="stylesheet" type="text/css"
+href="http://nullptr.boisestate.edu/CS-LMS/css/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css"
+href="http://nullptr.boisestate.edu/CS-LMS/css/github-light.css" media="screen" />
+    <link rel="shortcut icon"
+	  href="http://coen.boisestate.edu/cs/wp-content/themes/framewerk/framewerk/frontend/images/layout/favicon.ico">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis.min.css" rel="stylesheet" type="text/css">
+    
+  </head>
+  <body>
+    <!-- content from each course page -->
+<section class="page-header">
+	<h1 class="project-name">{ Project 3 }</h1>
+	<h2 class="project-tagline">Linked List</h2>
+	<a href="http://github.com/BoiseState/CS253-resources" class="btn">Class resources</a>
+	<a href="https://piazza.com/boisestate/" class="btn">Piazza</a>
+	<a href="http://coen.boisestate.edu/cs/computer-science-tutoring-center-cstc/tutors/" class="btn">Tutors</a>
+</section>
+
+<section class="main-content">
+	<div class="container">
+	  <!-- <h1>DUE: Week 30 <small>(Jul 31, 2016 at 11:59:59 PM)</small> </h1> -->
+	  <h2>DUE: checkpoint 1: 7/25 (20 points), checkpoint 2: 7/29 (20 points), final: 8/1 (160 points)</h2> 
+	    
+		<h2>Objectives</h2>
+		<ol>
+			<li> Implementing a linked list in C </li>
+			<li> Using pointers and structs </li>
+			<li> Using dynamic memory allocation </li>
+			<li> Building dynamic and shared libraries </li>
+			<li> Using function pointers </li>
+			<li> Testing your code </li>
+			<li> Using a macro to assert test failure </li>
+		</ol>
+
+		<h2>Introduction</h2>
+		In this assignment, you will apply your knowledge of pointers, structs,
+		and memory management to implement a null-terminated doubly linked list.
+		You will also gain experience in testing to ensure your list operates in
+		a robust and correct manner.
+
+		<img src="DoublyLinkedNullTerminated.png" alt="Doubly Linked NULL terminated list">
+
+		<h2>Doubly Linked List</h2>
+		Before you start modifying the code, read through all the files and
+		make sure that you understand how they work. <strong>Do not modify
+		any header files that are given to you. The grader depends on the
+		header files for testing.</strong>
+
+    <h3>Getting Started</h3>
+    This is the largest project of the semester and you have several weeks
+    to complete it. We will be covering material that you will need as you
+    work on it, so you will need to manage your time so you don't end up
+    trying to do everything at the end. You <em>may</em> pull it off,
+    but you will probably miss things and you won't learn everything that
+    you should.
+
+		<h4>Starter files</h4>
+    <p>
+    All of the starter files for this project are in the class lab repository in
+    the directory <strong>C-examples/linked-lists/doubly-linked</strong>, including
+    </p>
+		<ol>
+		  <li> Skeleton code for a doubly linked list.</li>
+			<li> Test code with a simple test, a random test and unit test with stubs. </li>
+		</ol>
+    <p>
+    Make sure you execute a <samp>git pull</samp> command on the lab file directory
+		before starting this project to get the most recent versions of the files.
+    In your local working copy, execute
+<pre>
+git pull origin master
+</pre>
+		You must use the exact directory structure that is already setup in the
+    lab as the grader depends on it to test your code. Copy all the files from
+    the doubly-linked folder into the <code>p3</code> project folder in your
+    backpack class folder. Then add them to the backpack repository with the
+    <code>git add</code> command. Assuming you are in the <code>p3</code>
+    project folder in backpack, you will use commands similar to the following
+    (adjusting the path as needed)
+<pre>
+cp -a ~/CS253-resources/C-examples/linked-lists/doubly-linked/* .
+git add *
+git commit -m "Setting up initial files for p3"
+</pre>
+    </p>
+    <p>
+    Before working on your code, make sure that everything works as expected. To check,
+    run <samp>backpack.sh</samp>. It should execute and produce output similar to the
+    following. It should not pass because the list is not fully implemented, but if it
+    runs, then things are set up correctly.
+<pre>
+[you@onyx p3(master)]$ ./backpack.sh result
+cd libsrc; make install
+make[1]: Entering directory `/home/marissa/marissaschmidt@u.boisestate.edu/backpack/test-class/p3/libsrc'
+gcc -Wall -g -fPIC -shared -I../include/   -c -o List.o List.c
+sgcc -Wall -g -fPIC -shared -I../include/   -c -o Node.o Node.c
+ld -shared -fPIC -o libmylib.so  List.o Node.o
+ar  rcv libmylib.a List.o Node.o
+a - List.o
+a - Node.o
+ranlib libmylib.a
+cp  List.h ../include/
+cp  Node.h ../include/
+cp  libmylib.so ../lib/libmylib.so
+cp  libmylib.a ../lib/libmylib.a
+make[1]: Leaving directory `/home/marissa/marissaschmidt@u.boisestate.edu/backpack/test-class/p3/libsrc'
+cd testsuite; make
+make[1]: Entering directory `/home/marissa/marissaschmidt@u.boisestate.edu/backpack/test-class/p3/testsuite'
+gcc -Wall -g  -I../include -I.   -c -o RandomTestList.o RandomTestList.c
+gcc -Wall -g  -I../include -I.   -c -o Object.o Object.c
+gcc -Wall -g  -I../include -I. -o RandomTestList RandomTestList.o Object.o  -L../lib -lmylib
+gcc -Wall -g  -I../include -I.   -c -o SimpleTestList.o SimpleTestList.c
+gcc -Wall -g  -I../include -I. -o SimpleTestList SimpleTestList.o   -L../lib -lmylib
+gcc -Wall -g  -I../include -I.   -c -o UnitTestList.o UnitTestList.c
+gcc -Wall -g  -I../include -I. -o UnitTestList UnitTestList.o Object.o   -L../lib -lmylib
+make[1]: Leaving directory `/home/marissa/marissaschmidt@u.boisestate.edu/backpack/test-class/p3/testsuite'
+----->ERROR: addAtRear did not actually add the correct node to Rear
+----->ERROR: Got a NULL node when we were not expecting it!
+!!!!SEGFAULT!!!!
+->> printing current passed tests (failed test count may be inaccurate)
+NOTE: Data is possibly corrupt and could be wrong
+</pre>
+    <p>
+    When you get the output above, delete the backpack output file and run
+<pre>
+make clean
+</pre>
+    Then, commit the starter files to your own p3 repository. Committing
+    <em>before</em> you make any changes will allow you to revert back to
+    a fresh state if you need to. It also helps you to see any changes you
+    have made compared to your last commit.
+    </p>
+
+    <h4>Source Files and Documentation</h4>
+    <p>
+    Start looking through the source files provided in the <samp>libsrc</samp>
+    and <samp>testsuite</samp> directories. Some of the syntax may not make
+    sense yet, but we will be covering the topics in lecture soon (or, you can
+    read ahead in the book/slides). You may also want to read through the
+    <a href="http://cs.boisestate.edu/~cs253/p3/docs/files.html">javadoc style
+    documentation</a> of the List, Node, and Object source files.
+    <p>
+    To generate the documentation on your own system, run
+<pre>
+make dox
+</pre>
+    </p>
+
+    <h2>Linked-List Implementation Checkpoints</h2>
+    <p>
+      Once you understand how the List and Node are related, you can start working
+      on completing the List functions. The <code>createList</code>,
+	  <code>addAtFront</code>, and <code>printList</code>
+      functions are done for you. Use these as a reference when you start working
+      on the other functions. Here is a list of functions that must be done for
+      each checkpoint. If Checkpoint 1 and Checkpoint 2 are not completed on time your
+      grade will drop by 20% (10% for checkpoint 1 and 10% for checkpoint 2).
+    </p>
+    <h3 id="checkpoint1">Functions due for Checkpoint 1</h3>
+    <ol>
+      <li>getSize</li>
+      <li>isEmpty</li>
+      <li>addAtRear</li>
+      <li>reverseList</li>
+    </ol>
+
+	You should have finished the above functions and written unit tests for each
+	function. You should have run valgrind and not be getting any memory errors
+	or memory leaks (except for reachable memory).
+
+    <h3 id="checkpoint2">Functions due for Checkpoint 2</h3>
+    <ol>
+      <li>removeFront</li>
+      <li>removeRear</li>
+      <li>removeNode</li>
+      <li>freeList - requires knowledge of function pointers</li>
+    </ol>
+	You should have finished the above functions and written unit tests for each
+	function. You should have run valgrind and not be getting any memory errors
+	or memory leaks.
+
+
+    <h3>Final Program</h3>
+    <ol>
+      <li>search - requires knowledge of function pointers</li>
+      <li>any remaining functions not yet implemented</li>
+    </ol>
+	You should have finished the above functions and written unit tests for each
+	function. You should have run valgrind and not be getting any memory errors
+	or memory leaks.  At this point you should also be passing the grader.
+
+
+    <p>
+    As always, make sure you are testing often! See the testing sections
+    below for more information on testing.
+    </p>
+
+		<h2>Testing</h2>
+		<strong>In the "General Code Quality" portion of your grade
+		you will lose points if you fail to implement any tests. Don't
+		just rely on the grader file to find bugs. You are required to
+		write your own tests to help you pass the grader.</strong>
+		<p>
+		Start with the SimpleTestList.c program that creates a list,
+		reverses it and then frees the list. See if you can get this
+		program working. SimpleTestList is just a smoke test for your
+		code. See <a href="http://en.wikipedia.org/wiki/Smoke_testing_(software)">
+		http://en.wikipedia.org/wiki/Smoke_testing_(software)</a>
+		for a good definition of a smoke test.
+		</p>
+		<h3>Unit testing</h3>
+		<p>
+		In the file UnitTestList.c you will find an example of some
+		unit tests. This test file is incomplete as it does not test all
+		possible boundary conditions. Your job is to expand it to ensure that
+		your list operates as expected.  One strategy for coming up with unit
+		tests is to create tests as you are implementing your list and debugging
+		with gdb and valgrind. Once you have identified the problem, write a
+		unit test that exposes that problem (the unit test should fail at this
+		point) and then fix your code which will cause your unit test to pass!
+		</p>
+		<p>
+		Make sure to add even more tests to test boundary conditions. For
+		example: what happens when the list is empty, when the list pointer is
+		NULL, when you add the first node (at front or at rear), when you
+		remove the last node, when you search for a node that does not exist
+		etc.  Each unit test should only test one function at a time
+		independent of the rest of the functions. You may have to build some
+		scaffolding to be able to execute each method independently. There is
+		a custom assert macro defined in UnitTestList.c that will print out a
+		failure message when a test fails.
+		</p>
+		<p>
+		In addition to the custom assert defined in UnitTestList.c there is
+		also an assert in the C standard library that you could leverage if
+		needed.  The difference between the C standard library assert and our
+		custom assert is the C library version will exit you program on an
+		assertion failure while our assert will just print a message and
+		continue executing the rest of your tests. You can read about the C
+		library assert here:
+		<a href="http://www.cplusplus.com/reference/cassert/assert/">
+		http://www.cplusplus.com/reference/cassert/assert/</a>
+		</p>
+
+		<h3>Random Testing</h3>
+		We have provided a completed test program RandomTestList.c,
+		which does random testing of the various list operations. This
+		simulates how an application may use the list and is used to check the
+		stability of the list on a large number of operations. The random test
+		program could also be used to assess the performance of your list
+		implementation.
+
+
+<pre>Usage: RandomTestList &lt;list size&gt; [&lt;test size=list size&gt;] [&lt;seed&gt;]</pre>
+
+
+		The RandomTestList.c program shown above takes up to three
+		arguments.  The first argument is required. The second argument is the
+		number of random operations to perform. It is optional. The default
+		value if not supplied by the user is the same as the initial size of
+		the list. The third argument is the random generator seed. By setting
+		a seed, you will get the same random number sequence, which can be
+		helpful with debugging. Otherwise the random number generator sets a
+		different seed for each run of the program.
+
+		<h2>Memory Checking with Valgrind</h2>
+		Run all your test programs (Unit, Random, etc) through the tool
+		Valgrind to test for memory errors and leaks. Getting a clean
+		bill of health from Valgrind can be tough! Failing to pass
+		Valgrind will cause you to fail the auto-graded portion of
+		this assignment.
+
+    To run Valgrind, use the following commands from the top level of your
+    p3 directory:
+
+<pre>valgrind --leak-check=yes testsuite/SimpleTestList <arguments> </pre>
+
+<pre>valgrind --leak-check=yes testsuite/RandomTestList <arguments> </pre>
+
+<pre>valgrind --leak-check=yes testsuite/UnitTestList </pre>
+
+	</div>
+		<section>
+		<h1>Running the Auto-grader on onyx </h1>
+		<iframe width="840" height="630" src="https://www.youtube.com/embed/L562zz33m-s" frameborder="0" allowfullscreen></iframe>
+
+		<h2>Turning in your assignment</h2>
+			<p>
+			Once you have finished your assignment you can turn it in
+			with the instructions below.
+			</p>
+			<ul>
+				<li>
+					Open up a terminal or console and navigate to the backpack folder for the class.
+					<!--Once you have a terminal open the submit process is the same
+					across all operating systems.-->
+				</li>
+				<li>
+					Navigate to the subdirectory that contains the source files that you worked on 
+					for the project/homework. Suppose that we are submitting <strong> README.md</strong>,
+					<strong>main.c</strong> and <strong>utility.c</strong>.
+				</li>
+        <li> Clean up your directory
+<pre>make clean</pre>
+        Remove any other unnecessary files that were generated by you or the auto-grader.
+        </li>
+				<li> Add all your changes to Git
+<pre>git add main.c utility.c README.md</pre>
+        </li>
+				<li> Commit your changes to Git
+<pre>git commit -a -m "Finished project XXX"</pre>
+        </li>
+				<li> Push your files to the Backpack server
+<pre>git push origin master</pre>
+        </li>
+			</ul>
+			<iframe width="840" height="630" src="https://www.youtube.com/embed/xP8IfKxRmWA" frameborder="0" allowfullscreen></iframe>
+		<h3>Grading breakdown</h3>
+		<ul>
+			<li>
+				<strong>50 pts - Passing all the grader scripts</strong>. 
+				This portion of your project is
+				pass fail.  Once you have successfully passed all the tests
+				lined out in the ./backpack.sh script you will automatically
+				get 50% of the total grade. <strong>If you intentionally write
+				code that subverts the grading script (E.g. hard coding the
+				answer to elicit a pass, exploiting a bug in the grader, etc)
+				your grade for the entire project will be set to 0. </strong>
+				Everything that you need to pass the grader is enumerated in
+				the project specification. If you think you have found a bug
+				in the grader then please report it to your instructor.
+			</li>
+
+			<li>
+				<strong>40 pts - General code quality</strong>.
+                <ul>
+                    <li>
+                        <font color="green">5 pts</font> - Code is formatted in a consistent manner (Hint #1: Use a code 
+                        formater such as astyle. See the script 
+						<a href="https://github.com/BoiseState/CS253-resources/blob/master/format.sh">format.sh</a>  from CS253-resources repo) 
+                        (Hint #2: Use Vim to format your code automatically)
+                    </li>
+
+                    <li>
+                        <font color="green">5 pts</font> - Code is well documented. Each *public* function must be 
+						documented in the .h (header) file. You will use javadoc style comments (using the Doxygen 
+						program) to document your functions. Most of the code that you will use this semester has 
+						this already done for you. For an example look 
+                        at <a href="https://github.com/BoiseState/CS253-resources/blob/master/C-examples/linked-lists/doubly-linked/libsrc/List.h">List.h in the class repository</a>.  Documentation for *.c files is not required unless you 
+						expose functions publicly in the .c file in which case it must be documented. 
+                    </li>
+
+                    <li>
+                        <font color="green">15 pts</font> - Modularity. Code is broken into appropriate files 
+						and functions. If you are copying and pasting code then you should be putting that code 
+						into a function and then calling the function.  Copy/pasting code is a well known source of bugs.
+                    </li>
+
+                    <li>
+                        <font color="green">15 pts</font> - Code is semantically and logically correct. 
+						C/C++ are unsafe languages which can allow dangerous bugs to "lurk" for years until they pop up. 
+						Even if your code passes the 
+                        grader you can still have errors. For example statically allocating a global array can 
+                        allow off by one errors that even the venerable Valgrind can not detect. Thus, when grading
+                        your code any errors that are found will still be docked regardless if your code "runs perfect" 
+                    </li>
+                </ul>
+			</li>
+			<li>
+				<strong>10 pts - README.md file</strong>. Fill out the template located at
+				<a href="https://github.com/BoiseState/CS253-lab/blob/master/README_TEMPLATE.md">README.md</a>.
+				Our README's will be using the Markdown format. You can get more information at
+				<a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown cheat-sheet</a>
+                <ul>
+                   <li> <font color="green">5 pts</font> - Used the template that was linked off of the project 
+				   	    specification page 
+				   </li>
+                   <li> <font color="green">2 pts</font> - Each section is <strong>relatively</strong> free of 
+				        grammar and spelling errors. At a bare minimum you should run spell checker on your document. 
+						Vim has the ability to spell check.
+                   </li>
+                   <li> <font color="green">2 pts</font> - Everything in the README.md is correct. </li>
+                   <li> <font color="green">1pt</font> - The "Sources Used" section is properly filled out. </li>
+                </ul>
+                    
+			</li>
+		</ul>
+		<h4>Late policy</h4>
+		<a name="late_policy"></a>
+		<p>
+			For each day after the stated due date you will lose 10% off the total
+			score. Late scores are all calculated programmatically so a submission
+			that is 1 second late (on our server)  will still be marked as late by
+			the grading scripts.  <strong>No extensions will be given beyond what
+			is listed in the table below.</strong>
+
+		<p>
+		<table>
+			<tr>
+			<th>Days Late</th>
+			<th>Maximum possible score</th>
+			</tr>
+		  <tr>
+			<td>0</td>
+			<td>100%</td>
+		  </tr>
+		  <tr>
+			<td>less than 1 day</td>
+			<td>90%</td>
+		  </tr>
+		  <tr>
+			<td>less than 2 days</td>
+			<td>80%</td>
+		  </tr>
+		  <tr>
+			<td>less than 3 days</td>
+			<td>70%</td>
+		  </tr>
+		  <tr>
+			<td>less than 4 days</td>
+			<td>60%</td>
+		  </tr>
+		  <tr>
+			<td>4+</td>
+			<td>0%</td>
+		  </tr>
+		</table>
+	</section>
+</section>
+	</body>
+</html>

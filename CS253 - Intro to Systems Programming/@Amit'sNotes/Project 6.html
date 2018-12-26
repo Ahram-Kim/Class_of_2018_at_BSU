@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Project 6</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css"
+href="http://nullptr.boisestate.edu/CS-LMS/css/normalize.css" media="screen" />
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"
+type="text/css" />
+    <link rel="stylesheet" type="text/css"
+href="http://nullptr.boisestate.edu/CS-LMS/css/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css"
+href="http://nullptr.boisestate.edu/CS-LMS/css/github-light.css" media="screen" />
+    <link rel="shortcut icon"
+	  href="http://coen.boisestate.edu/cs/wp-content/themes/framewerk/framewerk/frontend/images/layout/favicon.ico">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis.min.css" rel="stylesheet" type="text/css">
+    
+  </head>
+  <body>
+    <!-- content from each course page -->
+<section class="page-header">
+	<h1 class="project-name">{ Project 6 }</h1>
+	<h2 class="project-tagline">Threads and Signals Part 1</h2>
+	<a href="http://github.com/BoiseState/CS253-resources" class="btn">Class resources</a>
+	<a href="https://piazza.com/boisestate/" class="btn">Piazza</a>
+	<a href="http://coen.boisestate.edu/cs/computer-science-tutoring-center-cstc/tutors/" class="btn">Tutors</a>
+</section>
+
+<section class="main-content">
+	<div class="container">
+	  <!-- <h1>DUE: Week 32 <small>(Aug 14, 2016 at 11:59:59 PM)</small> </h1> -->
+	  <h1>DUE: 8/10/2016 </h1> 
+
+		<h2>Objectives</h2>
+		<ol>
+			<li> Practice implementing and using a library </li>
+			<li> Use struct's, pointers, and arrays </li>
+			<li> Implement a systems level data structure </li>
+			<li> Use Linux signals/handlers </li>
+			<li> Use IO libraries from C </li>
+		</ol>
+
+
+		<h2>Introduction</h2>
+		<p>
+		In this assignment, you will develop a simple ring buffer library that
+		will allow fast debug logging for all of your system
+		applications. This project is divided into two parts. In the first
+		part you will implement the ring buffer using a simple array as the
+		backing data structure. In the second part of the assignment you will
+		make your ring buffer thread safe. This will give you two versions of
+		the same library, one thread safe and one not. The wikipedia article
+		on circular buffers is a good article to read through before you start
+		coding <a href="https://en.wikipedia.org/wiki/Circular_buffer">
+		https://en.wikipedia.org/wiki/Circular_buffer</a>.
+		</p>
+		<p>
+		Our ring buffer will be a specialized version of the more general
+		circular buffer. We will maintain only one index for writing log
+		entries and reset the index to 0 when we are at the last entry. In other
+		words if we have a standard array of length 6 (yielding indexes 0-5)
+		when we reach the end of the array (index 5) we wrap back around to
+		index 0 and write our data. We do not provide an option to remove an
+		entry from the buffer.
+		</p>
+		<p>
+		At first glance this may seem like a bad idea. Our ring buffer will overwrite
+		previous entries, so how is this a good thing? The idea behind a ring buffer
+		in systems level programming is speed. We want a fast data structure that the
+		application can write log entries into for debugging purposes. A ring buffer
+		is only a snapshot of the final few moments of an application's life. However,
+		that snapshot is usually enough to give the developer an idea of where to
+		start looking for a potential problem.
+		</p>
+		<h2>Implementation details</h2>
+		<p>
+		We are going to implement a very simple ring buffer. Our implementation
+		is only going to maintain one index variable and an array of strings.
+		When our program starts up we will allocate a fixed number of entries,
+		initialize our buffer and start accepting calls.
+		</p>
+		<p>
+		All the starter code is provided for you in the lab folder
+		<code>C-examples/debug/ring-buffer</code>. The semantics
+		of each method is detailed within the header file provided (ring.h). Our
+		ring buffer will be compiled as a library so it can be used by other
+		programs. Our first version will not be safe to use in an asynchronous
+		manner (e.g. with multiple threads). We will make our code safe for multi-threaded 
+		use in the next homework.
+		</p>
+
+
+		</h3>Signals</h3>
+		<p>
+		We will use the alarm system call on Linux to setup an interval for check-pointing
+		our ring buffer to disk. This is valuable because there are times when
+		our program may not be able to write to disk before a crash. So if we are
+		always writing our log files at predictable intervals we can mitigate the
+		risk that we crash and have absolutely no log files to look at. The
+		worst case scenario is our log files are a little stale.
+		</p>
+		<p>
+		Below are some lab files to look at to get you started with signals.
+		You will want to setup an alarm signal in your code that will call the
+		<code>dump_buffer</code> function.
+		<ol>
+			<li> <a href="https://github.com/BoiseState/CS253-resources/blob/master/signals/wake-up.c">signals/wake-up.c</a></li> 
+		</ol>
+
+		<h2>Starter files</h2>
+		<p>
+		All of the starter files for this project are in the folder
+		<code>C-examples/debug/ring-buffer</code> in the class resources
+		repository. Everything should build out of the gate on onyx. We have provided
+		a basic implementation that you will extend to checkpoint the buffer to disk at
+		<code>alarm_interval</code> seconds.
+		</p>
+		<p>
+		Make sure you execute a <code>git pull</code> command on the lab file directory
+		before starting this project to get the most recent versions of the files.
+		In your local working copy execute:
+		</p>
+<pre>git pull origin master</pre>
+		<p>
+		You must use the exact directory structure that is already setup in the
+		lab as the grader depends on it to test your code. Copy these files in
+		to your <code>p6</code> project folder in the backpack repository.
+		</p>
+		<h2>Hints</h2>
+		<ol>
+			<li> First read through all the code and to get an understanding of what is going on.</li>
+
+			<li> Remember your job is to add check-pointing to this piece of code
+			so you will have to add a few helper functions in ring.c. First, fix
+			the <code>dump_buffer</code> function so that it prints the log messages
+			from the <i>oldest</i> to the <i>newest</i>. Note that this isn't necessarily from
+			index <i>0</i>&nbsp; to <i>MAX_LOG_ENTRY - 1</i> because we are using a circular
+			buffer.  The constant <i>MAX_LOG_ENTRY</i> is defined in the <code>ring.h</code> header file.
+			</li>
+
+			<li>Then you will also have to fix the <code>dump_buffer</code> function to write to a file
+			instead of just calling printf.
+			</li>
+
+			<li> Run valgrind often! (we have added it as the default run configuration
+			in run.sh)</li> 
+			
+			<li> Take a look at the notes for C File IO for using file calls in C.</li> 
+			
+			<li> Read through the Signals slides.  [Example: <a
+			href="https://github.com/BoiseState/CS253-resources/blob/master/signals/wake-up.c">signals/wake-up.c</a>]</li> 
+			
+			<li> When you checkpoint your buffer to disk you should create a text file
+			so a user could open it up in a standard text editor. All entries should
+			be dumped to the file in order from the <i>oldest</i> entry to the
+			<i>newest</i>
+			entry. They should, however, be labeled as log entry <i>0</i> to
+			<i>MAX_LOG_ENTRY - 1</i>. You should overwrite any existing log files that exist.
+			</li>
+
+			<li> Your program should not load up any existing logs when starting
+			up. Any existing log files will simply be overwritten. If a user wants
+			to save the log entries they would have to do that manually.
+			</li>
+
+		</ol>
+
+		<h2>Testing</h2> Look through the minimal testing that is provided for you
+		in test.c.  In your README add a section on testing in which you enumerate how
+		you will go about testing your ring buffer to ensure that it is correct. Once
+		you have a test plan in place you are required to improve test.c so our program
+		is a little more robust.
+
+		<h3>Testing Hints</h3> Below are some things you should think about when testing
+		your ring buffer.  This list is not all inclusive it is just a place to jump
+		start your ideas.  <ol>
+			<li> What happens if you try and log a NULL string? </li> <li> What
+			happens if you try and log a string that is too long? </li> <li> What
+			happens if you are trying to log at the exact same time you are dumping
+			your log to disk? (Note: You should plan for this now even though we
+			will not fix this until project P7).  </li>
+			<li> What happens if our index counter, which is an int, overflows? </li>
+		</ol>
+
+	</div>
+		<section>
+		<h1>Running the Auto-grader on onyx </h1>
+		<iframe width="840" height="630" src="https://www.youtube.com/embed/L562zz33m-s" frameborder="0" allowfullscreen></iframe>
+
+		<h2>Turning in your assignment</h2>
+			<p>
+			Once you have finished your assignment you can turn it in
+			with the instructions below.
+			</p>
+			<ul>
+				<li>
+					Open up a terminal or console and navigate to the backpack folder for the class.
+					<!--Once you have a terminal open the submit process is the same
+					across all operating systems.-->
+				</li>
+				<li>
+					Navigate to the subdirectory that contains the source files that you worked on 
+					for the project/homework. Suppose that we are submitting <strong> README.md</strong>,
+					<strong>main.c</strong> and <strong>utility.c</strong>.
+				</li>
+        <li> Clean up your directory
+<pre>make clean</pre>
+        Remove any other unnecessary files that were generated by you or the auto-grader.
+        </li>
+				<li> Add all your changes to Git
+<pre>git add main.c utility.c README.md</pre>
+        </li>
+				<li> Commit your changes to Git
+<pre>git commit -a -m "Finished project XXX"</pre>
+        </li>
+				<li> Push your files to the Backpack server
+<pre>git push origin master</pre>
+        </li>
+			</ul>
+			<iframe width="840" height="630" src="https://www.youtube.com/embed/xP8IfKxRmWA" frameborder="0" allowfullscreen></iframe>
+		<h3>Grading breakdown</h3>
+		<ul>
+			<li>
+				<strong>50 pts - Passing all the grader scripts</strong>. 
+				This portion of your project is
+				pass fail.  Once you have successfully passed all the tests
+				lined out in the ./backpack.sh script you will automatically
+				get 50% of the total grade. <strong>If you intentionally write
+				code that subverts the grading script (E.g. hard coding the
+				answer to elicit a pass, exploiting a bug in the grader, etc)
+				your grade for the entire project will be set to 0. </strong>
+				Everything that you need to pass the grader is enumerated in
+				the project specification. If you think you have found a bug
+				in the grader then please report it to your instructor.
+			</li>
+
+			<li>
+				<strong>40 pts - General code quality</strong>.
+                <ul>
+                    <li>
+                        <font color="green">5 pts</font> - Code is formatted in a consistent manner (Hint #1: Use a code 
+                        formater such as astyle. See the script 
+						<a href="https://github.com/BoiseState/CS253-resources/blob/master/format.sh">format.sh</a>  from CS253-resources repo) 
+                        (Hint #2: Use Vim to format your code automatically)
+                    </li>
+
+                    <li>
+                        <font color="green">5 pts</font> - Code is well documented. Each *public* function must be 
+						documented in the .h (header) file. You will use javadoc style comments (using the Doxygen 
+						program) to document your functions. Most of the code that you will use this semester has 
+						this already done for you. For an example look 
+                        at <a href="https://github.com/BoiseState/CS253-resources/blob/master/C-examples/linked-lists/doubly-linked/libsrc/List.h">List.h in the class repository</a>.  Documentation for *.c files is not required unless you 
+						expose functions publicly in the .c file in which case it must be documented. 
+                    </li>
+
+                    <li>
+                        <font color="green">15 pts</font> - Modularity. Code is broken into appropriate files 
+						and functions. If you are copying and pasting code then you should be putting that code 
+						into a function and then calling the function.  Copy/pasting code is a well known source of bugs.
+                    </li>
+
+                    <li>
+                        <font color="green">15 pts</font> - Code is semantically and logically correct. 
+						C/C++ are unsafe languages which can allow dangerous bugs to "lurk" for years until they pop up. 
+						Even if your code passes the 
+                        grader you can still have errors. For example statically allocating a global array can 
+                        allow off by one errors that even the venerable Valgrind can not detect. Thus, when grading
+                        your code any errors that are found will still be docked regardless if your code "runs perfect" 
+                    </li>
+                </ul>
+			</li>
+			<li>
+				<strong>10 pts - README.md file</strong>. Fill out the template located at
+				<a href="https://github.com/BoiseState/CS253-lab/blob/master/README_TEMPLATE.md">README.md</a>.
+				Our README's will be using the Markdown format. You can get more information at
+				<a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown cheat-sheet</a>
+                <ul>
+                   <li> <font color="green">5 pts</font> - Used the template that was linked off of the project 
+				   	    specification page 
+				   </li>
+                   <li> <font color="green">2 pts</font> - Each section is <strong>relatively</strong> free of 
+				        grammar and spelling errors. At a bare minimum you should run spell checker on your document. 
+						Vim has the ability to spell check.
+                   </li>
+                   <li> <font color="green">2 pts</font> - Everything in the README.md is correct. </li>
+                   <li> <font color="green">1pt</font> - The "Sources Used" section is properly filled out. </li>
+                </ul>
+                    
+			</li>
+		</ul>
+		<h4>Late policy</h4>
+		<a name="late_policy"></a>
+		<p>
+			For each day after the stated due date you will lose 10% off the total
+			score. Late scores are all calculated programmatically so a submission
+			that is 1 second late (on our server)  will still be marked as late by
+			the grading scripts.  <strong>No extensions will be given beyond what
+			is listed in the table below.</strong>
+
+		<p>
+		<table>
+			<tr>
+			<th>Days Late</th>
+			<th>Maximum possible score</th>
+			</tr>
+		  <tr>
+			<td>0</td>
+			<td>100%</td>
+		  </tr>
+		  <tr>
+			<td>less than 1 day</td>
+			<td>90%</td>
+		  </tr>
+		  <tr>
+			<td>less than 2 days</td>
+			<td>80%</td>
+		  </tr>
+		  <tr>
+			<td>less than 3 days</td>
+			<td>70%</td>
+		  </tr>
+		  <tr>
+			<td>less than 4 days</td>
+			<td>60%</td>
+		  </tr>
+		  <tr>
+			<td>4+</td>
+			<td>0%</td>
+		  </tr>
+		</table>
+	</section>
+</section>
+	</body>
+</html>

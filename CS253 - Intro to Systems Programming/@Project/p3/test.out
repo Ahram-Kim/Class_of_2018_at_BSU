@@ -1,0 +1,6 @@
+[0] ls
+[1] -l
+[2] -a
+[0] cat
+[1] hello.txt
+[0] pwd

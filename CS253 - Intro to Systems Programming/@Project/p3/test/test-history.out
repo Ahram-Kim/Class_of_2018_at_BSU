@@ -1,0 +1,22 @@
+[0] ls
+[1] -l
+[2] -a
+/home
+[0] pwd
+0 ls -l -a
+1 cd /home
+2 pwd
+3 history
+[0] touch
+[1] hello.txt
+[0] cat
+[1] hello.txt
+[0] clear
+[0] ls
+[0] time
+[0] pwd
+0 clear
+1 ls
+2 time
+3 pwd
+4 history

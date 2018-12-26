@@ -1,0 +1,120 @@
+\hypertarget{ring_8c}{\section{libsrc/ring.c File Reference}
+\label{ring_8c}\index{libsrc/ring.\-c@{libsrc/ring.\-c}}
+}
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$time.\-h$>$}\\*
+{\ttfamily \#include $<$ring.\-h$>$}\\*
+{\ttfamily \#include $<$signal.\-h$>$}\\*
+{\ttfamily \#include $<$unistd.\-h$>$}\\*
+{\ttfamily \#include $<$pthread.\-h$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+static char $\ast$ \hyperlink{ring_8c_a4a94df949afd7d3b124c581a378b6175}{get\-Time\-String} ()
+\begin{DoxyCompactList}\small\item\em Return the current timestamp (localtime) from the system. \end{DoxyCompactList}\item 
+void \hyperlink{ring_8c_a794eb7c1847f8ee4ab2b18a6828cddd0}{log\-\_\-msg} (char $\ast$entry)
+\begin{DoxyCompactList}\small\item\em Add entry into the ring buffer. \end{DoxyCompactList}\item 
+static void \hyperlink{ring_8c_aee27a8f2c8bb6aebdc1af522382e6da3}{dump\-\_\-buffer} ()
+\item 
+void $\ast$ \hyperlink{ring_8c_a67af8bf5e541cde95bd1a0f86c720a3a}{thread\-\_\-backup} (void $\ast$data)
+\item 
+void \hyperlink{ring_8c_aa2b94f1a58a55f9e276f9709d88ef52a}{init\-\_\-buffer} ()
+\begin{DoxyCompactList}\small\item\em Initialize the buffer for use. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>int \hyperlink{ring_8c_a96010e8f175b18e5988b95a0cf09faa1}{curr}\\
+\>char \hyperlink{ring_8c_a09840564bd04fafd8a02844cd497f6ed}{log} \mbox{[}\hyperlink{libsrc_2ring_8h_a492326be687908bee1e52e4063a1090f}{MAX\_LOG\_ENTRY}\mbox{]}\mbox{[}\hyperlink{libsrc_2ring_8h_a6789ebc0df71a8ef76bfbb4fb5f74aad}{MAX\_STRING\_LENGTH}\mbox{]}\\
+\>int \hyperlink{ring_8c_a88110d06c2b8b5584d31b5be3f13af46}{threadID}\\
+\>pthread\_mutex\_t \hyperlink{ring_8c_a4acff8232e4aec9cd5c6dc200ac55ef3}{mutex}\\
+\} \hyperlink{ring_8c_af0ee01ac657c0541a764842691e71a90}{buff}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{ring_8c_aee27a8f2c8bb6aebdc1af522382e6da3}{\index{ring.\-c@{ring.\-c}!dump\-\_\-buffer@{dump\-\_\-buffer}}
+\index{dump\-\_\-buffer@{dump\-\_\-buffer}!ring.c@{ring.\-c}}
+\subsubsection[{dump\-\_\-buffer}]{\setlength{\rightskip}{0pt plus 5cm}static void dump\-\_\-buffer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{ring_8c_aee27a8f2c8bb6aebdc1af522382e6da3}
+\hypertarget{ring_8c_a4a94df949afd7d3b124c581a378b6175}{\index{ring.\-c@{ring.\-c}!get\-Time\-String@{get\-Time\-String}}
+\index{get\-Time\-String@{get\-Time\-String}!ring.c@{ring.\-c}}
+\subsubsection[{get\-Time\-String}]{\setlength{\rightskip}{0pt plus 5cm}static char$\ast$ get\-Time\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{ring_8c_a4a94df949afd7d3b124c581a378b6175}
+
+
+Return the current timestamp (localtime) from the system. 
+
+\hypertarget{ring_8c_aa2b94f1a58a55f9e276f9709d88ef52a}{\index{ring.\-c@{ring.\-c}!init\-\_\-buffer@{init\-\_\-buffer}}
+\index{init\-\_\-buffer@{init\-\_\-buffer}!ring.c@{ring.\-c}}
+\subsubsection[{init\-\_\-buffer}]{\setlength{\rightskip}{0pt plus 5cm}void init\-\_\-buffer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{ring_8c_aa2b94f1a58a55f9e276f9709d88ef52a}
+
+
+Initialize the buffer for use. 
+
+We must call this function before calling log\-\_\-msg to ensure all the memory has been allocated and is ready to use.
+
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\hypertarget{ring_8c_a794eb7c1847f8ee4ab2b18a6828cddd0}{\index{ring.\-c@{ring.\-c}!log\-\_\-msg@{log\-\_\-msg}}
+\index{log\-\_\-msg@{log\-\_\-msg}!ring.c@{ring.\-c}}
+\subsubsection[{log\-\_\-msg}]{\setlength{\rightskip}{0pt plus 5cm}void log\-\_\-msg (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{entry}
+\end{DoxyParamCaption}
+)}}\label{ring_8c_a794eb7c1847f8ee4ab2b18a6828cddd0}
+
+
+Add entry into the ring buffer. 
+
+We can assume that entry is a properly terminated string. However we can N\-O\-T assume that entry is less than M\-A\-X\-\_\-\-S\-T\-R\-I\-N\-G\-\_\-\-L\-E\-N\-G\-T\-H, so we must be careful when copying our data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em entry} & null-\/terminated string that contains the log message \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\hypertarget{ring_8c_a67af8bf5e541cde95bd1a0f86c720a3a}{\index{ring.\-c@{ring.\-c}!thread\-\_\-backup@{thread\-\_\-backup}}
+\index{thread\-\_\-backup@{thread\-\_\-backup}!ring.c@{ring.\-c}}
+\subsubsection[{thread\-\_\-backup}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ thread\-\_\-backup (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{data}
+\end{DoxyParamCaption}
+)}}\label{ring_8c_a67af8bf5e541cde95bd1a0f86c720a3a}
+
+
+\subsection{Variable Documentation}
+\hypertarget{ring_8c_af0ee01ac657c0541a764842691e71a90}{\index{ring.\-c@{ring.\-c}!buff@{buff}}
+\index{buff@{buff}!ring.c@{ring.\-c}}
+\subsubsection[{buff}]{\setlength{\rightskip}{0pt plus 5cm}struct \{ ... \}   buff\hspace{0.3cm}{\ttfamily [static]}}}\label{ring_8c_af0ee01ac657c0541a764842691e71a90}
+\hypertarget{ring_8c_a96010e8f175b18e5988b95a0cf09faa1}{\index{ring.\-c@{ring.\-c}!curr@{curr}}
+\index{curr@{curr}!ring.c@{ring.\-c}}
+\subsubsection[{curr}]{\setlength{\rightskip}{0pt plus 5cm}int curr}}\label{ring_8c_a96010e8f175b18e5988b95a0cf09faa1}
+\hypertarget{ring_8c_a09840564bd04fafd8a02844cd497f6ed}{\index{ring.\-c@{ring.\-c}!log@{log}}
+\index{log@{log}!ring.c@{ring.\-c}}
+\subsubsection[{log}]{\setlength{\rightskip}{0pt plus 5cm}char log\mbox{[}{\bf M\-A\-X\-\_\-\-L\-O\-G\-\_\-\-E\-N\-T\-R\-Y}\mbox{]}\mbox{[}{\bf M\-A\-X\-\_\-\-S\-T\-R\-I\-N\-G\-\_\-\-L\-E\-N\-G\-T\-H}\mbox{]}}}\label{ring_8c_a09840564bd04fafd8a02844cd497f6ed}
+\hypertarget{ring_8c_a4acff8232e4aec9cd5c6dc200ac55ef3}{\index{ring.\-c@{ring.\-c}!mutex@{mutex}}
+\index{mutex@{mutex}!ring.c@{ring.\-c}}
+\subsubsection[{mutex}]{\setlength{\rightskip}{0pt plus 5cm}pthread\-\_\-mutex\-\_\-t mutex}}\label{ring_8c_a4acff8232e4aec9cd5c6dc200ac55ef3}
+\hypertarget{ring_8c_a88110d06c2b8b5584d31b5be3f13af46}{\index{ring.\-c@{ring.\-c}!thread\-I\-D@{thread\-I\-D}}
+\index{thread\-I\-D@{thread\-I\-D}!ring.c@{ring.\-c}}
+\subsubsection[{thread\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}int thread\-I\-D}}\label{ring_8c_a88110d06c2b8b5584d31b5be3f13af46}
