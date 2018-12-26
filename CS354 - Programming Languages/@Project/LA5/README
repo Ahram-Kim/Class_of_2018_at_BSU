@@ -1,0 +1,13 @@
+
+ DESCRIBE YOUR PORTING EXPERIENCE, AND COMPARE THE LANGUAGES
+
+ I used zetcode.com/gui/csharpwinforms/firststeps/
+
+ In this part of the Mono Winforms tutorial, there are some basic progrograms
+ in Winforms programming library. I started to make a simple.cs and try it 
+ works or not. I used the using directive, which allows me to use a type from
+ an appropricate namespace without a fully qualified name.
+ In Winforms, any window or a dialog is a Form. This control is a basic
+ container, whose purpose is to display other child controls. 
+ Text and Size are properties of a form. To compile the file,
+ used 'mcs -r:System.Windows.Forms.dll -r:System.Drawing.dll simple.cs'. 

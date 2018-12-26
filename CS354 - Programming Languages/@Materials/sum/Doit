@@ -1,0 +1,6 @@
+#!/bin/bash
+
+fpc -osum sum.p
+
+./sum
+

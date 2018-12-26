@@ -1,0 +1,5 @@
+#!/bin/bash -x
+
+export PATH=/usr/local/bin:/usr/bin:/bin
+
+icon sum.icn

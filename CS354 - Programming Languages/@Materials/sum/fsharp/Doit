@@ -1,0 +1,8 @@
+#!/bin/bash -x
+
+export PATH=/usr/local/bin:/usr/bin:/bin
+
+fsharpc Sum.fs
+
+MONO_PATH=/usr/local/lib/mono/4.0 \
+    mono Sum.exe

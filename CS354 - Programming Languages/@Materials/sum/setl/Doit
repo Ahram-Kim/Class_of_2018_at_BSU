@@ -1,0 +1,5 @@
+#!/bin/bash -x
+
+export PATH=/usr/local/src/setl/bin:/usr/bin:/bin
+
+setl sum.setl

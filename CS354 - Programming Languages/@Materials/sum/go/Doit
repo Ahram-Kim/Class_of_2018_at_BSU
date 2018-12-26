@@ -1,0 +1,9 @@
+#!/bin/bash -x
+
+export PATH=/usr/bin:/bin
+
+gccgo -g -o sum sum.go
+./sum
+
+gccgo -g -o sum sumgo.go
+./sum

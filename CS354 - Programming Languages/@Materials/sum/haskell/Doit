@@ -1,0 +1,5 @@
+#!/bin/bash
+
+ghc -o sum sum.hs
+
+./sum

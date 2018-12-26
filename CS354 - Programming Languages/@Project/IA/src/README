@@ -1,0 +1,26 @@
+
+Interpreter Assignments #1: Expressions and Assignments
+
+Author: Ahram Kim
+Class: CS354-001
+
+Overview:
+
+  This project makes me extend a small interpreter. 
+  
+Compiling and Using:
+
+  I compile the java
+    $ javac *.java
+  And, execute the java. For example, 
+    $ java Interpreter "x=1+2;" "y=x+2"
+   
+Testing: 
+
+  I got all correct values for int.
+  However, I had some problems about supporting double.
+  I add the period "." in the String s but I still have the error.
+  And, I was trying to change the 'nextNumber()' method instead of
+  changing 'initDigit()' method. I was trying to do 'indexof()', and
+  'parseDouble' but was not working correctly. 
+ 

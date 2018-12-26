@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# This program is a simple regression tester.
+# For each test directory, the interpreter
+# is executed on a *single* program in a file named "prg".
+# Input to "prg" is in "inp", which is redirected to stdin.
+# Output of "prg" is in "out", to which stdout is redirected.
+# After each execution, "out" is compared to "exp",
+# the expected output.
+
+for t in $PWD/test-* ; do
+    echo ${t##*/}
+    [ -f $t/inp ] || > $t/inp
+    (cd .. && java Interpreter "$(< $t/prg)" < $t/inp > $t/out)
+    cmp -s $t/exp $t/out || echo ${t##*/} failed >&2
+done

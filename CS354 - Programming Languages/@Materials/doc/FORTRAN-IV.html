@@ -1,0 +1,707 @@
+
+<html>
+<head>
+<title>FORTRAN IV Reference Page</title>
+
+</head>
+<BODY BGCOLOR="#DADADA">
+
+<BR>
+<HR>
+<CENTER><B>FORTRAN IV Reference Page<br>
+Programming Languages, <a href="http://www.gordon.edu">Gordon College</a></B>
+</CENTER>
+<HR>
+
+
+<pre>
+
+<h3><b>Program Organization</b></h3>
+
+All FORTRAN programs have the following format:
+
+    PROGRAM statement
+    variable declarations (optional)
+    executable statements
+    END statement
+    SUBROUTINE or FUNCTION modules (optional)
+   
+The original FORTRAN programs were prepared on a <a href="keypunch.html">keypunch</a> machine which punched holes into paper
+cards which had 80 characters maximum.  For this reason, lines in a FORTRAN program are often 
+referred to as "cards."  Each card is either a "data" card, a "comment" card or a "statement" card.
+
+</pre>
+<center><img height=180 width=417 src="punchcard.jpg"></center>
+<pre>
+    
+<i>Data Cards</i>
+All 80 characters of the line are used for program data as defined below.
+    
+<i>Comment Cards</i>
+The first character on the card much be C; all other characters are ignored in subsequent 
+processing.
+   
+<i>Statement Cards</i>
+Statement cards are subdivided into four sections as follows:
+
+
+                   1         2         3         4         5         6         7            8
+    12345 | 6 | 789012345678901234567890123456789012345678901234567890123456789012 | 34567890
+
+<ul>   
+<li>The first five characters are used for unique statement numbers.  Numbers do not need
+to appear in sequence.  Any statement (except the END statement) may have a statement
+number.
+<li>The sixth character is called the "continuation" character.  If more space is required
+from the previous card, include any character (except 0) in the 6th position of the next card.
+<li>Positions 7-72 are used for the actual program code.  Often programmers use a TAB (8 spaces) 
+rather than type 7 spaces.
+<li>Positions 73-80 are infrequently used, but when they are they are used for identification
+codes which are only of interest to the programmer, they are not computed. 
+</ul>
+<br><br><hr>
+<h3><b>Character set</b></h3>
+(ASA Standard FORTRAN IV)
+
+    A .. Z
+    0 .. 9
+    =
+    +
+    -
+    *
+    /
+    (
+    )
+    ,
+    .
+    $ 
+
+Note: All modern versions of FORTRAN support more characters than these.
+<br><br><hr>
+<h3><b>Identifiers</b></h3>    
+While FORTRAN is very picky about the placement of certain program elements on a card, it is
+supremely disinterested otherwise.  For example, the keyword PROGRAM, which begins a FORTRAN
+program, may be typed,
+
+    PROGRAM
+    PRO GRAM
+    PR OG RAM
+    
+or even,
+
+    P R  O    G     R      A       M
+    
+This is partly due to the difficulty in repairing a typographical error when using a keypunch
+machine.  Likewise, whitespace is not required between syntactic objects in a program.  In other
+words the FORTRAN executable statement,
+
+    DO 30 I = 10, 100
+
+can also be written,
+
+    DO30I=10,100
+    
+Such forms can lead to serious errors.  Imagine, for example, what would have occurred if the
+programmer accidentally punched a decimal point instead of a comma in the compressed example 
+above.
+<br><br><hr>
+<h3><b>Reserved words</b></h3>    
+FORTRAN has no reserved words.  All words have meaning based on context.  For example, the 
+following is legal, though unwise, in FORTRAN
+
+    IF (IF.EQ.THEN) IF=IF*THEN
+
+where the first use of the word IF refers to the keyword for a selection control structure,
+while the other uses refer to a variable named IF; likewise, THEN is used in the context
+of a variable in this statement.
+<br><br><hr>
+<h3><b>Data types and Variables</b></h3>
+    
+    <b>Variable declaration</b>
+  
+    Variables are named through user-defined identifiers; however, they do not need to be 
+    explicitly declared in a FORTRAN program.  Variables are declared either implicitly, by use 
+    of the variable's name or explicitly through a "type" statements, either DATA or DIMENSION.
+             
+    Any variable beginning with the letters I .. N is implicitly declared to
+    be an INTEGER data type (see below) unless overridden by an explicit 
+    declaration.  All other variables are implicitly declared to be REAL data
+    type (see below) unless overridden.       
+     
+    Declaration statements require type name, followed by list of identifiers, for example:
+	 		            
+        INTEGER DAY,WEEK,MONTH
+        REAL IM67,QU45
+        LOGICAL DONE
+
+        <b>Data types</b>
+ 		
+            <b>Primitive</b>
+ 		
+                <b>Numeric types</b>
+ 		
+                    INTEGER      literal examples:     0        
+                                                       42    
+                                                       -12    
+                                                       +2345     
+                                                       0034
+                                                       
+                    REAL                 literals:     0.       
+                                                       1.1   
+                                                       -.234  
+                                                       +12.34    
+                                                       1.234E-12
+                                                        
+                    DOUBLE PRECISION     literals:     13.D+1   
+                                                       13D1
+                                                       
+                    COMPLEX              literals:     CMPLX(1,2)              means    1 + 2i
+                                                       CMPLX(+12739E3,0.)
+                                                       CMPLX(44.36,-12.2E16) 		
+
+                <b>Boolean type</b>
+ 		
+                    LOGICAL              literals:     .TRUE.
+                                                       .FALSE.
+ 		      		           
+                <b>String type</b>
+ 		
+                    CHARACTER            literals:     4HJOHN
+                                                       6HR CASH
+                                                       'JOHNNY CASH'   -- note, not ASA standard 
+ 		      
+            <b>User-defined</b>
+ 		    
+                 FORTRAN IV does not support the creation of a user-defined data type
+ 		    
+            <b>Structured Data</b>
+ 		    
+            <i>Arrays</i>
+            
+                Arrays are created with DIMENSION statements and may have 1 to 7 subscripts 
+                (depending upon implementation.  
+                
+                    DIMENSION W(1000)
+                    DIMENSION X(10,10)
+                    DIMENSION Z(4,6,8,10)
+                
+                or
+                
+                    DIMENSION W(1000),X(10,10),Z(4,6,8,10)
+                
+                Note that the variable arrays above will contain REAL data because no explicit 
+                data type was declared.  To explicitly declare the type of value in the array use 
+                the form, for example,
+                
+                    DOUBLE PRECISION A,K,M(5,5,10),X
+                    
+                which will create three unstructured double precision variables (A, K and X) as 
+                well as an array of 250 double precision values (M).       
+                
+                FORTRAN stores arrays in column-major order meaning that the earlier subscripts 
+                vary most rapidly in the actual stored data.  For example, X(1,2) is followed in 
+                memory  by X(2,2) not X(1,3).  Alternately, values can be referenced by variable 
+                subscripts such as X(K) or X(K+1); note the use of an integer variable subscript.               
+ 		    
+            <i>Records</i>
+            
+                FORTRAN IV does not support record structures.
+                
+            <b>Variable initialization</b>
+            
+                DATA statements are used to initialize variables.  Data statements begin with the 
+                keyword DATA and are followed by identifiers and values, delimited by slashes.  
+                For example, either
+                
+                    DATA I,J,K/0,0,0/
+                    
+                or
+                
+                    DATA I,J,K/3*0/
+                    
+                results in the following:
+                    
+                    <table cellpadding=10 align=center>
+                    <tr><td>
+                    
+                    <table border=1>
+                    <tr><th>I</th><tr><td>0</td></tr>
+                    </table>
+                    
+                    </td><td>
+                 
+                    <table border=1>
+                    <tr><th>J</th><tr><td>0</td></tr>
+                    </table>
+                    
+                    </td><td>
+                    
+                    <table border=1>
+                    <tr><th>K</th><tr><td>0</td></tr>
+                    </table>
+                    
+                    </td></tr>
+                    </table>
+                    
+                while
+                
+                    DIMENSION L(2,3)
+                    DATA L/1,2,3,4,5,6/
+                    
+                results in
+ 		        
+                    <table cellpadding=5 align=center border=1>
+                    <tr><th>L(1,1)</th><th>L(1,2)</th><th>L(1,3)</th></tr>
+                    <tr><td align=center>1</td><td align=center>3</td><td align=center>5</td></tr>
+                    <tr><th>L(2,1)</th><th>L(2,2)</th><th>L(2,3)</th></tr>
+                    <tr><td align=center>2</td><td align=center>4</td><td align=center>6</td></tr>
+                     </table>
+                     
+                Note that L is implicitly an array of integers.  Also, notice the
+                effect of column-major order.
+<br><br><hr>
+<h3><b>Assignment Statements</b></h3>
+
+    Assignments are made as follows,
+    
+        <i>variable</i> = <i>expression</i>
+        
+    where the variable is either implicitly or explicitly declared and the expression is either a 
+    literal value (e.g. T=42.) or a computed value (e.g. I=K+L), as described below.
+        
+    <b>Expressions</b>
+    
+        <b>Numeric</b>
+        
+<TABLE BORDER=1 ALIGN=CENTER CELLPADDING=5>
+<tr><td><pre>
+        
+OPERATION        OPERATOR     ORDER OF PRIORITY
+            
+group              (  )              1
+exponentiate        **               2
+multiply            *                3
+divide              /                3 (see note)
+add                 +                4
+subtract            -                4
+</pre></td></tr>
+<tr><td><pre>            
+Note:  type of operands affects result.  For example,
+            
+           10/4  evaluates to 2 
+           10./4 evaluates to 2.5
+</pre></td></tr>
+</table>
+        
+            <b>Type conversion and coercions</b>
+            
+            In general, mixed mode math is discouraged in FORTRAN.  When using operands with 
+            different types, automatic conversion occur as follows:
+            
+                if any operand is COMPLEX, result is COMPLEX
+                else
+                    if any operand is DOUBLE PRECISION, result is DOUBLE PRECISION
+                    else
+                        if any operand is REAL, result is REAL
+                        else
+                            result is INTEGER
+                        
+            To convert from one data type to another explicitly, many built-in functions are 
+            provided.  For example,
+            
+<TABLE BORDER=1 ALIGN=CENTER CELLPADDING=5>
+<tr><td><pre>
+Conversion          ------------------ Function Result Type --------------------- 
+Functions
+                      
+From:          To:     INTEGER          REAL         DOUBLE PRECISION     COMPLEX
+                    --------------   ------------    ----------------     -------  
+                                                                     
+REAL                   INT()           AINT()<sup>1</sup>             DBLE()         CMPLX(A,B)<sup>2</sup>
+                       IFIX()          ANINT()
+                       NINT()<sup>3</sup>
+                       
+INTEGER                                FLOAT()
+
+DOUBLE PRECISION       IDINT()<sup>1</sup>         SNGL()
+                       IDNINT()<sup>1</sup>
+                       
+COMPLEX                                REAL()
+                                       AIMAG()
+                                       
+</pre></td></tr>
+<tr><td><pre>            
+<sup>1</sup> Truncates the real number.  Same as: FLOAT(INT())
+<sup>2</sup> Creates complex number A+Bi
+<sup>3</sup> "NINT" functions round to the nearest integer
+
+</pre></td></tr>
+</table>    
+                     
+        <b>Logical</b>
+   
+<TABLE BORDER=1 ALIGN=CENTER CELLPADDING=5>
+<tr><td><pre>
+
+OPERATION                      OPERATOR     ORDER OF PRIORITY
+            
+comparison                                   (after numeric)
+                
+    less than                    .LT.              5
+    less than or equal to        .LE.              5
+    equal to                     .EQ.              5
+    not equal to                 .NE.              5
+    greater than or equal to     .GE.              5
+    greater than                 .GT.              5
+                
+Boolean
+                
+    not                          .NOT.             6
+    and                          .AND.             7
+    or                           .OR.              8
+</pre></td></tr>
+</table>
+
+        <b>Character</b>
+ 
+        No character manipulations were possible in FORTRAN IV; however, FORTRAN 77 included
+        many of these useful features.
+        
+        <b>Function call</b>
+        
+        FORTRAN's many built-in functions evaluate as expressions.  User-defined functions (see
+        below) likewise are called as expressions.  Below are some of the more commonly used 
+        functions of FORTRAN IV.  
+   
+<TABLE BORDER=1 ALIGN=CENTER CELLPADDING=5>
+<tr><td><pre>
+
+Function            ---------- Function Result Type / Parameter Type------------- 
+                      
+                     INTEGER          REAL           DOUBLE PRECISION     COMPLEX
+                    --------------   ------------    ----------------     -------
+absolute value        IABS()          ABS()              DABS()
+square root                           SQRT()             DSQRT()          CSQRT()
+remainder of A/B      MOD(A,B)        AMOD(A,B)          DMOD(A,B) 
+e**x                                  EXP()              DEXP()           CEXP()
+natural log                           ALOG()             DLOG()           CLOG()
+base 10 log                           ALOG10()           DLOG10()         
+sine                                  SIN()              DSIN()           CSIN()
+cosine                                COS()              DCOS()           CCOS()
+arctangent                            ATAN()             DATAN()
+maximum of list       MAX0(A,B,...)   AMAX1(A,B,...)     DMAX1(A,B,...)
+minimum of list       MIN0(A,B,...)   AMIN1(A,B,...)     DMIN1(A,B,...)
+positive difference
+  = A-MIN(A,B)        IDIM(A,B)       DIM(A,B)
+sign transfer
+  = ABS(A)*sign of B  ISIGN(A,B)      SIGN(A,B)          DSIGN(A,B)
+</pre></td></tr>
+<tr><td><pre>
+  Note: In this table, unless more than one parameter is explicitly demonstrated 
+        above, all functions require one parameter which is an expression 
+        of the indicated type.
+        
+        When 2 or more parameters are required, they are separated by commas.
+</pre></td></tr>
+</table>             
+                
+        Some functions have results whose type differ from the parameters.  The conversion 
+        functions above are the prime examples.  In addition, FORTRAN IV has the following 
+        functions:
+        
+                INTEGER maximum from list of REAL values        MAX1(A,B,...)
+                INTEGER minimum from list of REAL values        MIN1(A,B,...)
+                REAL maximum from list of INTEGER values        AMAX0(A,B,...)
+                REAL minimum from list of INTEGER values        AMIN0(A,B,...)
+<br><br><hr>
+<h3><b>Control Statements</b></h3>
+  
+    <b>Branch</b>
+     
+    GO TO 1005                  ;   unconditional branch 
+                                    go directly to statement number 1005
+                                    
+    GO TO K                     ;   assigned branch
+                                    go to statement number whose value is stored in K
+                                    
+    GO TO (10,20,1000,20),K     ;   computed branch
+                                    K=1, 2, 3 or 4 branches to statement number 10, 20, 1000 or 20
+                                    
+    <b>Selection</b>
+    
+    <i>Logical IF</i>
+    
+        IF (logical-expression) any valid statement <i>except</i> DO or IF
+    
+    Evaluate the expression, then execute the statement only if the logical-expression
+    was .TRUE.  For example,
+    
+        IF (X.GT.T*Z) Y=X/FLOAT(K)
+    
+    <i>Arithmetic IF</i>
+    
+        IF (numeric-expression) statement1,statement2,statement3
+   
+    Evaluate the expression, then transfer to statement1 if the result is negative, to
+    statement2 if zero, to statement3 if positive.  For example,
+    
+        IF (X/Y*Z) 100,300,50
+        
+    If the result of the computation is negative, transfer to statement number 100, if zero
+    transfer to statement number 300, if positive to statement number 50.  Note that easrly
+    FORTRAN had no block structure like the familiar { ... } or BEGIN ... END found
+    in many other languages.  Block structure can be simulated as follows, using a 
+    Java-like snippet for comparison.
+    
+            Block-structure        Unstructured FORTRAN workaround
+            ---------------        -------------------------------
+            if (i == 42)                   IF (I.NE.42) GOTO ###
+            {                              STMT-1
+                stmt-1;                    STMT-2
+                stmt-2;                    STMT-3
+                stmt-3              ###    &le; next statement goes here >
+            }
+    
+    <b>Repetition</b>
+  
+    <i>Regular DO</i>
+    
+        DO statement#  variable = initialValue, finalValue, optionalIncrement
+        
+    Do this statement and all other statements upto the card labelled with statement#, beginning
+    by setting the variable to the initialValue, then incrementing by adding 1 (or the
+    non-negative optional increment value) with each successive iteration until 
+    variable > finalValue.  Once the loop is finished, proceed to the next card 
+    beyond the labelled statement#.
+    
+    Note:  Branching out of a DO loop body is allowed, but branching in is not.
+           Post-test loop; always executed at least once.
+</pre><p>              
+    <table align=center><tr><td><img src="FORTRAN-DO-loop.jpg" align=right></td></tr></table>
+<p><pre>
+    
+    <i>Nested DO</i>
+    
+    Unlike the IF statement, FORTRAN allows nesting of any number of DO loops within one
+    another.  The general form of a nested loop is,
+    
+                  DO stmt#1 variable1 = start, finish, step
+                  .
+                  .
+                  .
+                      DO stmt#2 variable2 = start, finish, step
+                      .
+                      .
+                      .
+           stmt#2     CONTINUE
+                  .
+                  .
+           stmt#1 CONTINUE
+<br><br><hr>
+<h3><b>Modularity</b></h3>
+    
+    <b>Functions</b>
+    
+    Functions may be used anywhere that an expression is expected in a FORTRAN program.
+    As described above, a large number of functions are provided in the standard FORTRAN
+    library.  These built-in functions are referred to as <i>intrinsic functions</i>.
+                 
+        <b>User-defined</b>
+    
+        Modern versions of FORTRAN have a much broader collection.  Many books have
+        been published with useful FORTRAN functions which are not available in the standard
+        library. The programmer implements functions using the syntax,
+        
+            <i>optResultType</i> FUNCTION <i>name</i>(<i>formalParamList</i>) 
+            <i>optFormalParameterDeclaration</i>
+            <i>optLocalVarDeclaration</i>
+            <i>executableStatements</i>
+            <i>name</i> = <i>value</i>
+            RETURN
+            END
+        
+        for example,
+        
+                PROGRAM DEMO
+                .
+                .
+                .
+                IF (CMPVAL(M1,M2,M3)) GOTO 500
+                .
+                .
+                .
+                END
+          C     -------- END OF PROGRAM -------    
+                LOGICAL FUNCTION CMPVAL(I,J,K)
+                INTEGER SUM, HLFSUM
+                LOGICAL RESULT
+                SUM = I+J+K
+                HLFSUM = SUM/2
+                RESULT=(I.GT.HLFSUM).OR.(J.GT.HLFSUM).OR.(K.GT.HLFSUM)
+                CMPVAL=RESULT
+                RETURN
+                END
+          C     -------- END OF FUNCTION -------    
+
+        
+         
+    <b>Subroutines</b> 
+    
+    When a programmer needs to build a module which returns either 0 or more than 1 result,
+    a subroutine is used, rather than a function.  Form of the subroutine is similar to the 
+    function,
+    
+        SUBROUTINE <i>name</i>(<i>formalParamList</i>)  
+        <i>optFormalParameterDeclaration</i>
+        <i>optLocalVarDeclaration</i>
+        <i>executableStatements</i>
+        RETURN
+        END
+
+    A subroutine receives values from the caller through the parameter list; likewise, the
+    subroutine returns values by modifying the variables in the parameter list.  Subroutines 
+    are invoked in a FORTRAN program as a statement, not an expression.  The syntax used is,
+    
+        CALL <i>name</i>(<i>actualParamList</i>)
+
+    <b>General Limitations</b>
+    
+        0. Early versions of FORTRAN did not allow recursive function calls.
+        
+        1. The names chosen for the formal parameters <i>must</i> agree in type with the actual 
+        parameters which will be passed or the data will be coerced to the new type.
+        
+        2. Use of global variables is not allowed without use of a COMMON statement (discussed
+        in references).
+        
+        3.  Subroutines and functions can be thought of as totally separate program units.  For
+        example, statement numbers which were used in the main program can be reused in the 
+        subprograms.
+<br><br><hr>
+<h3><b>Input/Output Statements</b></h3>
+
+    <b>Data Formats</b>
+    
+    Due to the nature of the original keypunched FORTRAN, data is highly formatted in a
+    FORTRAN program.  Consider, for example, a program that needs to process 4 three-digit
+    integers, a real number, 2 characters, separated by a space and a six-digit integer.
+    
+    For example,
+</pre><p>              
+    <table align=center><tr><td><img src="inputFields.jpg" align=right></td></tr></table>
+<p><pre>   
+        
+    <b>Input of formatted data</b>
+    
+    FORTRAN has several codes used to describe different types of data.  For example,
+<TABLE BORDER=1 ALIGN=CENTER CELLPADDING=5>
+<tr><td><pre>
+
+       I/O code    Data type for I/O
+         I<i>w</i>          INTEGER
+         F<i>w</i>.<i>d</i>        REAL 
+         E<i>w</i>.<i>d</i>        REAL data in exponential form
+         D<i>w</i>.<i>d</i>        DOUBLE PRECISION 
+         A<i>w</i>          ALPHAMERIC (character)
+         <i>w</i>X          space
+</pre></td></tr>
+</table>             
+        
+    where <i>w</i> refers to the total width of the field of data in characters and <i>d</i> refers 
+    to the number of digits after the decimal point.  Input is handled through the use of 
+    numbered FORMAT statements.  For example, to read the data above, one might use,
+    
+        333    FORMAT(I4,I4,I4,F8.5,A1,1X,A1,I6)
+        
+    or, alternately,
+    
+        333    FORMAT(3I4,F8.5,A1,1X,A1,I6)
+    
+    along with a READ statement,
+    
+        READ(<i>unit</i>,<i>formatStmtNumber</i>) <i>variableList</i>
+        
+    where unit is the integer associated with the input device.  Standard input device units 
+    are machine specific and might be, for example,
+    
+        2    magnetic tape
+        5    keyboard
+        6    console display
+        8    card punch
+        
+    All version of FORTRAN in use today use unit 5 for keyboard input, and unit 6 for output
+    to the terminal.  Thus, we can read the variables able using,
+    
+        333    FORMAT(3I4,F8.5,A1,1X,A1,I6)
+               READ(5,333) INT1,INT2,INT3,REAL1,CHAR1,CHAR2,INT4    
+        
+    <b>Output of formatted data</b> 
+    
+    Output is handled much the same as input, with two significant difference: the first
+    output character is not printed but is used as a control character as specified below.
+<TABLE BORDER=1 ALIGN=CENTER CELLPADDING=5>
+<tr><td><pre>
+   
+     First character
+     in Output code       Meaning
+        T<i>n</i>                Tab to location <i>n</i> on line
+        /                 insert blank line
+        blank             single space
+        +                 no carriage control
+        0                 double space line
+        1                 begin line on new page
+</pre></td></tr>
+</table>             
+
+    Secondly, the format list may include literal strings to be output as well as the variable
+    values.  For example, we could output the values above using,
+    
+        334    FORMAT('+OUT:',I6,'#',I6,'#',I6'#',I6,'#',E10.3)
+               WRITE(6,334) INT1,INT2,INT3,INT4,REAL1
+               
+    which displays, on the same line as the last output character,
+    
+</pre><p>              
+    <table align=center><tr><td><img src="outputFields.jpg" align=right></td></tr></table>
+<p><pre>   
+
+    Note that numeric data is right-justified in fields when more space is available.  
+    Character data is left-justified.  Note also that width of the decimal field may
+    result in a rounded displayed value.
+            
+    <b>List-directed I/O</b>
+     
+    Modern version of FORTRAN also allow input and output to be entered via delimited entry. 
+    For example, the same result as above could have been obtained from
+    
+        READ(5,*) INT1,INT2,INT3,INT4
+        
+    where all numeric values will be separated by whitespace in the input stream. Likewise,
+    an output could be handled as,
+    
+        WRITE(6,*) ' The output values:',INT1,',',INT2,',',INT3,',',INT4
+      
+</pre>
+    
+<hr>
+<p>
+<b>References</b>
+
+<ul>
+<!--
+<li><a href="Project-2007.doc">PROJECT</a><br>
+    <br>
+-->
+<li><i><a href="http://h21007.www2.hp.com/dspp/files/unprotected/Fortran/docs/lrm/dflrm.htm">Compaq FORTRAN Language Reference Manual</a></i>.
+<li><i>FORTRAN IV POCKET HANDBOOK</i>, Daniel Alexander and Andrew Messer, McGraw-Hill, 1972.
+<li><i>Programming Languages, Design and Implementation</i>, Terrence Pratt and Marvin Zelkowitz, Prentice Hall, 2001.
+<li><i>Programming Languages</i>, 2nd ed., Allen B. Tucker, McGraw-Hill, 1986.
+<li>Sample programs:
+<blockquote>
+    <a href="LINEAR.FOR">Sample #1</a><br>
+    <a href="GAUSSIAN.FOR">Sample #2</a><br>
+    <a href="HUCKEL.FOR">Sample #3</a>
+</blockquote>
+</ul>    
+</body>
+</html>

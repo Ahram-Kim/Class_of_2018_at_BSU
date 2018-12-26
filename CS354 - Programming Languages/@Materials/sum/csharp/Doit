@@ -1,0 +1,7 @@
+#!/bin/bash -x
+
+export PATH=/usr/bin:/bin
+
+mcs Sum.cs
+
+mono Sum.exe

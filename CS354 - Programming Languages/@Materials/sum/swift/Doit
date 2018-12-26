@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Tue Apr 25 13:16:43 2017
+# Evidently, installing swiftc on Fedora is a pain.
+# Builds with cmake and clang.
+
+#https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/GuidedTour.html
+
+#swiftc -g -o sum sum.swift

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="web.css">
+</head>
+<body>
+<ul class = "nav">
+  <li><a href="website.html" class = active>Home</a></li>
+  <li><a href="Example1.html">Code Examples</a></li>
+  <li><a href="BasicInformation.html">Basic Information</a></li>
+  <li><a href="History.html">History/Description</a></li>
+  <li><a href="Installation.html">Installation</a></li>
+</ul>
+
+<h1>JavaScript</h1>
+<div class = "fir">
+<p>
+  JavaScript often abbreviated as JS, is a high level, dynamic programming language. Alongside HTMl and CSS it is one of the three
+  core languages that make up the World Wide Web content production.
+</p>
+</div>
+<div class = "sec">
+<p class = "imgRight">
+  <img src="https://www.javatpoint.com/images/javascript/javascript_logo.png">
+</p> 
+</div>
+<div class = "Homepic">
+    
+</div>
+
+</body>
+</html>

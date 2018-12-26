@@ -1,0 +1,6 @@
+#!/bin/bash -x
+
+export PATH=/usr/bin:/bin
+
+g++ -pedantic -o sum sum.c++
+./sum

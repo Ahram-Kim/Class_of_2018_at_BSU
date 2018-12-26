@@ -1,0 +1,53 @@
+****************
+* SmallTalk PL
+* CS354 - 001
+* October 17, 2017
+* Ahram Kim
+**************** 
+
+OVERVIEW:
+
+ To begin using an object-oriented imperative programming language named SmallTalk.
+
+INCLUDED FILES:
+
+ List the files required for the project with a brief
+ explanation of why each is included.
+
+ * Customer.st 
+ * Account.st
+ * CheckingAccount.st
+ * SavingAccoung.st
+ * Bank.st - main class
+ * README - this File
+
+COMPILING AND RUNNING:
+
+
+ Run the compiled class file with the command:
+ $ gst Customer.st Account.st CheckingAccount.st SavingAccount.st Bank.st
+
+ Console output will give the results after the program finishes.
+
+
+PROGRAM DESIGN AND IMPORTANT CONCEPTS:
+
+ This assignment asked me to begin using an object-oriented imperative programming 
+ language named SmallTalk, which is more object oriented than Java.
+ It had mutiple versions of syntax, all of which are rather neanderthal.
+ It had constructors, which are just static methods. 
+ Method name could be the same as an instance variable, but the formal parameter
+ cannot be the same as an instance variable.
+
+TESTING:
+
+ I tested 'gst Customer.st' for the first and kept my working until the statement 
+ 'gst Customer.st Account.st CheckingAccount.st SavingAccount.st Bank.st' passed.
+
+
+DISCUSSION:
+ 
+ It looked easy when I am assgined this assignment. However, there were lots of 
+ small mistakes. It was hard to catch those mistakes.
+
+----------------------------------------------------------------------------

@@ -1,0 +1,63 @@
+****************
+* Project number/name
+* Class
+* Date
+* Your name
+**************** 
+
+OVERVIEW:
+
+ To write and fully demonstrate a function named super-duper,
+ with this interface, (super-duper source count)
+
+
+INCLUDED FILES:
+
+ * LA1_Scheme.scm - code for super-duper
+ * README - this file
+
+
+COMPILING AND RUNNING:
+
+ To type this command and start scheme program:
+ $ mit-scheme --load LA1_Scheme.scm
+ 
+ To make sure my code is right or not:
+ ]=> (super-duper 123 1)
+ 
+ with the rest of them.
+
+
+PROGRAM DESIGN AND IMPORTANT CONCEPTS:
+
+ I used this interface (super-duper source count).
+ The function should returns a copy of the list source, with every element 
+ duplicated count times.
+ If source is an atom, it is immediately returned, without duplicated.
+ I made other function called duper except super-duper.
+ 
+
+TESTING:
+
+ To type those command and start scheme program first
+ $ mit-scheme --load LA1_Scheme.scm
+ 
+ And put the (super-duper 123 1) in the example in the file la1.
+
+DISCUSSION:
+ 
+ I had no idea about scheme at all: what I am doing, or how it works.
+ I looked at the professor's ppt and asked tutor for this project.
+ I started to do small things like making a function by using define.
+ After I made some of the result, I had some problems about the parentheses. 
+ When I called the function and others, I needed parentheses but I didnt use.
+ Making the code easy to read makes me frustrated to make a code because
+ the scheme language was not familiar for me, even now.
+ There also is a parentheses problem in the output. There are two parenthese 
+ in the output but in the example there is one parenthese. 
+ I had no idea how to fix them. When I tried to fix the parenthese problem, 
+ all of the examples(output) didn't work. And still didnt get it what the problem
+ is in (super-duper '((a b) y) 3).
+
+----------------------------------------------------------------------------
+

@@ -1,0 +1,6 @@
+#!/bin/bash -x
+
+export PATH=/usr/bin:/bin
+
+scalac Sum.scala
+scala Sum

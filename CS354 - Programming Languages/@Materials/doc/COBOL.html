@@ -1,0 +1,1864 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+<HEAD>
+   <TITLE>COBOL: Language Reference</TITLE>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+   <META NAME="GENERATOR" CONTENT="Mozilla/3.01Gold (X11; I; HP-UX A.09.05 9000/715) [Netscape]">
+</HEAD>
+<BODY BGCOLOR="#CECFD2" BACKGROUND="../../images/osu_logo_bg.gif">
+
+</BODY>
+<HR><A NAME="TOC"><H3>Concepts:</H3></A>
+<TABLE BORDER=0 CELLPADDING=0 WIDTH="80%"><TR><TD>
+<TABLE BORDER=0 CELLPADDING=0 WIDTH="100%">
+<TR><TD VALIGN=TOP WIDTH="33%">
+<UL>
+<LI><A HREF="langref.html#cond">Conditions</A></LI>
+<LI><A HREF="langref.html#lvl88">Condition Names</A></LI>
+<LI><A HREF="langref.html#contin">Continuation</A></LI>
+<LI><A HREF="langref.html#ctrlbrk">Control Breaks</A></LI>
+<LI><A HREF="langref.html#datatype">Data Types</A></LI>
+<LI><A HREF="langref.html#dates">Dates</A></LI>
+<LI><A HREF="langref.html#delim">Delimiters</A></LI>
+<LI><A HREF="langref.html#fields">Fields</A></LI>
+</UL></TD>
+<TD VALIGN=TOP WIDTH="33%">
+<UL>
+<LI><A HREF="langref.html#hlval">High/Low Values</A></LI>
+<LI><A HREF="langref.html#subindx">Index</A></LI>
+<LI><A HREF="langref.html#julian">Julian Dates</A></LI>
+<LI><A HREF="langref.html#lvlnbr">Level Numbers</A></LI>
+<LI><A HREF="langref.html#literal">Literals</A></LI>
+<LI><A HREF="langref.html#para">Paragraphs</A></LI>
+<LI><A HREF="langref.html#pic">PIC Clauses</A></LI>
+</UL></TD>
+<TD VALIGN=TOP WIDTH="33%">
+<UL>
+<LI><A HREF="langref.html#qual">Qualified Fields</A></LI>
+<LI><A HREF="langref.html#refmod">Ref. Modification</A></LI>
+<LI><A HREF="langref.html#rpts">Reports</A></LI>
+<LI><A HREF="langref.html#section">Sections</A></LI>
+<LI><A HREF="langref.html#subindx">Subscripts</A></LI>
+<LI><A HREF="langref.html#table">Tables</A></LI>
+<LI><A HREF="langref.html#trunc">Truncation</A></LI>
+</UL></TD></TR></TABLE>
+</TD></TR></TABLE>
+
+<H3>Statements/Clauses:</H3>
+<TABLE BORDER=0 CELLPADDING=0 WIDTH="80%"><TR><TD>
+<TABLE BORDER=0 CELLPADDING=0 WIDTH="100%">
+<TR><TD VALIGN=TOP WIDTH="33%">
+<UL>
+<LI><A HREF="langref.html#lvl77">77-level Fields</A></LI>
+<LI><A HREF="langref.html#lvl88">88-level Fields</A></LI>
+<LI><A HREF="langref.html#accept">Accept</A></LI>
+<LI><A HREF="langref.html#add">Add</A></LI>
+<LI><A HREF="langref.html#bwz">Blank When Zero</A></LI>
+<LI><A HREF="langref.html#call">Call</A></LI>
+<LI><A HREF="langref.html#close">Close</A></LI>
+<LI><A HREF="langref.html#compute">Compute</A></LI>
+<LI><A HREF="langref.html#copy">Copy</A></LI>
+<LI><A HREF="langref.html#corr">Corresponding</A></LI>
+<LI><A HREF="intrinsic.html#date">Date Functions</A></LI>
+<LI><A HREF="langref.html#delete">Delete</A></LI>
+<LI><A HREF="langref.html#display">Display</A></LI>
+<LI><A HREF="langref.html#divide">Divide</A></LI>
+<LI><A HREF="langref.html#evaluate">Evaluate</A></LI>
+<LI><A HREF="langref.html#exit">Exit</A></LI>
+<LI><A HREF="langref.html#exitprog">Exit Program</A></LI>
+</UL></TD>
+<TD VALIGN=TOP WIDTH="33%">
+<UL>
+<LI><A HREF="langref.html#goto">Go To</A></LI>
+<LI><A HREF="langref.html#goback">Goback</A></LI>
+<LI><A HREF="langref.html#if">If</A></LI>
+<LI><A HREF="langref.html#init">Initialize</A></LI>
+<LI><A HREF="langref.html#inspect">Inspect</A></LI>
+<LI><A HREF="langref.html#invkey">Invalid Key</A></LI>
+<LI><A HREF="langref.html#merge">Merge</A></LI>
+<LI><A HREF="langref.html#move">Move</A></LI>
+<LI><A HREF="langref.html#multiply">Multiply</A></LI>
+<LI><A HREF="intrinsic.html#numeric">Numeric Fcns</A></LI>
+<LI><A HREF="langref.html#occurs">Occurs</A></LI>
+<LI><A HREF="langref.html#onsize">On Size Error</A></LI>
+<LI><A HREF="langref.html#open">Open</A></LI>
+<LI><A HREF="langref.html#perform">Perform</A></LI>
+<LI><A HREF="langref.html#read">Read</A></LI>
+<LI><A HREF="langref.html#readnext">Read Next</A></LI>
+<LI><A HREF="langref.html#redef">Redefines</A></LI>
+</UL></TD>
+<TD VALIGN=TOP WIDTH="33%">
+<UL>
+<LI><A HREF="langref.html#release">Release</A></LI>
+<LI><A HREF="langref.html#return">Return</A></LI>
+<LI><A HREF="langref.html#rewrite">Rewrite</A></LI>
+<LI><A HREF="langref.html#round">Rounded</A></LI>
+<LI><A HREF="langref.html#search">Search</A></LI>
+<LI><A HREF="langref.html#set">Set</A></LI>
+<LI><A HREF="langref.html#sort">Sort</A></LI>
+<LI><A HREF="langref.html#start">Start</A></LI>
+<LI><A HREF="langref.html#stoprun">Stop Run</A></LI>
+<LI><A HREF="langref.html#string">String</A></LI>
+<LI><A HREF="langref.html#subtract">Subtract</A></LI>
+<LI><A HREF="langref.html#unstring">Unstring</A></LI>
+<LI><A HREF="langref.html#usage">Usage</A></LI>
+<LI><A HREF="langref.html#using">Using</A></LI>
+<LI><A HREF="langref.html#value">Value</A></LI>
+<LI><A HREF="langref.html#write">Write</A></LI>
+</UL></TD></TR></TABLE>
+</TD></TR></TABLE>
+
+<BR><BR>
+<UL><LI><A HREF="topics.html">Back to COBOL Topics Index</A></LI>
+<LI><A HREF="../index.html">Back to Main</A></LI>
+</UL>
+<HR>
+
+<A NAME="cond"><H4>Conditions</H4></A>
+<P>A condition is a special piece of code that allows you to instruct the 
+computer to compare two pieces of data. Conditions are used in 
+<A HREF="langref.html#if">IF</A> statements and in the While/Until clauses 
+of the <A HREF="langref.html#perform">PERFORM</A> statement</P>
+
+<P>Conditions have the syntax:</P>
+	<I>data-1</I> <B>operator</B> <I>data-2</I>
+<P>where <I>data-1</I> and <I>data-2</I> can be a
+<A HREF="langref.html#literal">literal</A> or a <A HREF="langref.html#fields">
+field</A>. <I>data-2</I> can also be a COBOL literal such as SPACES or 
+ZEROS.</P>
+
+<P><B>Operator</B> can be the traditional comparison symbols =, <, >, <=, >=. 
+To check for inequality use 'NOT =' since not all compilers accept the symbol 
+<>. Rarely, a compiler will not accept <= or >=. You can use 'NOT >' and 
+'NOT <' instead. To comply with older versions of COBOL English can be used 
+(i.e. EQUALS, IS NOT EQUAL TO, etc.).</P>
+
+<P>Conditions can be combined into a compound condition by using AND and OR. 
+Unless directed to do otherwise by grouping conditions with parenthesis 
+COBOL will evaluate the ANDs first, then the ORs. If the conditions also 
+contain NOTs then those are evaluated before the ANDs.</P>
+<P>Also see <A HREF="langref.html#lvl88">88-level Fields</A>.</P>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="contin"><H4>Continuation</H4></A>
+<P>Statements can be continued over several lines without doing anything 
+more than placing the code on separate lines. The compiler will figure it 
+out.</P>
+
+<P>Very long alphanumeric <A HREF="langref.html#literal">literals</A> can 
+be continued on multiple lines by placing a hyphen in column 7 of the 
+continuation lines and placing the remainder of the literal there. This 
+continuation of the literal requires a beginning single quote. The 
+literal on the previous line does not have an ending single quote but is 
+considered to extend to column 72.</P>
+<PRE><TT>
+             MOVE 'THIS IS ONE SERIOUSLY LONG ALPHANUME
+      -    'RIC LITERAL' TO WS-STRING.
+</TT></PRE>
+<P>The hyphen on the 2nd line is in column 7. The single quote on that line 
+is in column 12 and the literal continues from there. The ending single 
+quote on that line is required. Note that the portion of the literal that's 
+on the first line does not have an ending quote. If the last 'E' is not in 
+column 72 then it will be assumed that all characters between that 'E' and 
+column 72 are spaces and will appear in the literal.</P>
+
+<P>Also valid with <A HREF="langref.html#value">value</A> clauses.</P>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="ctrlbrk"><H4>Control Breaks</H4></A>
+<P>Control breaks are a feature of <A HREF="langref.html#rpts">reports</A> 
+that allow for the grouping of and accumulating subtotals for data that 
+belong together based on the value of a <A HREF="langref.html#fields">field</A> 
+(the control field). When the value for this field changes from one record 
+to another the program "breaks" to do some special processing (like printing 
+subtotals) before it goes on with the next record. The input file must be 
+sorted on the control field(s).</P>
+
+<P>An example of a report with a single-level control break:</P>
+<TT><PRE>
+      04/20/1999          The ABC Company              Page   1
+                          Payroll Register
+
+   Department: Janitorial
+
+     Employee Nbr       Name          Hours      Rate        Pay
+
+     123 45 6789   Ray, Marcus         40.0      2.00        80.00
+     111 11 1111   Griese, Brian       50.0      2.50       125.00
+
+   Totals for department Janitorial:   90.0                 205.00
+
+   Department: Research and Development
+
+     456 78 9123   Gates, Willy        12.0    800.00     9,600.00
+	...            ...              ...     ...          ...
+
+    Grand Totals:                   1,002.5             258,125.00
+</PRE></TT>
+<P>The control break is on department. Each control group (department) has 
+it's own headings and footings (totals). Though it's not shown here in this 
+example it's common for column headings to be repeated after each control 
+heading.</P>
+
+<P>See the <A HREF="algs.html#ctrlbrk">algorithms</A> page for sample 
+code.</P>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="datatype"><H4>Data Types</H4></A>
+<P>There are basically three types of data recognized by COBOL. Numeric 
+data (both with or without decimal places: only 0-9, the decimal point and 
+a sign allowed), alphabetic (only the characters A-Z) and alphanumeric (any 
+characters). Alphabetic is rarely used.</P>
+
+<P>Math can only be performed on numeric <A HREF="langref.html#fields">
+fields</A>.</P>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="dates"><H4>Dates</H4></A>
+<P>Dates are common data for COBOL programs and must be manipulated often. 
+Typically dates are stored in the Gregorian format, consisting of the 
+familiar month, day and year. This is generally called the 'mmddyy' format, 
+though the 'mmddyyyy' format is becoming the new standard (see the 
+<A HREF="discuss.html">Y2K discussion</A> page). While those formats are 
+familiar to the coders and users dates are more often stored in 'yymmdd' or 
+'yyyymmdd' format so that they can be sorted easily.</P>
+
+<P>So-called 'calendar math', where dates are used in calculations, can be 
+a tedious process, unless your compiler supports the 
+<A HREF="intrinsic.html#date">intrinsic date functions</A>. If not, 
+remember the following about the Gregorian calendar:</P>
+<UL><LI>April, June, September and November only have 30 days</LI>
+<LI>February only has 28 days, 29 if a leap year</LI>
+<LI>All other months have 31 days</LI>
+<LI>The 'official' method of determining if a year is a leap year requires 
+dividing the 4-digit year by 4, 100 and 400 and looking at the remainders 
+of those three calculations. If the first remiander is 0 then the year is a 
+leap year, but if the second remainder is also 0 then the year is not a 
+leap year, but if the third remainder is also a 0 then the year is a leap 
+year again. This is why 2000 is a leap year by 1900 and 2100 are not. These 
+checks must be nested within each other, trying to put them in a single IF 
+will not work.</LI></UL>
+<P>Also see <A HREF="langref.html#julian">Julian Dates</A>.</P>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="delim"><H4>Delimiters</H4></A>
+<P>Delimiters are used as visual ends to a statement. They don't change 
+processing but they do make code easier to read and maintain. An example 
+of a delimiter is END-IF:</P>
+<TT><PRE>
+        IF WS-OSU > WS-MICHIGAN
+           <I>statement(s)</I>
+        ELSE
+           <I>statement(s)</I>
+        END-IF
+</TT></PRE>
+<P>Verbs that have end-delimiters are the comparison verbs (IF, EVALUATE), 
+input/output (READ, WRITE, DELETE, REWRITE, ACCEPT), math (ADD, SUBTRACT, 
+MULTIPLY, DIVIDE, COMPUTE), processing transfer (PERFORM, CALL) and some 
+other lesser used verbs.</P>
+
+<P>When the compiler encounters a period it takes that as the end of the 
+statement. A delimiter that is found after a period is in error.</P>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="fields"><H4>Fields</H4></A>
+<P>A field is what other languages call a variable. It's a place to store 
+data. All fields must be declared in the DATA DIVISION. A field declaration 
+has three parts: the <A HREF="langref.html#lvlnbr">level number</A>, the 
+field name and the <A HREF="langref.html#pic">PIC clause</A>.
+<A HREF="langref.html#value">VALUE clauses</A> are optional.</P> 
+
+<P>A valid field name is from 1 to 30 characters in length; contains only 
+the letters A-Z, the digits 0-9 and the hyphen; contains at least one letter; 
+does not begin or end with a hyphen; and is not a COBOL reserved word.</P>
+<P>Also see <A HREF="langref.html#qual">Qualified Fields</A>.</P>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="hlval"><H4>HIGH-VALUES/LOW-VALUES</H4></A>
+<P>These are special numeric <A HREF="langref.html#literal">literals</A> 
+inherent to COBOL. HIGH-VALUES is the COBOL equivalent to infinity - no 
+number is greater than HIGH-VALUES. Conversely, no number is less than 
+LOW-VALUES.</P>
+
+<P>They can be used in <A HREF="langref.html#value">VALUE clauses</A>, 
+<A HREF="langref.html#cond">conditions</A> and <A HREF="langref.html#move">
+MOVE</A> statements but math <I>cannot</I> be performed using these literals. 
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="julian"><H4>Julian Dates</H4></A>
+<P>Julian is a date format that's an alternative to 
+<A HREF="langref.html#dates">Gregorian dates</A>. It consists of a 3-digit 
+day and a year; there are no months. The days range from 1 (Jan 1st) to 
+either 365 or 366 (Dec 31), depending on if the year is a leap year or 
+not. This is generally known as the 'dddyy' or 'dddyyyy' format, even 
+though normally the date is stored as 'yyddd' or 'yyyyddd' to ease with 
+sorting.</P>
+
+<P>Shops that make use of Julian dates will have callable routines that 
+covert Julian to Gregorian and back again, because humans are comfortable 
+with Gregorian dates. <A HREF="langref.html#funccal">Intrinsic date 
+functions</A> available with newer COBOL compilers have these conversions 
+built-in.</P>
+
+<P>Julian format has two advantages. First, it's smaller, so it takes up 
+less space. Second, it eases with some calculations because it contains no 
+months. For example, how many days are between Feb 5, 1997 and Nov 28, 1999? 
+Convert to Julian (1997036 and 1999332) a quick subtraction gives 1026 days. 
+Remember that 'borrowing' a year gives you 365 days.</P>
+
+<P>Getting a future date or past date can also be easier with Julian. What 
+date is 45 days before Apr 15, 1999? Convert it to Julian (1999105), 
+subtract 45 to get 1999060) and convert back to Gregorian (Mar 1, 1999).</P>
+
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="lvlnbr"><H4>Level Numbers</H4></A>
+<P>Level numbers are used to group <A HREF="langref.html#fields">fields</A> 
+in the Data Division. A field can then be defined as a collection of other 
+fields. The higher the level number the lower in the heirarchy the field is. 
+Normally, the field numbers 01, 05, 10, etc. are used. By spacing them out 
+you leave yourself room in case a level needs to be added later. Valid level 
+numbers are 0-49.</P>
+
+<P>Each FD is required to have an 01-level field defined. This is the record 
+definition. It can be broken down into smaller fields if desired. For 
+example:</P>
+<TT><PRE>
+        01  INPUT-RECORD.
+            05  IN-EMPLOYEE-NUMBER     PIC 9(09).
+            05  IN-EMPLOYEE-NAME.
+                10  IN-EMP-LAST-NAME   PIC X(30).
+                10  IN-EMP-FIRST-NAME  PIC X(15).
+                10  IN-EMP-MIDDLE      PIC X.
+            05  IN-BIRTH-DATE.
+                10  IN-BIRTH-DD        PIC 99.
+                10  IN-BIRTH-MM        PIC 99.
+                10  IN-BIRTH-YEAR.
+                    15  IN-BIRTH-CC    PIC 99.
+                    15  IN-BIRTH-YY    PIC 99.
+            05  IN-DEPARTMENT          PIC X(05).
+</PRE></TT>
+<P>We have an 01-level field that is broken down into 4 fields (the 05-level 
+fields). Two of the 05-level fields are also broken down. Employee number is 
+an elementary field because it is not broken down into smaller fields. The 
+employee name and birth date are group level fields because they are broken 
+down into smaller fields. Only elementary fields have <A HREF="langref.html#pic">
+PIC clauses</A>.</P>
+
+<P>The birth date is 8 characters long (the sum of the lengths of the 
+elementary fields that compose it). All 8 characters can be accessed with 
+one name (IN-BIRTH-DATE) or one of its pieces can be accessed by using that 
+name instead (i.e. IN-BIRTH-MM).</P>
+
+<P>A group level item 'ends' when another field with the same level number, 
+or one with a lower value, is encountered. For example, the list of fields 
+within IN-BIRTH-YEAR ends when the 05-level IN-DEPARTMENT is encountered. A 
+field of level 10 would also have ended it.</P>
+
+<P>All group level fields are considered to be 
+<A HREF="langref.html#datatype">alphanumeric</A>.</P>
+
+<P>All of these level number concepts are valid for WORKING-STORAGE also.</P>
+<P>Also see <A HREF="langref.html#lvl77">77-level Fields</A>&nbsp&nbsp
+<A HREF="langref.html#lvl88">88-level Fields</A>.</P>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="literal"><H4>Literals</H4></A>
+<P>Literals are specific values as opposed to fields. Alphanumeric literals 
+are enclosed in single quotes. In the following statements:</P>
+<TT><PRE>
+        MOVE 3.1415927 TO WS-PI.
+        DISPLAY 'Enter a number: '.
+</PRE></TT>
+<P>3.1415927 is a <A HREF="langref.html#datatype">numeric</A> literal and 
+'Enter a number: ' is an <A HREF="langref.html#datatype">alphanumeric</A> 
+literal. COBOL has some built-in literals like ZEROES and SPACES.</P>
+<P>Also see <A HREF="langref.html#contin">Continuation</A>&nbsp;&nbsp
+<A HREF="langref.html#hlval">HIGH-VALUES/LOW-VALUES</A>.</P>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="para"><H4>Paragraphs</H4></A>
+<P>A paragraph is a section of COBOL code. Paragraph names start in the 'A' 
+margin and follow the same naming rules that <A HREF="langref.html#fields">
+fields</A> do. A paragraph ends when another paragraph name is encountered. 
+Paragraphs can be executed with the <A HREF="langref.html#perform">PERFORM</A> 
+statement.</P>
+
+<P>You can think of a pargraph as the equivalent of a subroutine in other 
+languages. There are no arguments, all fields are thought of as global.</P>
+<P>Also see <A HREF="langref.html#section">Sections</A>.</P>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="pic"><H4>PIC Clauses</H4></A>
+<P>PIC (short for PICture) clauses describe the size and type of data for 
+each <A HREF="langref.html#fields">field</A>. <A HREF="langref.html#datatype">
+Numeric data</A> has a PIC character of 9, <A HREF="langref.html#datatype">
+alphanumeric data</A> uses X and <A HREF="langref.html#datatype">alphabetic 
+data</A> an A. Each 9, X or A represents one character. Length can also be 
+represented by a repetition factor. The PIC clauses 9999 and 9(04) both 
+define 4-digit numbers.</P>
+
+<P>The PIC character V is used to mark where a decimal point is. If you had 
+a 8-digit numeric field but 2 of the digits are after the decimal point, you 
+would define it as PIC 9(06)V99. The decimal point is implied, it is not 
+physically there in the data. It also takes up no space. To allow for a 
+field to hold either positive or negative numbers precede the leftmost 
+PIC character with an S (PIC S999V99).</P>
+
+<P>There are several output PIC characters which help with formatting data 
+for display or print. Numeric fields are <A HREF="langref.html#move">
+MOVEd</A> to fields defined with these formatting PIC characters. Fields 
+defined with these formatting PIC characters are considered 
+<A HREF="langref.html#datatype">alphanumeric</A>. No calculations can be 
+done with these fields. Newer versions of COBOL allow these fields to be 
+MOVEd to straight numeric fields.</P>
+
+<P>To print a decimal point place a '.' in the desired place in the output 
+PIC clause (i.e. PIC 999.99). You can place commas in output numbers also 
+(i.e. PIC 999,999.99). In this manner the decimal point (and commas) do take 
+up space. These are considered insertion characters - they insert themselves 
+into the data. Other insertion characters are B (for a space), 0 (a zero) 
+and / (useful in printing dates).</P>
+
+<P>There is Z, for suppressing leading zeroes. If the digit represented by 
+a Z is a leading zero it will print as a blank. You normally have one 9 in 
+the PIC clause, in the one's place. All other digits represented by Z's. Do 
+not use Z's after the decimal point. If used with commas 
+(i.e. PIC ZZZ,ZZ9.99) a comma will only print if the character to its left 
+prints, else it prints as a blank.</P>
+
+<P>There are other zero suppression characters. A $ can be used just like 
+the Z except that rightmost leading zero will print as a $ and all zeroes to 
+the left of that will print as spaces. So the value of 125.00 MOVEd to a 
+PIC $$$,$$9.99 will print as '   $125.00'. This behavior of the $ is called 
+'floating'. An * will work the same way (for check protection) but all * 
+print, not just the one to the left of the most significant digit. When 
+either the floating $ or the * is used in conjunction with commas the comma 
+will only print as a comma if the character to its left prints as a digit. 
+Depending on the situation it will otherwise print as a blank, $ or *.</P>
+
+<P>For sign control you can use + or - as an output PIC character. A + will 
+print + for positive numbers and - for negative numbers. A - will print a - 
+for negative numbers and a blank for positive numbers. Either can be 
+repeated to suppress leading zeroes (like the $) and can 'float' (also like 
+the $). Alternatively, a + or - can be placed to the right of the number.</P>
+
+<P>For accounting purposes the PIC characters 'DB' and 'CR' can also be 
+used (i.e. PIC $$$,$$9.99DB). The DB or CR will only show if the value is 
+negative. If positive they will print blanks.</P>
+<P>Also see <A HREF="langref.html#bwz">Blank When Zero</A>&nbsp&nbsp
+<A HREF="langref.html#trunc">Truncation</A>.</P>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="qual"><H4>Qualified Fields</H4></A>
+<P>It is legal in COBOL for different <A HREF="langref.html#fields">fields</A> 
+to have the same name. These fields <I>cannot</I> be 01-level fields and 
+cannot be part of the same group-level field.</P>
+
+<P>When referencing one of these fields the compiler requires the field to 
+be qualified, meaning its group-level field must be specified. If both 
+INPUT-RECORD and OUTPUT-RECORD contained a field named PAY-RATE then in code 
+you cannot simply reference PAY-RATE, it would have to either be PAY-RATE 
+OF INPUT-RECORD or PAY-RATE OF OUTPUT-RECORD.</P>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="refmod"><H4>Reference Modification</H4></A>
+<P>Reference modification allows for the referencing of a portion of a 
+field without having to make it a group-level field and defining each 
+portion of the field that will be accessed.</P>
+
+<P>If you wanted to check the value of the 4th through 6th characters of a 
+field to see if they were equal to ABC you can code:</P>
+<TT><PRE>
+          IF WS-FIELD (4:3) = 'ABC'
+</PRE></TT>
+<P>The first number in the parenthesis represents the start position in the 
+field and the second number represents the length. Both values have to be 
+specified. COBOL treats all such references as 
+<A HREF="langref.html#datatype">alphanumeric</A>.</P>
+
+<P>Since this is not a self-documenting feature it should not be used 
+carelessly.</P>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="rpts"><H4>Reports</H4></A>
+<P>A report is simply a formatted representation of data, suitable for being 
+printed on paper (hardcopy). Reports generically look like:</P>
+<TT><PRE>
+      04/20/1999          The ABC Company              Page   1
+                          Payroll Register
+
+     Employee Nbr       Name          Hours      Rate        Pay
+
+     123 45 6789   Ray, Marcus         40.0      2.00        80.00
+     456 78 9123   Gates, Willy        12.0    800.00     9,600.00
+	...            ...              ...     ...          ...
+
+    Totals:                         1,002.5             258,125.00
+</PRE></TT>
+<P>The first two lines are page headings, which will appear on every page. 
+The next printed line (following the blank line) is column headings. It's 
+common for column heading lines to be printed on every page. Next come the 
+detail lines - typically one per record. At the end of the report will be a 
+total line (if you are totalling anything). Note that the first detail 
+line is the 6th line printed on a page (must count the blank lines also).</P>
+
+<P>There are other types of lines that can appear on reports. Sometimes there 
+are page footings (printed on the bottom of each page). There can also be 
+report headings and report footings (only printed at the top and bottom of 
+the report as opposed to each page).</P>
+
+<P>Note the formatting of the data. There are commas and leading zeroes are 
+suppressed on page numbers and monetary figures. The date has slashes. 
+Always make reports as easy to read as possible.</P>
+
+<P>See the <A HREF="algs.html#report">algorithms</A> page for sample 
+code.</P>
+<P>Also see <A HREF="langref.html#pic">PIC clauses</A>.</P>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="section"><H4>Sections</H4></A>
+<P>A section is a group of <A HREF="langref.html#para">paragraphs</A>. The 
+section name must begin in the 'A' margin and be followed by the word 
+'SECTION'. Naming standards for sections are the same as those for 
+paragraphs. A section ends when a new one begins.</P>
+
+<P>A section can be <A HREF="langref.html#perform">PERFORMed</A> in the 
+same manner a paragraph is PERFORMed. The PERFORM only uses the section 
+name, there is no reference to it actually being a section instead of a 
+paragraph.</P>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="subindx"><H4>Subscripts and Indexes</H4></A>
+<P>Subscripts and indexes are the two tools used to reference individual 
+elements of a <A HREF="langref.html#table">table</A>. A subscript is a 
+working-storage <A HREF="langref.html#fields">field</A> defined separately 
+from the table and is completely available to the programmer. An index is 
+created automatically by the system if it is directed to do so and only 
+has limited availability to the programmer.</P>
+
+<P>An index cannot be part of a calculation, cannot be 
+<A HREF="langref.html#move">MOVEd</A> to another field or cannot receive 
+another field from a MOVE and it cannot be <A HREF="langref.html#display"> 
+DISPLAYed</A>. To manipulate an index the <A HREF="langref.html#set">SET</A> 
+statement must be used.</P>
+
+<P>The major difference between a subscript and an index is that a subscript 
+is a position in the table (first element, 20th element, etc.). An index is 
+a byte offset of an element relative to the beginning of the table. Since the 
+first element is 0 bytes away from the start of the table, it has an index 
+of 0. The 20th element (say each element is a PIC X(5)) starts 95 bytes 
+from the start of the table so its index is 95. When manipulating an index 
+the programmer does not do so by this byte offset. It is done by position 
+in the table and the translation to byte offset is done internally by 
+COBOL.</P>
+
+<P>See the <A HREF="algs.html#tables">algorithms</A> page for sample 
+code on loading and searching tables.</P>
+
+<P>Also see <A HREF="langref.html#occurs">OCCURS clause</A>,&nbsp&nbsp
+<A HREF="langref.html#set">Set</A>.</P>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="table"><H4>Tables</H4></A>
+<P>Tables are the COBOL equivalent to arrays. It is a set of 
+<A HREF="langref.html#fields">fields</A> with the same name and the same 
+<A HREF="langref.html#datatype">data type</A>. To reference an individual 
+element of the table a <A HREF="langref.html#subindx">subscript or index</A> 
+must be used.</P>
+
+<P>Tables are defined using the <A HREF="langref.html#occurs">OCCURS 
+clause</A>.</P>
+<P>See the <A HREF="algs.html#tables">algorithms</A> page for sample 
+code on loading and searching tables.</P>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="trunc"><H4>Truncation</H4></A>
+<P>Truncation is a phenomenon that occurs when the receiving 
+<A HREF="langref.html#fields">field</A> of a <A HREF="langref.html#move">
+MOVE</A> or a math operation is not big enough to hold what it's getting. 
+For <A HREF="langref.html#datatype">alphanumeric</A> fields truncation 
+happens on the right (move 'COBOL' to a PIC X(4) and you get 'COBO') and 
+<A HREF="langref.html#datatype">numeric</A> it happens on the left (move 
+1000005 to a PIC 9(06) and you get 5). No warnings, no messages. Just the 
+loss of data.</P>
+<P>Also see <A HREF="langref.html#onsize">On Size Error</A>.</P>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<! Statements and Clauses follow>
+
+<A NAME="lvl77"><H4>77-level Fields</H4></A>
+<P>A working storage <A HREF="langref.html#fields">field</A> can be declared 
+with a <A HREF="langref.html#lvlnbr">level number</A> of 77. The 77 must be 
+in column 8, the field cannot be a group-level field and the field cannot 
+be part of a group-level field.</P>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="lvl88"><H4>88-level Fields</H4></A>
+<P>A <A HREF="langref.html#fields">field</A> declared with a 
+<A HREF="langref.html#lvlnbr">level number</A> of 88 is commonly known as a
+'condition name'. This name can be used anywhere a <A HREF="langref.html#cond">
+condition</A> can be used and is generally more readable. Condition names are 
+declared immediately after the field they are associated with. They use no 
+storage (they take up no room).</P>
+<P>For example your application contains a field named ACCT-TYPE which is 
+PIC 999. One particular section of code determines if the account is a 
+checking account (account type 100, 110, 210 or 300), a savings account 
+(type 150 or 175) or a CD/IRA (type 400). An IF statement could look 
+like:</P>
+<TT><PRE>
+            IF WS-ACCT-TYPE = 100 OR 110 OR 210 OR 300
+               <I>statement(s)</I>
+            ELSE
+               IF WS-ACCT-TYPE = 150 OR 175
+                  <I>statement(s)</I>
+               ELSE
+                  IF WS-ACCT-TYPE = 400
+                     <I>statement(s)</I>
+                  END-IF
+               END-IF
+            END-IF
+</PRE></TT>
+<P>Logically accurate but not entirely clear what account types are what. 
+Comments would help, but condition names will help more. Define as:</P>
+<TT><PRE>
+        01  WS-ACCT-TYPE        PIC 999.
+            88  CHECKING-ACCT           VALUE 100 110 210 300.
+            88  SAVINGS-ACCT            VALUE 150 175.
+            88  CD-IRA-ACCT             VALUE 400.
+</PRE></TT>
+<P>The same IF can now look like:</P>
+<TT><PRE>
+            IF CHECKING-ACCT
+               <I>statement(s)</I>
+            ELSE
+               IF SAVINGS-ACCT
+                  <I>statement(s)</I>
+               ELSE
+                  IF CD-IRA-ACCT
+                     <I>statement(s)</I>
+                  END-IF
+               END-IF
+            END-IF
+</PRE></TT>
+<P>Now it's self-documenting. The added advantage is if another type of 
+savings account is developed it only needs added at the condition name. The 
+IF statement doesn't change.</P>
+
+<P>A specific value can appear in multiple condition names. Values 
+associated with a condition name can be specified with THRU (i.e. VALUES 
+90 THRU 99). When checking condition names 'NOT' can be used. If a condition 
+name only has one value a statement such as 'SET CD-IRA-ACCT TO TRUE' is 
+valid and is the equivalent to 'MOVE 400 TO WS-ACCT-TYPE'.</P>
+<P>Also see <A HREF="langref.html#set">Set</A>.</P>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="accept"><H4>Accept</H4></A>
+<P>The ACCEPT statement is used to get information from a source other than 
+a data file (like the keyboard or CPU clock).</P>
+
+<P>The statement:</P>
+<TT><PRE>
+        ACCEPT <A HREF="langref.html#fields"><I>field</I></A>.
+</PRE></TT>
+<P>will cause the program to wait until the enter key is pressed. Any data 
+typed in before the enter key is pressed will then be placed in <I>field</I>.
+See <A HREF="howto.html#interact">How do I ...?</A> for issues with getting 
+<A HREF="langref.html#datatype">numeric data</A> in this manner. 
+See the <A HREF="algs.html#interact">algorithms</A> page for sample 
+code on receiving and processing data received interactively.</P>
+
+
+<P>The ACCEPT statement can also be used to get information from the system 
+clock such as the current date and time:</P>
+<TT><PRE>
+        ACCEPT <I>field-1</I> FROM DATE.
+        ACCEPT <I>field-2</I> FROM TIME.
+        ACCEPT <I>field-3</I> FROM DAY.
+        ACCEPT <I>field-4</I> FROM DAY-OF-WEEK.
+</PRE></TT>
+<P>Where:</P><UL>
+<LI><I>field-1</I> is PIC 9(6). The date will be in yymmdd format</LI>
+<LI><I>field-2</I> is PIC 9(8). The time will be in hhmmsscc format where 
+cc is hundredths of a second. hh will be in military time (0-23)</LI>
+<LI><I>field-3</I> is PIC 9(3). The value will represent the current Julian 
+date, which is a number from 1-366 representing the date as a number of 
+days relative to the end of the previous year (Jan 1st = 1, Feb 1st = 32, 
+etc.).</LI>
+<LI><I>field-4</I> is PIC 9. The values range from 1 (Monday) to 7 
+(Sunday).</LI>
+</UL>
+<P>Also see <A HREF="langref.html#delim">Delimiters</A>.</P>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="add"><H4>Add</H4></A>
+<P>The basic form of the ADD statement is:</P>
+<TT><PRE>
+        ADD <I>value</I> TO <I>field-1</I>.
+</PRE></TT>
+<P>which adds <I>value</I> (either a <A HREF="langref.html#literal">literal</A> 
+or a <A HREF="langref.html#fields">field</A>) to <I>field-1</I> and stores 
+the result in <I>field-1</I>. A list of fields can follow the TO which will 
+add the value to each of them. A list of values can be before the TO which 
+would add all of them to <I>field-1</I>.</P>
+
+<P>It is possible to add two values (either literals or fields) and store 
+the result in a separate field with the GIVING clause:</P>
+<TT><PRE>
+        ADD <I>value-1</I> TO <I>value-2</I> GIVING <I>field-1</I>.
+</PRE></TT>
+<P>Also see <A HREF="langref.html#round">Rounded</A>,&nbsp&nbsp
+<A HREF="langref.html#onsize">On Size Error</A>,&nbsp&nbsp
+<A HREF="langref.html#trunc">Truncation</A>,&nbsp;&nbsp
+<A HREF="langref.html#delim">Delimiters</A>.</P>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="bwz"><H4>Blank When Zero</H4></A>
+<P>'BLANK WHEN ZERO' can be specified with a <A HREF="langref.html#pic">PIC</A> clause so that blanks are printed if the value of the field is zero.
+For example, 'PIC -,--9.99 BLANK WHEN ZERO'.</P>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="call"><H4>Call</H4></A>
+<P>The CALL statement is used to call another program. As long as the 
+called program contains a <A HREF="langref.html#goback">GOBACK</A> or 
+<A HREF="langref.html#exitprog">EXIT PROGRAM</A> then when the called 
+program finishes control returns to the calling program.</P>
+
+<P>Fields can be passed from the calling program to the called program. 
+These fields are in the calling program's WORKING-STORAGE SECTION and in 
+the called program's LINKAGE SECTION. The <A HREF="langref.html#using">
+USING</A> clause on the CALL specifies the fields to pass. The called 
+program lists these fields in the USING clause of the PROCEDURE DIVISION. 
+These fields don't have to have the same name in both programs, but the 
+definitions must match.</P>
+<PRE><TT>
+            CALL 'PGM2.OBJ'.
+
+            CALL 'PGM6F.OBJ'
+               USING WS-FLD-1 WS-FLD-2 WS-FLD-3
+                     WS-FLD-4 WS-FLD-5
+            END-CALL.
+</TT></PRE>
+<P>See the <A HREF="algs.html#call">algorithms</A> page for sample 
+code on calling another program.</P>
+
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="close"><H4>Close</H4></A>
+<P>The CLOSE statement will close an open file. Attempting to close a closed 
+file will produce a run-time error.</P>
+
+<P>One CLOSE statement can close multiple files.</P>
+<PRE><TT>
+        CLOSE <I>file-name-1</I>
+              <I>file-name-2</I>.
+</TT></PRE><BR>
+<P>Also see <A HREF="langref.html#open">Open</A>.</P>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="compute"><H4>Compute</H4></A>
+<P>COMPUTE allows you to combine several math operations in one statement, 
+using familiar symbols instead of English-like sentances.</P>
+<TT><PRE>
+        COMPUTE <I>field-1</I> = <I>expression</I>.
+</PRE></TT>
+<P>Expression is any valid mathematical expression involving 
+<A HREF="langref.html#literal">literals</A>, <A HREF="langref.html#fields">
+fields</A> and the following symbols: +&nbsp(add), -&nbsp(subtract), 
+*&nbsp(multiply), /&nbsp(divide), **&nbsp(exponentiation). To code 2 to the 
+3rd power use '2&nbsp** 3'.</P>
+
+<P>The order of operations is as follows:</P>
+<OL><LI>Exponentiation, from right to left</LI>
+<LI>Multiplication and division, from left to right</LI>
+<LI>Addition and subtraction, from left to right</LI></OL>
+<P>Parenthesis can also be used to force the order in which the operations 
+are carried out. Expressions inside parenthesis are computed first, from 
+the innermost parenthesis to the outermost.</P>
+
+<P>COMPUTE comes with a warning. Some compilers will round/truncate each 
+intermediate result as opposed to waiting until the end of all calculations. 
+This can lead to erroneous results.</P> 
+<P>Also see <A HREF="langref.html#round">Rounded</A>,&nbsp;&nbsp
+<A HREF="langref.html#onsize">On Size Error</A>,&nbsp;&nbsp
+<A HREF="langref.html#trunc">Truncation</A>,&nbsp;&nbsp
+<A HREF="langref.html#delim">Delimiters</A>.</P>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="copy"><H4>Copy</H4></A>
+<P>COPY will insert the contents of the specified file into the program 
+containing the COPY when the program is compiled. The file being copied 
+is normally referred to as a copybook. COPYs can appear in any of the 
+divisions. A period must terminate the COPY.</P>
+
+<P>Record layouts are commonly in copybooks. Every program that reads or 
+writes the file can contain a COPY instead of having the same record 
+definition repeated in several programs. If the record layout is changed 
+the change needs to be in one place and the programs recompiled to grab 
+the more recent version.</P>
+<PRE><TT>
+         FD  IN-CUSTOMER-MASTER
+             RECORD CONTAINS 1200 CHARACTERS.
+         COPY CUSTMAST.
+</TT></PRE>
+<P>A specific location for the copybook can be specified on the COPY by 
+using either 'OF' or 'IN', followed by the library name.</P>
+<PRE><TT>
+         FD  IN-CUSTOMER-MASTER
+             RECORD CONTAINS 1200 CHARACTERS.
+         COPY CUSTMAST OF CPYBOOKS.
+</TT></PRE>
+<P>COPY supports a REPLACING clause, where text in the copybook is 
+altered once it is inserted in the program. The original copybook is 
+unchanged. <A HREF="langref.html#literal">Literals</A> and identifiers 
+can be changed simply by specifying them in the command. Text can also 
+be replaced, but requires the source and target text to be in between 
+pairs of equal signs.</P>
+<PRE><TT>
+         COPY CUSTMAST REPLACING CUST-NUMBER BY CUST-NBR.
+
+         COPY CUSTMAST REPLACING ==CUST-== BY ==CUSTOMER-==,
+                                 ==9(5)==  BY ==X(5)==.
+</TT></PRE>
+<P>The first will change the name of a field, assuming it exists in the 
+copybook. The second will change every occurrence of 'CUST-' to 
+'CUSTOMER-' and change all '9(5)' to 'X(5)'. Some record layout copybooks 
+will have a dummy prefix on each field name and each time it is COPYed the 
+prefix is changed by a REPLACING on the COPY. This allows for the copybook 
+to used for multiple files in the same program - each COPY REPLACEs the 
+dummy prefix with a different value avoiding having multiple fields with 
+the same name.</P>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="corr"><H4>Corresponding</H4></A>
+<P>MOVE CORRESPONDING (or just MOVE CORR) is used with group-level fields. 
+Whenever the source and target group-level fields have elementary fields 
+of <I>exactly the same name</I> then that field will be moved. Consider the 
+following:</P>
+<TT><PRE>
+     01  GROUP-1.                       01  GROUP-2.
+         05  FIELD-A        PIC 999.        05  FIELD-E      PIC 99. 
+         05  FIELD-B.                       05  FIELD-A      PIC 9(4).
+             10  FIELD-C    PIC X(12).      05  FIELD-BB.
+             10  FIELD-D    PIC XXX.            10  FIELD-C  PIC XXX.
+         05  FIELD-E        PIC 99.             10  FIELD-D  PIC X.
+         05  FIELD-F        PIC X.          05  FIELD-G      PIC X(10).
+</PRE></TT>
+<P>The statement 'MOVE CORRESPONDING GROUP-1 TO GROUP-2' will cause both 
+FIELD-A and FIELD-E to be moved. FIELD-C and FIELD-D have different 
+group-level names so they don't correspond.</P>
+<P>This command is very useful when reformatting records. It can replace 
+dozens, even hundreds, of moves.</P> 
+<P>Also see <A HREF="langref.html#move">Move</A>.</P>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="delete"><H4>Delete</H4></A>
+<P>DELETE will delete the current record in a non-sequential file 
+<A HREF="langref.html#open">OPENed</A> as 'I-O'. There must be a 
+current record, so a successful <A HREF="langref.html#read">READ</A> or 
+<A HREF="langref.html#readnext">READ NEXT</A> must precede the DELETE.</P>
+<PRE><TT>
+        DELETE OT-FILE RECORD.
+</TT></PRE>
+<P>DELETE specifies the file name, followed by the word 'RECORD'.</P>
+<P>See the <A HREF="algs.html#nonseq">algorithms</A> page for sample 
+code on using non-sequential files.</P>
+<P>Also see <A HREF="langref.html#invkey">Invalid Key</A>.</P>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="display"><H4>Display</H4></A>
+<P>The DISPLAY statement is used to show information on the terminal screen. 
+Any combination of <A HREF="langref.html#literal">literals</A> and 
+<A HREF="langref.html#fields">fields</A> can be displayed. All of the 
+following are valid:</P>
+<TT><PRE>
+        DISPLAY <I>field-name</I>.
+        DISPLAY 'Now performing paragraph 2000-READ'.
+        DISPLAY 'Employee number = ' WS-EMPLOYEE-NBR.
+</PRE></TT>
+<P>Can use the clause 'WITH NO ADVANCING' after the value being displayed 
+to prevent the cursor from dropping down a line on the screen. This can be 
+useful for prompts for an <A HREF="langref.html#accept">ACCEPT</A> 
+statement:</P>
+<TT><PRE>
+        DISPLAY 'Enter a number: ' WITH NO ADVANCING.
+        ACCEPT WS-NBR.
+</PRE></TT>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="divide"><H4>Divide</H4></A>
+<P>The basic form of the DIVIDE statement is:</P>
+<TT><PRE>
+        DIVIDE <I>value</I> INTO <I>field-1</I>.
+</PRE></TT>
+<P>which divides <I>value</I> (either a <A HREF="langref.html#literal">
+literal</A> or a <A HREF="langref.html#fields">field</A>) into <I>field-1</I> 
+and stores the result in <I>field-1</I>.</P>
+
+<P>It is possible to store the result in a separate field with the GIVING 
+clause. When using GIVING you can opt to divide BY instead of divide INTO. 
+This changes the positions of the divisor and dividend:</P>
+<TT><PRE>
+        DIVIDE <I>value-1</I> INTO <I>value-2</I> GIVING <I>field-1</I>.
+        DIVIDE <I>value-1</I> BY <I>value-2</I> GIVING <I>field-1</I>.
+</PRE></TT>
+<P>You can also specify the remainder of the division to be stored in a 
+separate field (only valid with GIVING):</P>
+<TT><PRE>
+        DIVIDE <I>value-1</I> INTO <I>value-2</I>
+           GIVING <I>field-1</I>
+           REMAINDER <I>field-2</I>.
+</PRE></TT>
+<P>While it is legal in COBOL to have REMAINDER when not working with 
+integers it makes little sense to do so.</P>
+<P>Also see <A HREF="langref.html#round">Rounded</A>,&nbsp&nbsp
+<A HREF="langref.html#onsize">On Size Error</A>,&nbsp&nbsp
+<A HREF="langref.html#trunc">Truncation</A>,&nbsp;&nbsp
+<A HREF="langref.html#delim">Delimiters</A>.</P>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="evaluate"><H4>Evaluate</H4></A>
+<P>The EVALUATE statement can be used to replace a nested-
+<A HREF="langref.html#if">IF</A> construct. It is the equivalent of a CASE 
+or SWITCH statement of other languages.</P>
+<TT><PRE>
+            EVALUATE WS-GRADE
+               WHEN 100
+                  DISPLAY 'PERFECT'
+               WHEN 90 THRU 99
+                  DISPLAY 'A'
+               WHEN 80 THRU 89
+                  DISPLAY 'B'
+               WHEN 70 THRU 79
+                  DISPLAY 'C'
+               WHEN OTHER
+                  DISPLAY 'WOULD YOU LIKE FRIES WITH THAT?'
+            END-EVALUATE.
+</PRE></TT>
+<P>Each 'WHEN' can only have one statement, though it can be a 
+<A HREF="langref.html#perform">PERFORM</A>. If multiple WHENs are true only 
+the first one checked will execute. The 'WHEN OTHER' is like a 'none of the 
+above'.</P>      
+                 
+<P>If two WHENs are 'stacked' (no statement between them) they are treated 
+like an 'OR'. For example:</P>
+<TT><PRE>     
+            EVALUATE WS-AGE
+               WHEN 0 THRU 4
+               WHEN 70 THRU 99
+                  DISPLAY 'TAKE A NAP'
+            END-EVALUATE.
+</PRE></TT>
+<P>The display will execute if WS-AGE falls in either range.</P>
+
+<P>Instead of EVALUATEing a field you can use 'EVALUATE TRUE'. Each WHEN must 
+then contain a <A HREF="langref.html#cond">condition</A>. The first 
+WHEN containing a true condition is executed. This method releases you 
+from the restriction of checking the same field with each WHEN. Also valid 
+is 'EVALUATE FALSE' where the first WHEN containing a false condition is 
+executed.</P>
+
+<P><A HREF="langref.html#lvl88">Condition names</A> cannot be used when 
+EVALUATEing a field. Condition names can only be used with 'EVALUATE 
+TRUE' or 'EVALUATE FALSE'. When EVALUATEing a field the WHENs contain 
+values, not conditions.</P>
+
+<P>Use EVALUATE ALSO to evaluate multiple fields/conditions at the same 
+time.</P>
+<TT><PRE>     
+            EVALUATE WS-SEX ALSO WS-MARITAL-STATUS
+               WHEN 'F' ALSO 'S'
+                  MOVE 'MISS' TO WS-TITLE
+               WHEN 'F' ALSO 'M'
+                  MOVE 'MRS.' TO WS-TITLE
+               WHEN 'M' ALSO 'S'
+                  MOVE 'MR.' TO WS-TITLE
+               WHEN 'M' ALSO 'M'
+                  MOVE 'POOR MR.' TO WS-TITLE
+               WHEN OTHER
+                  DISPLAY 'CALL SECURITY'
+            END-EVALUATE.
+</PRE></TT>
+<P>You can use EVALUTE TRUE and FALSE with ALSO. Each WHEN will then contain 
+one condition for each TRUE or FALSE.</P>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="exit"><H4>Exit</H4></A>
+<P>EXIT is used as the only statement in a paragraph that isn't supposed to 
+do anything. This typically is used in conjunction with 
+<A HREF="langref.html#perform">PERFORM THRUs</A>. The 
+<A HREF="langref.html#para">paragraph</A> being PERFORMed THRU is the 
+one containing the EXIT.</P>
+<PRE><TT>
+          PERFORM 300-READ-FILE THRU 300-EXIT.
+
+           . . . . . .
+
+      300-READ-FILE.
+          READ IN-FILE
+             AT END MOVE 'Y' TO WS-EOF-SW
+                    GO TO 300-EXIT
+          END-READ.
+             
+           . . . . (MUCH LOGIC) . . . .
+              
+          PERFORM 400-WRITE-RECORD THRU 400-EXIT.
+      300-EXIT.
+          EXIT.      
+</TT></PRE>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="exitprog"><H4>Exit Program</H4></A>
+<P>EXIT PROGRAM is used in a called program instead of a 
+<A HREF="langref.html#stoprun">STOP RUN</A>. It will 
+return execution to the calling program where a STOP RUN will terminate all 
+currently running programs.</P>
+<P>Also see <A HREF="langref.html#goback">Goback</A>.</P>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="goto"><H4>Go To</H4></A>
+<P>GO TO is used to transfer control to another part of the program. The 
+target of a GO TO is a <A HREF="langref.html#para">paragraph</A> name.</P>
+
+<P>Unlike a <A HREF="langref.html#perform">PERFORM</A> a GO TO will not 
+return when the paragraph finishes.</P>
+<PRE><TT>
+         GO TO 300-EXIT.
+</TT></PRE>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="goback"><H4>Goback</H4></A>
+<P>GOBACK is used in a called program instead of a 
+<A HREF="langref.html#stoprun">STOP RUN</A>. It will 
+return execution to the calling program where a STOP RUN will terminate all 
+currently running programs.</P>
+<P>Also see <A HREF="langref.html#exitprog">Exit Program</A>.</P>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="if"><H4>If</H4></A>
+<P>The IF statement is used to limit the execution of code so that it only 
+happens under certain <A HREF="langref.html#cond">conditions</A>. The 
+standard form is:</P>
+<TT><PRE>
+        IF <I>condition</I>
+           <I>statement(s)</I>
+        END-IF.
+</PRE></TT>
+<P>The <I>statement(s)</I> are only executed if the <I>condition</I> is 
+true. Each IF is allowed to have an ELSE. The <I>statement(s)</I> in the 
+ELSE are only executed if the <I>condition</I> is false:</P>
+<TT><PRE>
+        IF <I>condition</I>
+           <I>statement(s)</I>
+        ELSE
+           <I>statement(s)</I>
+        END-IF.
+</PRE></TT>
+<P>There must be at least one statement in either portion of the IF. If you 
+do not want any processing done you can use the CONTINUE or NEXT SENTENCE 
+statement:</P>
+<TT><PRE>
+        IF <I>condition</I>
+           CONTINUE
+        ELSE
+           <I>statement(s)</I>
+        END-IF.
+</PRE></TT>
+<P>IFs can be nested (one IF inside another). COBOL will match an ELSE or 
+an END-IF with the nearest IF that does not yet already have an ELSE or 
+END-IF paired with it.</P>
+
+<P>IFs can also be used to check types. An <A HREF="langref.html#fields">
+field</A> can be checked to see if it contains valid <A HREF="langref.html#datatype">
+numerics</A> with:</P>
+<TT><PRE>
+        IF <I>field</I> IS NUMERIC
+</PRE></TT>
+<P>IS NOT NUMERIC is also valid. In the same manner a numeric field can be
+checked to see if IS POSITIVE, IS NEGATIVE or IS ZERO.</P>
+
+<P>The END-IF <A HREF="langref.html#delim">delimiter</A> is not required. 
+A period will end all IFs.</P>
+<P>Also see <A HREF="langref.html#evaluate">Evaluate</A>.</P>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="init"><H4>Initialize</H4></A>
+<P>The INITIALIZE command is used to set all of the values for 
+<A HREF="langref.html#fields">fields</A> in the same group-level field to 
+either 0 or spaces, depending on the field's definition. The statement:</P>
+<TT><PRE>
+        INITIALIZE WS-GROUP.
+</PRE></TT>
+<P>where:</P>
+<TT><PRE>
+        01  WS-GROUP.
+            05  WS-FIELD-1     PIC X(05).
+            05  WS-FIELD-2     PIC 999.
+            05  WS-FIELD-3     PIC S9(04)V99.
+            05  WS-FIELD-4     PIC X(100).
+</PRE></TT>
+<P>is the equivalent to MOVEing SPACES to WS-FIELD-1 and WS-FIELD-4 and 
+MOVEing ZEROS to WS-FIELD-2 and WS-FIELD-3. The nice thing is that as 
+elementary fields are added to the group the INITIALIZE will automatically 
+take care of them.</P>
+
+<P>INITIALIZE will not change the value of any FILLER items. If a non-FILLER 
+item has a <A HREF="langref.html#value">VALUE clause</A> it will still get 
+either ZEROS or SPACES with the INITIALIZE statement. The VALUE is 
+ignored.</P>
+<P>Also see <A HREF="langref.html#move">Move</A>.</P>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="inspect"><H4>Inspect</H4></A>
+<P>INSPECT has two purposes. It can count the number of times a particular 
+character appears in an alphanumeric string, and it can change those 
+characters to another.</P>
+<TT><PRE>
+          INSPECT <I>field-1</I> TALLYING <I>field-2</I>
+              FOR <I>target</I>.
+</PRE></TT>
+<P>Where <I>field-1</I> is an alphanumeric field and <I>field-2</I> is a 
+numeric field that will hold the count.</P>
+<P><I>target</I> has a few different possibilities. It can be the word 
+CHARACTERS in which case <I>field-2</I> holds the number of characters in 
+the alphanumeric string. Or a specific character can INSPECTed for using 
+either ALL or LEADING followed by the character. Finally, any of these 
+forms can be ended with a BEFORE/AFTER INITIAL clause:</P>
+<TT><PRE>
+          INSPECT WS-A TALLYING WS-N FOR ALL '*'
+          INSPECT WS-A TALLYING WS-N FOR LEADING SPACES
+          INSPECT WS-A TALLYING WS-N FOR CHARACTERS AFTER INITIAL SPACE
+          INSPECT WS-A TALLYING WS-N FOR ',' BEFORE INITIAL '0'
+</PRE></TT>
+<P>To use INSPECT to change particular characters in an alphanumeric 
+string, use REPLACING instead of TALLYING. The CHARACTERS, ALL and 
+LEADING clauses are valid with REPLACING, as is FIRST. You can also use 
+the BEFORE/AFTER INITIAL clause with REPLACING.</P>
+<TT><PRE>
+          INSPECT WS-A REPLACING ALL SPACES BY ZEROES
+          INSPECT WS-A REPLACING FIRST 'A' BY 'B'
+          INSPECT WS-A REPLACING ALL ' ' BY '0' AFTER INITIAL ','
+</PRE></TT>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="invkey"><H4>Invalid Key</H4></A>
+<P>The INVALID KEY clause is used with any type of non-sequential I-O statement. 
+It specifies a statement to be executed if the command fails. Any statement such 
+as READ or WRITE with any relative or indexed file should include this clause. 
+For example:</P>
+<TT><PRE>
+       MOVE WS-KEY TO FILE-KEY.
+       READ INDEX-FILE
+          INVALID KEY PERFORM 300-RECORD-NOT-FOUND
+       END-READ.
+</PRE></TT>
+<P>Upon an unsuccesful READ (for example, if no record in the file has that key) 
+the specified statement is executed instead of the program crashing. There is an 
+optional NOT INVALID KEY clause that can be included (must be after the INVALID 
+KEY). It is best if only one statement is used in either the INVALID KEY or NOT 
+INVALID KEY clause.</P>
+<P>See the <A HREF="algs.html#nonseq">algorithms</A> page for sample 
+code on using non-sequential files.</P>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="merge"><H4>Merge</H4></A>
+<P>The merge is used to sort multiple files into one. Each of these files 
+requires its own FD in the FILE SECTION, as does the combined file. All of 
+these files must obviously have the same record format. The merge requires 
+another entry in the FILE SECTION, an SD instead of an FD.</P>
+<TT><PRE>
+        MERGE <I>sd-file-name</I> ON ASCENDING KEY <I>sd-field-name</I>
+             USING <I>fd-input-file-name-1</I>
+                   <I>fd-input-file-name-2</I>
+             GIVING <I>fd-output-file-name</I>
+</PRE></TT>
+<P>To sort multiple fields list them in the desired order. DESCENDING KEYs can 
+be mixed with ASCENDING KEYs in the same MERGE (but only use 'ON' once). List the 
+input files in the desired order in the USING clause.</P>
+<P>Like the <A HREF="langref.html#sort">SORT</A> an OUTPUT procedure can be 
+specified (requiring a <A HREF="langref.html#return">RETURN</A>) instead of the 
+GIVING, but the MERGE does not support the INPUT PROCEDURE option.</P>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="move"><H4>Move</H4></A>
+<P>The MOVE statement is used to place a value in a 
+<A HREF="langref.html#fields">field</A>. It is kind of like an assignment 
+statement in other languages though it does not allow for computations. Even 
+though the statement is a move, it is more like a copy. The data is still in 
+its original place as well as the receiving field. The standard form of 
+statement is:</P>
+<TT><PRE>
+        MOVE <I>value</I> TO <I>field</I>.
+</PRE></TT>
+<P>where <I>value</I> can be a <A HREF="langref.html#literal">literal</A> or 
+a field. A list of fields can follow the TO causing the <I>value</I> to be 
+MOVEd to each of the fields.</P>
+
+<P>With a <A HREF="langref.html#datatype">numeric</A> move the source and 
+destination are checked for the location of the decimal place (if one is 
+not explicitly defined it is assumed to be to the right of the rightmost 
+digit) and the move is done based on that. For example, MOVEing the value 
+80.375 to a PIC 9(06)V99 will cause the receiving field to contain 80.37 
+and MOVEing the value 3.1415927 to a PIC 9(08) will cause the receiving 
+field to contain 3.</P>
+
+<P><A HREF="langref.html#datatype">Alphanumeric</A> and 
+<A HREF="langref.html#datatype">alphabetic</A> moves first move the leftmost 
+character of the sending field to the leftmost character of the receiving 
+field, then the next character, and so on. All group-level MOVEs are 
+considered alphanumeric.</P>
+
+<P>If the receiving field is larger than the data being MOVEd then the field 
+will be padded. Alphanumeric fields are padded on the right with spaces, 
+numerics are padded on the left with zeroes. If a numeric has more decimal 
+places than the data being MOVEd then zeroes will be padded on the right in 
+the decimal portion of the receiving field.</P>
+ 
+<P>Also see <A HREF="langref.html#trunc">Truncation</A>,&nbsp;&nbsp
+<A HREF="langref.html#corr">Corresponding</A>.</P>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="multiply"><H4>Mulitply</H4></A>
+<P>The basic form of the multiply statement is:</P>
+<TT><PRE>
+        MULTIPLY <I>value</I> BY <I>field-1</I>.
+</PRE></TT>
+<P>which multiplys <I>value</I> (either a <A HREF="langref.html#literal">
+literal</A> or a <A HREF="langref.html#fields">field</A>) by <I>field-1</I> 
+and stores the result in <I>field-1</I>.</P>
+
+<P>It is possible to store the result in a separate field with the GIVING 
+clause:</P>
+<TT><PRE>
+        MULTIPLY <I>value-1</I> BY <I>value-2</I> GIVING <I>field-1</I>.
+</PRE></TT>
+<P>Also see <A HREF="langref.html#round">Rounded</A>,&nbsp&nbsp
+<A HREF="langref.html#onsize">On Size Error</A>,&nbsp&nbsp
+<A HREF="langref.html#trunc">Truncation</A>,&nbsp;&nbsp
+<A HREF="langref.html#delim">Delimiters</A>.</P>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="occurs"><H4>Occurs</H4></A>
+<P>Occurs is used to define a table. It is followed by the number of 
+elements in the table. COBOL does not support dynamic tables - the size must 
+be specified.</P>
+<TT><PRE>
+        01  WS-TABLE.
+            05  WS-ELEMENT   OCCURS 100 TIMES      PIC 9(5).
+</PRE></TT>
+<P>Defines a table with 100 elements. The allowable 
+<A HREF="langref.html#subindx">subscripts</A> for this table are 1 through 
+100. To access a specific element of the table you would use something like 
+WS-ELEMENT (27). A space is required before and after the parenthesis. The 
+subscript can be a <A HREF="langref.html#fields">field</A> but cannot be an 
+expression. The subscript can be a separate working-storage numeric field 
+or COBOL can told to create an <A HREF="langref.html#subindx">index</A>, 
+like in the 
+following:</P>
+<TT><PRE>
+        01  WS-TABLE.
+            05  WS-ELEMENT   OCCURS 100 TIMES 
+                             INDEXED BY WS-INDX       PIC 9(5).
+</PRE></TT>
+<P>The field WS-INDX is automatically created by COBOL.</P>
+<P>The OCCURS can be on a group-level field which would then create a 
+table containing multiple instances of each of the elementary fields. The 
+OCCURS <I>cannot</I> appear on an 01-level field. It is also invalid on 
+<A HREF="langref.html#lvl77">77-level fields</A> and 
+<A HREF="langref.html#lvl88">88-level fields</A>.</P>
+<TT><PRE>
+        01  WS-TABLE-AREA.
+            05  WS-TABLE         OCCURS 100 TIMES.
+                10  WS-KEY             PIC XX.
+                10  WS-VALUE-1         PIC 9(5).
+                10  WS-VALUE-2         PIC 9(6)V99. 
+</PRE></TT>
+<P>This would create 100 elements of each of the 3 elementary fields.</P>
+<TT><PRE>
+        01  FILLER               VALUE 'MONTUEWEDTHUFRISATSUN'.
+            05  WS-DAYS-OF-WEEK         OCCURS 7 TIMES.
+</PRE></TT>
+<P>Creates a table with 7 elements and also initializes them. This was not 
+possible until a very recent version of COBOL. A 
+<A HREF="langref.html#redef">redfines</A> had to be used.</P>
+<P>See the <A HREF="algs.html#tables">algorithms</A> page for sample 
+code on loading and searching tables.</P>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="onsize"><H4>On Size Error</H4></A>
+<P>When used with one of the math verbs 
+(<A HREF="langref.html#add">ADD</A>, 
+<A HREF="langref.html#subtract">SUBTRACT</A>, 
+<A HREF="langref.html#multiply">MULTIPLY</A>, 
+<A HREF="langref.html#divide">DIVIDE</A>, 
+<A HREF="langref.html#compute">COMPUTE</A>) it allows COBOL to detect 
+<A HREF="langref.html#trunc">truncation</A> and divide-by-zero situations 
+and execute a specified instruction instead of doing the calculation. The 
+one statement can be a <A HREF="langref.html#perform">PERFORM</A>. For 
+example:</P>
+<TT><PRE>
+            DIVIDE WS-TOTAL BY WS-COUNT
+                 GIVING WS-PCT ROUNDED
+                 ON SIZE ERROR MOVE 0 TO WS-PCT
+            END-DIVIDE.
+</PRE></TT>
+<P>A statement can also be specified for 'NOT ON SIZE ERROR'.</P>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="open"><H4>Open</H4></A>
+<P>The open statement will open a file. Attempting to open an opened 
+file will produce a run-time error. Accessing an unopened file will 
+also produce a run-time error. You must specify whether the file is 
+being opened as an input file or an output file.</P>
+
+<P>Opening an existing file as output will cause the contents of the 
+file to lost immediately after it is opened.</P>
+
+<P>One read statement can open multiple files, even mixing input and 
+output.</P>
+<PRE><TT>
+        OPEN INPUT <I>file-name-1</I>
+                   <I>file-name-2</I>.
+
+        OPEN OUTPUT <I>file-name-1</I>
+                    <I>file-name-2</I>.
+
+        OPEN INPUT  <I>file-name-1</I>
+                    <I>file-name-2</I>
+             OUTPUT <I>file-name-3</I>
+                    <I>file-name-4</I>.
+</TT></PRE><BR>
+<P>Also see <A HREF="langref.html#close">Close</A>.</P>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="perform"><H4>Perform</H4></A>
+<P>The perform statement will execute the specified 
+<A HREF="langref.html#para">paragraph</A> and then control will return to 
+the statement following the perform. There are no restrictions as to the 
+physical placement of a paragraph compared to the perform statement that 
+executes it.</P>
+
+<P>There are several variations controlling the performing of paragraphs. 
+A paragraph cannot perform itself; COBOL has no recursion.</P>
+<PRE><TT>
+        PERFORM <I>paragraph-name</I>.
+
+        PERFORM <I>paragraph-name</I>
+           WHILE <I>condition</I>.
+
+        PERFORM <I>paragraph-name</I>
+           UNTIL <I>condition</I>.
+
+        PERFORM <I>paragraph-name</I>
+           VARYING <I>field-1</I> 
+           FROM <I>value-1</I> BY <I>value-2</I>
+           UNTIL <I>condition</I>.
+
+        PERFORM <I>paragraph-name</I> <I>value-1</I> TIMES.
+</TT></PRE>
+<P>Where any of the <I>value</I>s can be <A HREF="langref.html#literal">
+literals</A> or <A HREF="langref.html#fields">fields</A>.</P>
+
+<P>Each of the examples can also be specified with a THRU option, allowing 
+for a sequence of paragraphs to be executed.</P>
+<PRE><TT>
+        PERFORM <I>paragraph-name-1</I> THRU <I>paragraph-name-2</I>
+</TT></PRE>
+<P><I>Paragraph-name-2</I> will also be executed.</P>
+
+<P>There is also what's known as an in-line perform where a block of code 
+appears between a PERFORM and END-PERFORM. No paragraph name is specified. 
+For example:</P>
+<TT><PRE>
+        PERFORM UNTIL WS-END-OF-FILE
+           <I>statement(s)</I>
+           READ IN-FILE
+              AT END
+                 MOVE 'Y' TO WS-END-OF-FILE-SW
+           END-READ
+        END-PERFORM
+</PRE></TT>
+<P>When using the UNTIL option with a perform or in-line perform the 'UNTIL 
+<I>condition</I>' clause can be preceded by 'WITH TEST AFTER' to have COBOL 
+check the condition after the loop instead of before. This will cause the 
+loop to always be executed at least once. This has the effect of a 
+REPEAT-UNTIL loop of other languages.</P>
+<P>Also see <A HREF="langref.html#cond">Conditions</A>&nbsp;&nbsp
+<A HREF="langref.html#delim">Delimiters</A>&nbsp;&nbsp
+<A HREF="langref.html#section">Sections</A>.</P>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="read"><H4>Read</H4></A>
+<P>The read statement will read the next record from the specified file 
+and place the data in the record layout of that file's FD. The file must be 
+already open as input. Reading an unopend file or attempting to read beyond 
+the end of a file will produce a run-time error. The AT END clause is 
+required.</P>
+<PRE><TT>
+        READ <I>file-name</I>
+           AT END
+              <I>statement</I>
+        END-READ.
+</TT></PRE>
+<P>Optional clauses are NOT AT END and INTO. NOT AT END specifies a 
+statement to be executed if the read did not hit the end of the file. INTO 
+specifies a working-storage <A HREF="langref.html#fields">field</A> into 
+which the system will place the input record.</P>
+<PRE><TT>
+        READ <I>file-name</I>
+           INTO
+              <I>working-storage field</I>
+           AT END
+              <I>statement</I>
+	   NOT AT END
+              <I>statement</I>
+        END-READ.
+</TT></PRE><BR>
+<P>Also see <A HREF="langref.html#delim">Delimiters</A>.</P>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="readnext"><H4>Read Next</H4></A>
+<P>The READ NEXT is used after a successful <A HREF="langref.html#start">START</A> 
+to read records along the established access path. The condition used by the 
+START is not "remembered" by the READ NEXT so after each successful READ NEXT the 
+record must be checked to see if it still matches whatever criteria the program 
+is calling for. A successful read only means that a record was retrieved.</P>
+<TT><PRE>
+        READ <I>indexed-file-name</I> NEXT RECORD
+           AT END <I>statement</I>
+        END-READ
+</PRE></TT>
+<P>Since this is still a "sequential" process the READ NEXT requires an AT END 
+clause. The optional NOT AT END clause is supported.</P>
+<P>See the <A HREF="algs.html#altindex">algortihms</A> page for code 
+examples.</P>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="redef"><H4>Redefines</H4></A>
+<P>The REDEFINES clause allows you to have multiple 
+<A HREF="langref.html#fields">field</A> definitions for the same piece of 
+storage. The same data then can be referenced in multiple ways.</P>
+
+<P>Take a simple example, useful for data validation:</P>
+<TT><PRE>
+          01  WS-NUMBER-X       PIC X(8).
+          01  WS-NUMBER      REDEFINES WS-NUMBER-X
+                                PIC 9(6)V99.
+</PRE></TT>
+<P>This portion of the data division only consumes 8 bytes of storage, not 
+16. Each of the two PIC clauses is describing the same 8 bytes of data, just 
+doing it differently.</P>
+
+<P>Once data is in WS-NUMBER-X it can be checked to see if it is 
+<A HREF="langref.html#datatype">numeric</A> (IF WS-NUMBER-X IS NUMERIC). If 
+so, WS-NUMBER can then be used as part of a calculation. If the data happens 
+to be non-numeric then this type of code will prevent the program from 
+choking. We access the data as <A HREF="langref.html#datatype">
+alphanumeric</A> (any data allowed) to see if it is safe to access it as 
+numeric before actually attempting to do so.</P>
+
+<P>Note that once the data was moved to WS-NUMBER-X it was also moved to 
+WS-NUMBER because they both describe the same portion of storage.</P>
+
+<P>There are a few rules with REDEFINES:</P>
+<UL><LI>A redefinition must have the same 
+<A HREF="langref.html#lvlnbr">level number</A> as the field it is 
+redefining</LI>
+<LI>The redefinition must immediately follow the field it is redefining 
+(i.e. if an 05-level field is being redefined then the redefinition 
+<B>must</B> be the next 05-level field)</LI>
+<LI>Cannot have a REDEFINES of an 01-level field in an FD</LI>
+<LI>The redefinition <I>should</I> be the same size as the field it is 
+redefining though not all compilers require this</LI>
+<LI>It is possible to redefine at the group level though each group-level 
+field does not have to the same number of elementary fields</LI>
+<LI>Not all compilers allow <A HREF="langref.html#value">VALUE</A> with 
+REDEFINES. It's a bad idea in any case</LI>
+<LI>Can have multiple REDEFINES of the same field</LI></UL>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="release"><H4>Release</H4></A>
+<P>The RELEASE statment is required in an INPUT PROCEDURE of a 
+<A HREF="langref.html#sort">SORT</A>. It is used to specify that a 
+record is to be included in the sort.</P>
+<TT><PRE>
+        RELEASE <I>sd-record-name</I>
+
+        RELEASE <I>sd-record-name</I> FROM </I>working-storage-field</I>
+</PRE></TT>
+<P>Only RELEASEd records will be sorted.</P>
+<P>See the <A HREF="algs.html#sort">algorithms</A> page for sample 
+code on using the SORT statement.</P>
+<P>Also see <A HREF="langref.html#return">Return</A>.</P>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="return"><H4>Return</H4></A>
+<P>The RETURN statment is required in an OUTPUT PROCEDURE of a 
+<A HREF="langref.html#sort">SORT</A>. It is used to retrieve a record from the 
+sort back into your program.</P>
+<TT><PRE>
+        RETURN <I>sd-file-name</I>
+           AT END
+              <I>statement</I>
+        END-RETURN
+</PRE></TT>
+<P>The records are RETURNed in the sorted order.</P>
+<P>Like the <A HREF="langref.html#read">READ</A> statement the RETURN supports 
+the NOT AT END and INTO optional clauses. Also like the READ, it is best if only 
+one statement is used in either the AT END or NOT AT END clauses.</P>
+<P>See the <A HREF="algs.html#sort">algorithms</A> page for sample 
+code on the SORT statement.</P>
+<P>Also see <A HREF="langref.html#release">Release</A>.</P>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="rewrite"><H4>Rewrite</H4></A>
+<P>REWRITE will update the current record in a non-sequential file 
+<A HREF="langref.html#open">OPENed</A> as 'I-O'. There must be a 
+current record, so a successful <A HREF="langref.html#read">READ</A> or 
+<A HREF="langref.html#readnext">READ NEXT</A> must precede the REWRITE. 
+Following the READ/READ NEXT and before the REWRITE some information on 
+the record will presumably be changed.</P>
+<PRE><TT>
+        REWRITE IN-FILE-REC.
+</TT></PRE>
+<P>REWRITE specifies the record, not the file.</P>
+<P>See the <A HREF="algs.html#nonseq">algorithms</A> page for sample 
+code on using non-sequential files.</P>
+<P>Also see <A HREF="langref.html#invkey">Invalid Key</A>.</P>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="round"><H4>Rounded</H4></A>
+<P>Rounded is a clause valid with any of the math verbs
+(<A HREF="langref.html#add">ADD</A>, 
+<A HREF="langref.html#subtract">SUBTRACT</A>, 
+<A HREF="langref.html#multiply">MULTIPLY</A>, 
+<A HREF="langref.html#divide">DIVIDE</A>, 
+<A HREF="langref.html#compute">COMPUTE</A>). Place it in the command after 
+the name of the <A HREF="langref.html#fields">field</A> that will receive 
+the result:</P> 
+<PRE><TT>
+        ADD IN-AMOUNT TO WS-BALANCE ROUNDED.
+        MULTIPLY IN-HOURS BY IN-RATE GIVING WS-PAY ROUNDED.
+        COMPUTE WS-CUBE ROUNDED = WS-NBR ** WS-POWER.
+</TT></PRE>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="search"><H4>Search</H4></A>
+<P>The search command is used to search a <A HREF="langref.html#table">
+table</A> for a particular entry. The table must have an 
+<A HREF="langref.html#subindx">index</A> (see <A HREF="langref.html#occurs">
+OCCURS</A>). The format is:</P>
+<PRE><TT>
+        SEARCH <I>field</I>
+           AT END
+                 <I>statement-1</I>
+           WHEN  <I>condition</I>
+                 <I>statement-2</I>
+        END-SEARCH.
+</TT></PRE>
+<P>The <I>field</I> is the field with the OCCURS clause. WHEN specifies the 
+<A HREF="langref.html#cond">condition</A> on which to end the search (usually 
+when some field equals a table entry) Only one statement can be specified 
+in the WHEN but it can be a <A HREF="langref.html#perform">PERFORM</A>. The 
+AT END clause is optional, specifying one statement to be executed if the 
+entire table is searched without satisfying the WHEN condition. It is 
+recommended, however.</P>
+<P>For example:</P>
+<PRE><TT>
+      * ALWAYS SET THE INDEX TO 1 BEFORE A SEARCH
+           SET WS-INDX TO 1.
+
+           SEARCH WS-TABLE
+              AT END
+                    MOVE ZEROES TO SALES-TAX
+              WHEN  IN-STATE = WS-TABLE-STATE (WS-INDX)
+                    MOVE WS-TABLE-TAX TO SALES-TAX
+           END-SEARCH.
+</TT></PRE>
+<P>There can be multiple WHENs but the search stops once the condition of a 
+WHEN is satisfied. To allow for multiple search matches use a 
+<A HREF="langref.html#perform">PERFORM VARYING</A>, which can increment an 
+index.</P>
+<P>If the table entries are sequenced by the field being searched then a 
+binary search can be used instead. Use SEARCH ALL instead of SEARCH. It is 
+more efficient than a regular search, especially with large tables. The 
+SEARCH ALL has some limitations:</P>
+<UL><LI>Only one WHEN is permitted</LI>
+<LI>The WHEN condition can only test equality</LI>
+<LI>The WHEN condition cannot contain an OR</LI>
+<LI>The table field must be to the left of the = in the condition</LI></UL>
+<P>See the <A HREF="algs.html#tables">algorithms</A> page for sample 
+code on loading and searching tables.</P>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="set"><H4>Set</H4></A>
+<P>Set can be used to manipulate an <A HREF="langref.html#subindx">
+index</A>:</P>
+<TT><PRE>
+        SET WS-INDX TO WS-NUMBER.
+        SET WS-INDX UP BY 1.
+        SET WS-INDX DOWN BY 3.
+</PRE></TT>
+<P>Note that while an index is actually a byte offset within a table COBOL 
+does not expect you to work on that level. Setting an index to 2 will cause 
+it to point to the 2nd element in the table, regardless of its offset. 
+Likewise, seting an index up one will move it to the next element in the 
+table, regardless of the size of the element. COBOL will translate it to 
+the proper offset for you.</P>
+<P>Set can also be used with <A HREF="langref.html#lvl88">condition names</A> 
+as an alternative to a <A HREF="langref.html#move">MOVE</A>. Consider the 
+following:</P>
+<TT><PRE>
+        01  WS-END-OF-FILE-SW      PIC X  VALUE 'N'.
+            88  END-OF-FILE               VALUE 'Y'.
+</PRE></TT>
+<P>It is then permissible to code:</P>
+<TT><PRE>
+        SET END-OF-FILE TO TRUE.
+</PRE></TT>
+<P>This is the equivalent to "MOVE 'Y' TO WS-END-OF-FILE-SW" but it is 
+more readable. Most compilers will not allow a condition name with multiple 
+values to be used in a SET. It is not a good idea in any case.</P>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="sort"><H4>Sort</H4></A>
+<P>The sort statement is used to sort a file. It requires a work file area that 
+is defined in the FILE SECTION, just like any other file, except it is an SD 
+instead of an FD. The basic sort statement looks like:</P>
+<TT><PRE>
+        SORT <I>sd-file-name</I> ON ASCENDING KEY <I>sd-field-name</I>
+            USING <I>fd-input-file-name</I>
+            GIVING <I>fd-output-file-name</I>
+</PRE></TT>
+<P>Multiple fields can be used in the sort, just list them in the desired order. 
+DESCENDING KEY can be specified instead of ASCENDING KEY. DESCENDING KEY and 
+ASCENDING KEY can be combined in the same statement.</P>
+
+<P>The SORT statement will open and close both the input and output files 
+automatically. The field(s) to be sorted on must be defined in the SD of the 
+sort file.</P>
+
+<P>An INPUT PROCEDURE can be specified instead of an input file. This allows the 
+flexibility of selecting specific records to be sorted or to do other types of 
+processing before the sort. Likewise, an OUTPUT PROCEDURE can be used instead of 
+an output file. An INPUT PROCEDURE requires a <A HREF="langref.html#release">
+RELEASE</A> statement and an OUTPUT PROCEDURE requires a 
+<A HREF="langref.html#return">RETURN</A> statement. For example:</P>
+<TT><PRE>
+        SORT <I>sd-file-name</I> ON ASCENDING KEY <I>sd-field-name</I>
+            INPUT PROCEDURE IS <I>paragraph-1</I>
+            OUTPUT PROCEDURE IS <I>paragraph-2</I>
+</PRE></TT>
+<P>This statement will execute <I>paragraph-1</I>, perform the sort and then 
+execute <I>paragraph-2</I>. An INPUT PROCEDURE can be used with GIVING and an 
+OUTPUT PROCEDURE can be used with USING. Each of these options allows the 
+THRU option (i.e. <I>paragraph-a</I> THRU <I>paragraph-b</I>).</P>
+<P>The clause 'WITH DUPLICATES IN ORDER' can be included in the statement (after 
+the last ASCENDING/DESCENDING KEY). This will cause any records with the same 
+value(s) for the sort field(s) to be kept in their original order. Not specifying 
+this will not necessarily change their original order, but there is no guarantee.</P>
+<P>See the <A HREF="algs.html#sort">algorithms</A> page for sample 
+code on using the SORT statement.</P>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="start"><H4>Start</H4></A>
+<P>The Start statement is used to establish an access path for an indexed file 
+with alternate keys (see the <A HREF="algs.html#altindex">algortihms</A> page 
+for code examples). Note that keys in alternate indexes are not necessarily unique 
+and the START is used in conjunction with the <A HREF="langref.html#readnext">
+READ NEXT</A> statement to find and retrieve and these records.</P>
+<PRE><TT>
+       START <I>indexed-file-name</I>
+          KEY EQUALS <I>alternate-key-field-in-FD</I>
+       END-START
+</TT></PRE>
+<P>The alternate key field must already be populated with a value.</P>
+<P>The first record in the file with that value for the alternate key is read. It 
+is a good idea to include a <A HREF="langref.html#invkey">INVALID KEY</A> clause 
+in any START to handle the case where there is no record in the file with the 
+appropriate alternate key.</P>
+<P>Instead of 'EQUALS' the START also supports '>' and 'NOT <'.</P>
+<P>With some compilers a START with an EQUALS will read a record if an appropriate 
+one exists, but a START with a '>' or 'NOT <' will not retrieve a record under any 
+circumstances. Other compilers will never have a START actually read a record.</P> 
+<P>See the <A HREF="algs.html#nonseq">algorithms</A> page for sample 
+code on using non-sequential files.</P>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="stoprun"><H4>Stop Run</H4></A>
+<P>The stop run statement will cause a normal termination to your 
+program.</P>
+
+<PRE><TT>
+        STOP RUN.
+</TT></PRE><BR>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="string"><H4>String</H4></A>
+<P>The STRING is used to concatenate (join) multiple fields or 
+<A HREF="langref.html#literls">literals</A> into one field. It replaces a 
+series of <A HREF="langref.html#move">MOVEs</A>. For example:</P>
+<TT><PRE>
+       01  WS-DATE-FIELDS.
+           05  WS-YEAR      PIC X(4)  VALUE '2000'.
+           05  WS-MONTH     PIC XX    VALUE '12'.
+           05  WS-DAY       PIC XX    VALUE '24'.
+       01  WS-DISPLAY-DATE  PIC X(10).
+
+    .....
+
+           STRING WS-MONTH DELIMITED BY SPACE
+                  '/'      DELIMITED BY SIZE
+                  WS-DAY   DELIMITED BY SPACE
+                  '/'      DELIMITED BY SIZE
+                  WS-YEAR  DELIMITED BY SPACE
+              INTO WS-DISPLAY-DATE.
+</PRE></TT>
+<P>After the above statement is executed WS-DISPLAY-DATE will contain '12/24/2000'. 
+DELIMITED BY SPACE means to use as much of that field or literal that appears before 
+the first space. If there are no spaces (like in the example) then the entire 
+field or literal is used. Any character can be used in the DELIMITED BY clause.</P>
+<P>Literals are usually DELIMTED BY SIZE, meaning to use the whole thing.<P>
+<P>The DELIMITED BY character is never included in the combined field.</P>
+<P>Also see <A HREF="langref.html#unstring">Unstring</A>.</P>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="subtract"><H4>Subtract</H4></A>
+<P>The basic form of the subtract statement is:</P>
+<TT><PRE>
+        SUBTRACT <I>value</I> FROM <I>field-1</I>.
+</PRE></TT>
+<P>which subtracts <I>value</I> (either a <A HREF="langref.html#literal">
+literal</A> or a <A HREF="langref.html#fields">field</A>) from <I>field-1</I> 
+and stores the result in <I>field-1</I>. A list of fields can follow the 
+FROM which will subtract the value from each of them. A list of values can 
+be before the FROM which would subtract all of them from <I>field-1</I>.</P>
+
+<P>It is possible to store the result in a separate field with the GIVING 
+clause:</P>
+<TT><PRE>
+        SUBTRACT <I>value-1</I> FROM <I>value-2</I> GIVING <I>field-1</I>.
+</PRE></TT>
+<P>Also see <A HREF="langref.html#round">Rounded</A>,&nbsp&nbsp
+<A HREF="langref.html#onsize">On Size Error</A>,&nbsp&nbsp
+<A HREF="langref.html#trunc">Truncation</A>,&nbsp;&nbsp
+<A HREF="langref.html#delim">Delimiters</A>.</P>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="unstring"><H4>Unstring</H4></A>
+<P>The UNSTRING is used to split a field into multiple fields using a particular 
+character to determine where to split the field. For example:</P>
+<TT><PRE>
+       01  WS-NAME-FIELDS.
+           05  WS-FIRST      PIC X(10).
+           05  WS-MIDDLE     PIC X.
+           05  WS-LAST       PIC X(14).
+       01  WS-WHOLE-NAME     PIC X(25)  VALUE 'HOMER J SIMPSON'.
+
+    .....
+
+           UNSTRING WS-WHOLE-NAME DELIMITED BY SPACE
+              INTO WS-FIRST, WS-MIDDLE, WS-LAST.
+</PRE></TT>
+<P>The above statement will take the all of WHOLE-NAME, up to but not including 
+the 1st space, and place it into WS-FIRST. The the part that is between the 
+1st and 2nd spaces, not including either one, is placed in WS-MIDDLE, and so on.<P>
+<P>Also see <A HREF="langref.html#string">String</A>.</P>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="usage"><H4>Usage</H4></A>
+<P>USAGE can be used in conjunction with the <A HREF="langref.html#pic">PIC 
+clause</A> to specify how numeric data is to be stored. The most common options 
+are DISPLAY (the default), COMP and COMP-3. COMP is short for COMPUTATIONAL, 
+which can also be used. The words 'USAGE IS' are optional. USAGE is only valid 
+with <A HREF="langref.html#datatype">numeric</A> fields. It can be specified 
+as follows:</P>
+<TT><PRE>
+        01  WS-FIELDS.
+            05  WS-DISPLAY-1         PIC 9(4).
+            05  WS-DISPLAY-2         PIC 999     USAGE IS DISPLAY.
+            05  WS-COMP-1            PIC S9999   USAGE IS COMPUTATIONAL.
+            05  WS-COMP3-1           PIC 9(5)V99 COMP-3.
+</PRE></TT>
+<P>A number stored as COMP is in binary format. A COMP-3 number is stored as 
+packed-decimal.</P>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="using"><H4>Using</H4></A>
+<P>The USING clause is used to pass parameters from one program to another. It 
+appears in the <A HREF="langref.html#call">Call</A> statement of the calling 
+program to specify the parameter list. These parameters must be working storage 
+fields.</P>
+<P>The called program must have a USING clause on its PROCEDURE DIVISION statement 
+followed by the parameters the program is receiving. These fields are defined in 
+the LINKAGE SECTION of the DATA DIVISION, which follows the WORKING-STORAGE 
+SECTION. All of the received fields are updateable by the called program.</P>
+The parameters do not have to have the same names in the calling and called 
+programs but the sizes and data types have to match.</P>
+<TT><PRE>     (In calling program)
+
+       CALL 'PGM2.OBJ'
+         USING WS-FIELD-1, WS-FIELD-2, WS-FIELD-3
+       END-CALL
+
+     (In called program)
+
+    PROCEDURE DIVISION USING LK-FIELD-A, LK-FIELD-B, LK-FIELD-C
+</PRE></TT>
+<P>See the <A HREF="algs.html#call">algorithms</A> page for sample 
+code on calling one program from another.</P>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="value"><H4>Value</H4></A>
+<P>Value allows you to initialize a field at the same time it is defined. 
+The VALUE clause follows the <A HREF="langref.html#pic">PIC clause</A> and 
+must be the proper type of data. The value can be changed in code at any 
+time.</P>
+<TT><PRE>
+           05  WS-NBR-LINES-PER-PAGE   PIC 99   VALUE 60.
+           05  FILLER                  PIC X(6) VALUE 'PAGE: '.
+</PRE></TT>
+<P>Some compilers will require the VALUE data to be the proper size also, 
+others will <A HREF="langref.html#trunc">truncate</A> to fit. Most compilers 
+will not allow VALUEs in input FDs - it is a bad idea in any case.</P>
+<P>Also see <A HREF="langref.html#contin">Continuation</A>&nbsp;&nbsp
+<A HREF="langref.html#init">Initialize</A>.</P>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+<A NAME="write"><H4>Write</H4></A>
+<P>The write statement will write data to the specified file. The file 
+must be opened for output. Attempting to write to an unopened file or a 
+file opened for input will produce a run-time error.</P>
+<PRE><TT>
+        WRITE <I>record-name</I>.
+</TT></PRE><BR>
+<P>Optional clauses are FROM, BEFORE and AFTER. FROM specifies a 
+working-storage <A HREF="langref.html#fields">field</A> from which the 
+system will select the data that is to be written. FROM can appear with 
+either BEFORE or AFTER.</P>
+
+<P>BEFORE and AFTER specify actions to be taken by the printer along with 
+writing a record of data. You can either specify the number of lines that 
+are to be advanced or you can specify advancing to the top of the next 
+page. BEFORE and AFTER cannot appear in the same write.</P>
+<PRE><TT>
+        WRITE <I>record-name</I>
+           FROM <I>working-storage field</I>
+        END-WRITE.
+
+        WRITE <I>record-name</I>
+           AFTER ADVANCING <I>value</I> LINES
+        END-WRITE.
+
+        WRITE <I>record-name</I>
+           AFTER PAGE
+        END-WRITE.
+</TT></PRE><BR>
+<P>Where <I>value</I> can be a <A HREF="langref.html#literal">literal</A> or 
+a <A HREF="langref.html#fields">field</A>.</P>
+<P>Also see <A HREF="langref.html#delim">Delimiters</A>.</P>
+<HR><A HREF="langref.html#TOC">Back to Table of Contents</A><BR><HR>
+
+</BODY>
+
+</HTML>

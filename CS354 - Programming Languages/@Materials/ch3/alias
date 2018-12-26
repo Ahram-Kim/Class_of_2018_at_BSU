@@ -1,0 +1,24 @@
+EQUIVALENCE (x,y)
+
++--------------+--------------+
+| COMMON a,b,c | COMMON d,e,f |
+|      :       |      :       |
+| a=b+c        | d=e+f        |
+|      :       |      :       |
++--------------+--------------+
+
+union {
+    struct { int x,y,z; } s;
+    int a[3];
+} u;
+u.a[1]=123;
+u.s.y++;
+
+int i=123;
+int *p=&i;
+*p++;
+i++;
+
+int a[100];
+void f(int a[], int b[]) { a[1]++; b[1]++; }
+f(a,a);    
