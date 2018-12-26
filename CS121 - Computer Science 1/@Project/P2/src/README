@@ -1,0 +1,29 @@
+# Project 1: Interactive PlayList Analysis
+
+* Author: Luke Hindman
+* Class: CS121 Section 1
+* Semester: Fall 2016
+
+## Overview
+
+This Java application displays an animated marshmallow with features based on
+user input specifying sponginess, color, sugar density, and burn resistance.
+
+## Compiling and Using
+
+    To compile, execute the following command in the main project directory:
+        $ javac PlayList.java
+    To run the compiled class with the command:
+        $ java PlayList
+
+
+## Discussion
+
+I got some problems and errors during the section 3(Calculate the average play time) and 4(Find the song with play time closest to 4 minutes). 'if' method didn't work well and when I changed the order of the three song, the song which is the closest to 4minutes also changed. I asked the tutor how to do and make it.  
+
+## Extra Credit
+
+
+
+## Sources used
+

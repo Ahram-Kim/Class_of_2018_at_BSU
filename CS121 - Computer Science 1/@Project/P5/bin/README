@@ -1,0 +1,37 @@
+# Project 5 : MyTunes GUI
+
+* Author: Ahram KIm
+* Class: CS121 Section 1
+* Semester: Fall 2016
+
+## Overview
+
+This Java application is to implement the basic iTunes like application with a heat map
+visualization that show you which songs you play the most. 
+It makes me to use JPanel, JLabel, and Jframe for the design.
+I designed and implemented a graphical user interface(GUI) program and good user interface.
+
+
+## Compiling and Using
+
+To compile, execute the following command in the main project directory:
+$ javac MyTunesGUI.java
+$ javac MyTunesGUIPanel.java
+
+
+Run the compiled class with the command:
+$ java MyTunesGUI
+$ java MyTunesGUIPanel
+
+## Discussion
+
+I used several classes from the AWT and Swing graphics packages. 
+I manages a grid of buttons using a 2-dimensional array.
+I reused classes that I implemented previously in a new context.
+I also applied the basics of event-driven programing using events and listener.
+That is the hardest project I worked ever. I took lots of time and endeaver. 
+I couldn't finish perfectly and submitted. However, I will try to finish perfectly even if
+the due date would be passed.
+
+## Extra Credit
+

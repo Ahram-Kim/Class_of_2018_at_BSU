@@ -1,0 +1,15 @@
+Author: Ahram Kim   
+Class: CS121L-03
+Semester: Spring 2016
+
+#Overview
+The program is to work many applications. 
+
+#Compiling and Using
+Javac ConvertToSeconds.java
+Javac ConvertToHours.java
+Java ConvertToSeconds
+Java ConvertToHours
+
+#Discussion
+I got a lot of problem and errors in java program what equation I need to input. 
