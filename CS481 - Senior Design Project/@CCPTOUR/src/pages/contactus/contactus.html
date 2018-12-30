@@ -1,0 +1,44 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>contactus</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  
+  <h3>Computer science</h3>
+  <h4>computerscience@boisestate.edu</h4>
+  <h4>(208) 426-5766</h4>
+  <h4>City Center Plaza(CCP), RM364</h4>
+  <br><br>
+
+  <ion-card>
+  <h4>If you have any questions, feel free to contact us!</h4>
+  <form [formGroup]="csForm">
+    <ion-item>
+      <ion-label floating> Name </ion-label>
+      <ion-input [formControl]="csForm.controls['name']" type="name"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating> Email </ion-label>
+      <ion-input [formControl]="csForm.controls['email']" type="email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating> Message </ion-label>
+      <ion-input [formControl]="csForm.controls['message']"></ion-input>
+    </ion-item>
+
+    <ion-row>
+      <ion-col text-center>
+        <button ion-button block color="secondary" (click)="what">Submit</button>
+      </ion-col>
+    </ion-row>
+  </form>
+  </ion-card>
+</ion-content>

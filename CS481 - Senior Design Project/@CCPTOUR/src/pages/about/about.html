@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      About
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="card-background-page">
+
+  <!-- onclick="window.open('http://cs.boisestate.edu/~amit/ecosystem')" -->
+
+  <ion-card (click)="openNewstudents()">
+    <img src="../../assets/imgs/edit3.jpg"  />
+    <div class="card-title">For new students</div>
+  </ion-card>
+ 
+  <ion-card (click)="openCcpbuilding()">
+    <img src="../../assets/imgs/edit6.jpg" />
+    <div class="card-title">CCP Building</div>
+  </ion-card>
+
+  <ion-card (click)="openCsdepart()">
+    <img src="../../assets/imgs/edit1.jpg"  />
+    <div class="card-title">CS Department</div>
+  </ion-card>
+ 
+  <ion-card (click)="openEcosystems()">
+    <img src="../../assets/imgs/edit2.jpg"  />
+    <div class="card-title">Ecosystem</div>
+  </ion-card>
+
+  <ion-card  (click)="openFaculty()">
+      <img src="../../assets/imgs/edit4.jpg" />
+      <div class="card-title">Our Faculty</div>
+  </ion-card>
+
+  <ion-card (click)="openContactus()">
+    <img src="../../assets/imgs/edit5.jpg" />
+    <div class="card-title">Contact us</div>
+  </ion-card>
+ 
+</ion-content>

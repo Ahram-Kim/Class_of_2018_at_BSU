@@ -1,0 +1,38 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>The CCP Building</ion-title>
+  </ion-navbar>
+
+</ion-header> 
+
+
+<ion-content padding>
+  
+  <ion-card>
+    <ion-card-header> 
+      <h1 style="color:navy; text-align: center;"> City Center Plaza</h1> 
+    </ion-card-header>
+
+    <!-- <div> -->
+      <ion-slides class="image-slider" loop="true" style="height:500px;width:500px">
+        <ion-slide *ngFor="let img of images">
+          <img src="assets/imgs/{{img}}" class="thumb-img" imageViewer>
+        </ion-slide>
+      </ion-slides>
+    <!-- </div> -->
+
+    <h4>Home for the Computer Science department</h4>
+    <ul>
+      <li>2nd and 3rd floors of City Center Plaza Buiding</li>
+      <li>42,000 sq. ft. space</li>
+      <li>Offices for 26+ faculty</li>
+      <li>5 classrooms</li>
+      <li>2 tutoring / computer labs</li>
+      <li>Research labs</li>
+      <li>Public transportation. Straight to the building. Shuttle to/from main campus. Bike storage</li>
+      <li>CS tutoring center that is open seven days a week to especially help freshment and sophmores.</li>
+    </ul>>
+  </ion-card>
+</ion-content>

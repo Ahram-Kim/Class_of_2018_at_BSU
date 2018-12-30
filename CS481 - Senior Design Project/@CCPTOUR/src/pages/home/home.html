@@ -1,0 +1,22 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>Welcome</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding scroll="false" >
+
+  <img src="../../assets/imgs/home.png" >
+
+  <ion-fab left bottom>
+    <button ion-fab color="dark"><ion-icon name="arrow-dropright"></ion-icon></button>
+    <ion-fab-list side="right">
+      <button ion-fab  (click)="openLocationpage()" ><ion-icon name="navigate"></ion-icon></button>
+      <button ion-fab onclick="window.open('https://www.boisestate.edu/')"><ion-icon name="at"></ion-icon></button>
+      <button ion-fab (click)="openAboutpage()"><ion-icon name="more"></ion-icon></button>
+    </ion-fab-list>
+  </ion-fab>
+
+</ion-content>
+

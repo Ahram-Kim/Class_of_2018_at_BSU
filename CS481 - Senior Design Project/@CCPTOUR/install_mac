@@ -1,0 +1,5 @@
+#!/bin/bash
+sudo curl "https://nodejs.org/dist/latest-dubnium/node-${VERSION:-$(wget -qO- https://nodejs.org/dist/latest-dubnium/ | sed -nE 's|.*>node-(.*)\.pkg</a>.*|\1|p')}.pkg" > "$HOME/Downloads/node-latest.pkg" && sudo installer -store -pkg "$HOME/Downloads/node-latest.pkg" -target "/"
+sudo npm install -g ionic cordova
+npm i -D -E @ionic/app-scripts
+ionic serve

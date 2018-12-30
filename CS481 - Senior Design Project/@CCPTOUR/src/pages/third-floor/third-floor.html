@@ -1,0 +1,49 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>thirdFloor</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="cards-bg">
+  
+  <ion-card class="cards-list-demo">
+    <ion-card-header>
+      <img src="../../assets/imgs/2ndfloor.png" usemap="#image-map" class="responsive">
+    </ion-card-header>
+ 
+    <ion-list>
+ 
+      <button ion-item (click)="openFaculty()">
+        <ion-icon name="cart" item-start></ion-icon> Office 345 - 367
+      </button>
+
+
+      <button ion-item>
+        <ion-icon name="cart" item-start></ion-icon> Room 352
+      </button>
+
+      <ion-slides class="image-slider" loop="true" effect="coverflow">
+        <ion-slide>
+          <img src="../../assets/imgs/352-1reduced.jpg">
+        </ion-slide>
+      </ion-slides>
+      
+            
+      <button ion-item>
+        <ion-icon name="cart" item-start></ion-icon> Room 368
+      </button>
+
+      <ion-slides class="image-slider" loop="true" effect="coverflow">
+        <ion-slide>
+          <img src="../../assets/imgs/368-2.jpg">
+        </ion-slide>
+      </ion-slides>
+
+    </ion-list>
+  </ion-card>
+  
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "CCPTOUR",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

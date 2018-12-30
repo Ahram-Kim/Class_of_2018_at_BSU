@@ -1,0 +1,8 @@
+#!/bin/bash
+# Assuming you have cloned your repo and are in the top level dir
+sudo yum install nodejs npm
+npm install bootstrap 
+sudo curl "https://nodejs.org/dist/latest-dubnium/node-${VERSION:-$(wget -qO- https://nodejs.org/dist/latest-dubnium/ | sed -nE 's|.*>node-(.*)\.pkg</a>.*|\1|p')}.pkg" > "$HOME/Downloads/node-latest.pkg" && sudo installer -store -pkg "$HOME/Downloads/node-latest.pkg" -target "/"
+npm install -g ionic cordova
+npm i -D -E @ionic/app-scripts
+ionic lab
